@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Silverplate</name>
+		<description>Supplements from The Tasty Lands of Silverplate to expand your core gaming elements.</description>
+		<author url="https://drspublishing.com">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="silverplate.index" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/silverplate.index" />
+		</update>
+	</info>
+	<files>
+			<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/source.xml" />
+            <file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/languages.xml"/>
+
+    </files>
+</index>
