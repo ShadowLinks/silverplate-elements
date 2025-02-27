@@ -77,7 +77,7 @@
             <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FRYING_PAN</set>
         </setters>
     </element>    
-    <element name="Great Frying Pan" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_CUTTING_KNIFE_GREAT_FRYING_PAN">
+    <element name="Great Frying Pan" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_GREAT_FRYING_PAN">
         <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, kitchen-weapons</supports>
         <description>
             <p/>
@@ -91,7 +91,7 @@
             <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_FRYING_PAN</set>
         </setters>
     </element>
-    <element name="Great Grater" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_CUTTING_KNIFE_GREAT_GRATER">
+    <element name="Great Grater" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_KNIFE_GREAT_GRATER">
         <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, kitchen-weapons</supports>
         <description>
             <p/>

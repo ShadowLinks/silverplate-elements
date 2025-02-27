@@ -17,7 +17,7 @@
             </div>
         </description>
         <setters>
-            <set name="category">Foodfok Tags</set>
+            <set name="category">Foodfolk Tags</set>
             <set name="keywords">Racial Trait, flavors</set>
             <set name="slot">misc</set>
             <set name="inventory-hidden">true</set>
@@ -28,7 +28,6 @@
     </element>
 </elements>
 <!--
-Barbarian, LV03: Primal Knowledge"
 <element name="traitname" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_">
         <compendium display="false"/>
         <description>
@@ -40,7 +39,7 @@ Barbarian, LV03: Primal Knowledge"
             </div>
         </description>
         <setters>
-            <set name="category">Foodfok Tags</set>
+            <set name="category">Foodfolk Tags</set>
             <set name="keywords">Racial Trait, flavors</set>
             <set name="slot">misc</set>
             <set name="inventory-hidden">true</set>
@@ -49,4 +48,5 @@ Barbarian, LV03: Primal Knowledge"
             <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
         </rules>
     </element>
+</elements>
 -->
