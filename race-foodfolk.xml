@@ -70,123 +70,121 @@
             <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_ALWAYS_HOT" level="1" />
         </rules>
     </element>
-    <!--
+   
     <element name="Pizza" type="Sub Race" source="Silverplate" id="ID_DRS_SILVERPLATE_SUB_RACE_PIZZA">
         <supports>foodfolk-options</supports>
         <description>
-            <p></p>
+            <p>This pizza pie made of a simple dough, some olives, mushrooms, pepperoni and mozzarella cheese has been baked to perfection. </p>
             <p class="indent"></p>
             <h4>Pizza Traits</h4>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_PRESERVABLE" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_NECESSARY_FLAVOR" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_MAIN_COURSE" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_HEAVY_TEMPLE" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_ANCIENT" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_OVENBORN" />
+
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Racial Trait" id="ID__" level="1" />
-            <grant type="Racial Trait" id="ID___" level="1" />
-            <grant type="Racial Trait" id="ID____" level="1" />
-            <grant type="Racial Trait" id="ID_____" level="1" />
-            <grant type="Racial Trait" id="ID______" level="1" />
-            <grant type="Racial Trait" id="ID_______" level="1" />
-            <grant type="Racial Trait" id="ID________" level="1" />
-            <grant type="Racial Trait" id="ID_________" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_PRESERVABLE" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_NECESSARY_FLAVOR" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_MAIN_COURSE" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_HEAVY_TEMPLE" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_ANCIENT" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_OVENBORN" level="1" />
+
         </rules>
     </element>
     <element name="Hot Dog" type="Sub Race" source="Silverplate" id="ID_DRS_SILVERPLATE_SUB_RACE_HOT_DOG">
         <supports>foodfolk-options</supports>
         <description>
-            <p></p>
+            <p>With its bun crispy on the outside and fluffy on the inside, and the sausage boiled to the perfect temperature, this hot dog would be a great addition to any party. </p>
             <p class="indent"></p>
             <h4>Hot Dog Traits</h4>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_AROMA_SENSE" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_SKILLS" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_POWER_OF_FLAVOR" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_PROTEIN_BUFF" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_FATTY_PROTECTIOn" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GRAIN_WEAPON_TRAINING" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_HOT_POT" />
+
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Racial Trait" id="ID__" level="1" />
-            <grant type="Racial Trait" id="ID___" level="1" />
-            <grant type="Racial Trait" id="ID____" level="1" />
-            <grant type="Racial Trait" id="ID_____" level="1" />
-            <grant type="Racial Trait" id="ID______" level="1" />
-            <grant type="Racial Trait" id="ID_______" level="1" />
-            <grant type="Racial Trait" id="ID________" level="1" />
-            <grant type="Racial Trait" id="ID_________" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_AROMA_SENSE" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_SKILLS" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_POWER_OF_FLAVOR" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_PROTEIN_BUFF" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_FATTY_PROTECTIOn" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GRAIN_WEAPON_TRAINING" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_HOT_POT" level="1" />
+
         </rules>
     </element>
     <element name="Coffee" type="Sub Race" source="Silverplate" id="ID_DRS_SILVERPLATE_SUB_RACE_COFFEE">
         <supports>foodfolk-options</supports>
         <description>
-            <p></p>
+            <p>The bitterness of this cup of coffee with slight hints of cherries in its aroma, has been cut with frothy skimmed milk. </p>
             <p class="indent"></p>
             <h4>Coffee Traits</h4>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_LIQUID_FORM" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_AFTER_TASTE" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_ALREADY_BITTER" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_SKIMMED" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_ME_JUICE" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_ART_OF" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_STEAM_DISCHARGE" />
+
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Racial Trait" id="ID__" level="1" />
-            <grant type="Racial Trait" id="ID___" level="1" />
-            <grant type="Racial Trait" id="ID____" level="1" />
-            <grant type="Racial Trait" id="ID_____" level="1" />
-            <grant type="Racial Trait" id="ID______" level="1" />
-            <grant type="Racial Trait" id="ID_______" level="1" />
-            <grant type="Racial Trait" id="ID________" level="1" />
-            <grant type="Racial Trait" id="ID_________" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_LIQUID_FORM" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_AFTER_TASTE" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_ALREADY_BITTER" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_SKIMMED" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_ME_JUICE" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_ART_OF" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_STEAM_DISCHARGE" level="1" />
+
         </rules>
     </element>
     <element name="Cupcake" type="Sub Race" source="Silverplate" id="ID_DRS_SILVERPLATE_SUB_RACE_CUPCAKE">
         <supports>foodfolk-options</supports>
         <description>
-            <p></p>
+            <p>This cupcake with vanilla illing has been decorated with fresh strawberries on top. </p>
             <p class="indent"></p>
             <h4>Cupcake Traits</h4>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_AROMA_SENSE" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_DARKVISION" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_ENERGIZE" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_SWEET_TOOTH" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_WHOLE_GRAIN_FORM" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_VIBRANT_COLORS" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_BAKED_BUT_NOT_FORGOTTEN" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_BLEND_OF_COLORS" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Racial Trait" id="ID__" level="1" />
-            <grant type="Racial Trait" id="ID___" level="1" />
-            <grant type="Racial Trait" id="ID____" level="1" />
-            <grant type="Racial Trait" id="ID_____" level="1" />
-            <grant type="Racial Trait" id="ID______" level="1" />
-            <grant type="Racial Trait" id="ID_______" level="1" />
-            <grant type="Racial Trait" id="ID________" level="1" />
-            <grant type="Racial Trait" id="ID_________" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_AROMA_SENSE" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_DARKVISION" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_ENERGIZE" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_SWEET_TOOTH" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_WHOLE_GRAIN_FORM" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_VIBRANT_COLORS" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_BAKED_BUT_NOT_FORGOTTEN" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_BLEND_OF_COLORS" level="1" />
         </rules>
-    </element>-->
+    </element>
     <element name="Cook Yourself" type="Sub Race" source="Silverplate" id="ID_DRS_SILVERPLATE_SUB_RACE_CUSTOM">
         <supports>foodfolk-options</supports>
         <description>
