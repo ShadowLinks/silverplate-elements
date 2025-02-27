@@ -316,67 +316,80 @@
             <description>When a friendly creature that you can see within 30 feet of you makes a saving throw against being frightened, you can grant advantage on the saving throw as a reaction. </description>
         </sheet>
     </element>
-    <element name="Sour - Acidic Affinity ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_ACIDIC_AFFINITY">
+    <element name="Sour - Acidic Affinity (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_ACIDIC_AFFINITY">
         <description>
             <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
-            <p class="indent"></p>
+            <p class="indent">Since your body alreadAcidic Affincontains acidic components, you have resistance to acid damage.</p>
+            <p class="indent">Additionally, when a creature within 5 feet of you hits you with a weapon attack, the creature takes 1 acid damage. This damage increases by 1 at 4th, 8th, 12th, and 16th level.</p>
+        </description>
+        <sheet>
+            <description>When a creature within 5 feet of you hits you with a weapon attack, the creature takes 1 acid damage.</description>
+            <description level="4">When a creature within 5 feet of you hits you with a weapon attack, the creature takes 2 acid damage.</description>
+            <description level="8">When a creature within 5 feet of you hits you with a weapon attack, the creature takes 3 acid damage.</description>
+            <description level="12">When a creature within 5 feet of you hits you with a weapon attack, the creature takes 4 acid damage.</description>
+            <description level="16">When a creature within 5 feet of you hits you with a weapon attack, the creature takes 5 acid damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Sour - Resilience of Flavor (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_RESILIENCE_OF_FLAVOR">
+        <description>
+            <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
+            <p class="indent">You have advantage on Constitution saving throws. </p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+        </rules>
     </element>
-    <element name="Sour - Resilience of Flavor ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_RESILIENCE_OF_FLAVOR">
+    <element name="Sour - Citric Edge (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_CITRIC_EDGE">
         <description>
             <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
-            <p class="indent"></p>
+            <p class="indent">You can be very sharp when you need to be. You have advantage on Charisma (Intimidation) checks. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have advantage on Charisma (Intimidation) checks.</description>
         </sheet>
     </element>
-    <element name="Sour - Citric Edge ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_CITRIC_EDGE">
+    <element name="Sour - Vitamin Protection (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_VITAMIN_PROTECTION">
         <description>
             <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
-            <p class="indent"></p>
+            <p class="indent">.Your body naturally fights off disease. You have immunity to diseases. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have immunity to diseases.</description>
         </sheet>
     </element>
-    <element name="Sour - Vitamin Protection ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_VITAMIN_PROTECTION">
+    <element name="Sour - Reduced Risks (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_REDUCED_RISKS">
         <description>
             <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
-            <p class="indent"></p>
+            <p class="indent">Thanks to your self-healing components, you can live up to 300 years instead of 200 years. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can live up to 300 years instead of 200 years.</description>
         </sheet>
     </element>
-    <element name="Sour - Reduced Risks ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_REDUCED_RISKS">
+    <element name="Sour - Harming Acidity (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_HARMING_ACIDITY">
         <description>
             <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
-            <p class="indent"></p>
+            <p class="indent">You can channel your sour smell to irritate others. As a bonus action, you can release your citric essence onto a creature that you can see within 5 feet of you. The target has disadvantage on the next  Constitution saving throw it makes within 1 minute to maintain concentration.</p>
+            <p class="indent"> Once you use this feature, you must finish a long rest to use it again. </p>
         </description>
         <sheet>
-            <description></description>
+            <description usage ="Long Rest" action="Bonus Action">As a bonus action, you can release your citric essence onto a creature that you can see within 5 feet of you. The target has disadvantage on the next  Constitution saving throw it makes within 1 minute to maintain concentration.</description>
         </sheet>
     </element>
-    <element name="Sour - Harming Acidity ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_HARMING_ACIDITY">
+    <element name="Sour - Type-C Healing (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_TYPE_C_HEALING">
         <description>
             <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
-            <p class="indent"></p>
+            <p class="indent">You can use your action to stabilize a creature through your touch. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Sour - Type-C Healing ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_TYPE_C_HEALING">
-        <description>
-            <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
-            <p class="indent"></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can use your action to stabilize a creature through your touch.</description>
         </sheet>
     </element>
     <element name="Salty - Too Much! ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_TOO_MUCH">
