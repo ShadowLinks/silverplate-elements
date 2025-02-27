@@ -1,0 +1,517 @@
+<elements>
+    <info>
+        <name>Foodfolk tags</name>
+        <description>The Foodfolk tags to create Foodfolk from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="foodfolk-tags.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/foodfolk-tags.xml"/>
+        </update>
+    </info>
+    <element name="Food - Preserveable (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_PRESERVABLE">
+        <description>
+            <p>Food People are those whose bondy consists of solid materials. They have been fighting for their place in Silverplate since the First Age.</p>
+            <p class="indent">Cold preserves your body to a certain extent. You have resistance to cold damage and you are unharmed by temperatures as low as  -20 degrees Fahrenheit. Also, your Constitution score increases by 1, up to a maximum of 20.</p>
+        </description>
+        <sheet>
+            <description>You are unharmed by temperatures as low as -20 degrees Fahrenheit. </description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+            <stat name="Consitution" value="1" />
+        </rules>
+    </element>
+    <element name="Food - Solid Structure (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_SOLID_STRUCTURE">
+        <description>
+            <p>Food People are those whose bondy consists of solid materials. They have been fighting for their place in Silverplate since the First Age.</p>
+            <p class="indent">Your body consists of solid material and thus is durable. You have proficiency in Constitution saving throws. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+        </rules>
+    </element>
+    <element name="Food - Darkvision (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_DARKVISION">
+        <description>
+            <p>Food People are those whose bondy consists of solid materials. They have been fighting for their place in Silverplate since the First Age.</p>
+            <p class="indent">. Your eyes are used to the natural darkness of the realm. You can see in dim light within 60 feet of you as if it were bright  light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. </p>
+        </description>
+        <sheet>
+            <description>Darkvision for 60 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+        </rules>
+    </element>
+    <element name="Food - Food Skills (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_SKILLS">
+        <description>
+            <p>Food People are those whose bondy consists of solid materials. They have been fighting for their place in Silverplate since the First Age.</p>
+            <p class="indent">You are taught the ancient ways of the food people. You are proficient in one of the following skills of your choice: Animal Handling, Athletics, and Survival. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Food Skills" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL" />
+        </rules>
+    </element>
+    <element name="Food - Foot Tools (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_TOOLS">
+        <description>
+            <p>Food People are those whose bondy consists of solid materials. They have been fighting for their place in Silverplate since the First Age.</p>
+            <p class="indent">You are taught the ancient ways of the food people. You are proficient with one of the following tools of your choice: cook's  utensils, potter's tools, or mason's tools. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Food Tools" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS|ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Food - Food Language (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_LANGUAGE">
+        <description>
+            <p>Food People are those whose bondy consists of solid materials. They have been fighting for their place in Silverplate since the First Age.</p>
+            <p class="indent">You know the language spoken among food; Yummish. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_YUMMISH" />
+        </rules>
+    </element>
+    <element name="Food - Aroma Sense (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_AROMA_SENSE">
+        <description>
+            <p>Food People are those whose bondy consists of solid materials. They have been fighting for their place in Silverplate since the First Age.</p>
+            <p class="indent">You have a keen sense of smell. As an action, you can sense the presence of foodfolk within 30 feet of you and can tell if  they are a food or a beverage. This feature doesn't reveal the creatures' location or number. Once you use this feature, you must finish a long rest to use it again. </p>
+        </description>
+        <sheet usage="1/Long rest">
+            <description>You have a keen sense of smell. As an action, you can sense the presence of foodfolk within 30 feet of you and can tell if they are a food or a beverage. This feature doesn't reveal the creatures' location or number. Once you use this feature, you must finish a long rest to use it again.</description>
+        </sheet>
+    </element>
+    <element name="Beverage - Liquid Form (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_LIQUID_FORM">
+        <description>
+            <p>Beverage people are those whose bondy consists of liquid materials. They are mostly one with their vessels and usually cant live outside of them.</p>
+            <p class="indent">You can live without a vessel. As an action, you can leave the vessel you are in. When you do so, you can survive for a number of hours equal to your level. If you are outside of your vessel for more than a number of  hours equal to your level, you suffer one level of exhaustion for every hour that exceeds your  level. To elaborate, if you are a 5th level creature, you suffer one level of exhaustion at the  beginning of the sixth hour you spend outside of your vessel, and another level of exhaustion at the beginning of the seventh hour. When you are in liquid form, you leave every item you're  carrying and wearing behind. Your walking speed doesn't change and you can move through a space as  narrow as 1 inch wide without squeezing. Also, while motionless, you are indistinguishable from  non-living liquids. You can still talk while in liquid form but can't take the Attack action. Your  empty vessel counts as an unattended object. </p>
+            <p class="indent">As an action, you can choose an unattended object within 5 feet of you and enter it, using it as a  new vessel.</p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>
+            <p class="indent">Additionally, you have resistace to fire damage in both your forms since you are attuned to your  liquid form. </p>
+        </description>
+        <sheet usage="1/Long rest">
+            <description>As an action, you can leave the vessel you are in. When you do so, you can survive for a number of hours equal to your level. If you are outside  of your vessel for more than a number of hours equal to your level, you suffer one level of  exhaustion for every hour that exceeds your level. To elaborate, if you are a 5th level creature,  you suffer one level of exhaustion at the beginning of the sixth hour you spend outside of your  vessel, and another level of exhaustion at the beginning of the seventh hour. When you are in liquid form, you leave every item you're  carrying and wearing behind. Your walking speed doesn't change and you can move through a space as  narrow as 1 inch wide without squeezing. Also, while motionless, you are indistinguishable from  non-living liquids. You can still talk while in liquid form but can't take the Attack action. Your  empty vessel counts as an unattended object. As an action, you can choose an unattended object within 5 feet of you and enter it, using it as a  new vessel. Once you use this feature, you must finish a long rest to use it again. </description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+    <element name="Beverage - Fluid Body (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_FLUID_BODY">
+        <description>
+            <p>Beverage people are those whose bondy consists of liquid materials. They are mostly one with their vessels and usually cant live outside of them.</p>
+            <p class="indent">No matter what vessel you are in, your body is fluid and is thus flexible. You have proficiency in Dexterity saving throws. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+        </rules>
+    </element>
+    <element name="Beverage - Darkvision (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_DARKVISION">
+        <description>
+            <p>Beverage people are those whose bondy consists of liquid materials. They are mostly one with their vessels and usually cant live outside of them.</p>
+            <p class="indent">Your eyes are used to the natural darkness of the realm. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. </p>
+        </description>
+        <sheet>
+            <description>Darkvision 60 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+        </rules>
+    </element>
+    <element name="Beverage - Beverage Skills (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_BEVERAGE_SKILLS">
+        <description>
+            <p>Beverage people are those whose bondy consists of liquid materials. They are mostly one with their vessels and usually cant live outside of them.</p>
+            <p class="indent">You are taught the ancient ways of the beverage people. You are proficient in one of the following skills of your choice:  Persuasion, Stealth, or Survival. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Beverage Skills" supports="ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" />
+        </rules>
+    </element>
+    <element name="Beverage - Beverage Tools (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_BEVERAGE_TOOLS">
+        <description>
+            <p>Beverage people are those whose bondy consists of liquid materials. They are mostly one with their vessels and usually cant live outside of them.</p>
+            <p class="indent">You are taught the ancient ways of beverage people. You are proficient with one of the following tools of your choice:  brewer's supplies, glassblower's tools, or cartographer's tools. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Beverage Tools" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Beverage - Beverage Language (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_BEVERAGE_LANGUAGES">
+        <description>
+            <p>Beverage people are those whose bondy consists of liquid materials. They are mostly one with their vessels and usually cant live outside of them.</p>
+            <p class="indent">You know the language spoken among the beverage people; Beveric. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_BEVERIC" />
+        </rules>
+    </element>
+    <element name="Beverage - Hiding Lid (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_HIDING_LID">
+        <description>
+            <p>Beverage people are those whose bondy consists of liquid materials. They are mostly one with their vessels and usually cant live outside of them.</p>
+            <p class="indent">You can hide your smell by covering yourself as a bonus action. To be able to cover yourself, you need a free hand. As long as  you are covering yourself, you don't have a smell and count as invisible to creatures who only rely  on smell as a way of perception. </p>
+        </description>
+        <sheet Action="Bonus Action">
+            <description>You can hide your smell by covering yourself as a bonus action. To be able to cover yourself, you need a free hand. As long as you are covering yourself, you don't have a smell and count as invisible to creatures who only rely on smell as a way of perception. </description>
+        </sheet>
+    </element>
+    <element name="Bitter - Antioxidants (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_ANTIOXIDANTS">
+        <description>
+            <p>Bitterness may seem like an unpleasant taste, but it provides one with very powerful abilites. The taste of bitter folk gives them the advantage in combat aas well as an opportunity to lead a healthier life than most.</p>
+            <p class="indent">Your body contains components that promote your well-being. Whenever you gain a level, your hit point maximum  increases by an additional ld4 hit points. </p>
+        </description>
+        <sheet>
+            <description>Whenever you gain a level, your hit point maximum  increases by an additional ld4 hit points.</description>
+        </sheet>
+    </element>
+    <element name="Bitter - Bitter Strikes (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_BITTER_STRIKES">
+        <description>
+            <p>Bitterness may seem like an unpleasant taste, but it provides one with very powerful abilites. The taste of bitter folk gives them the advantage in combat aas well as an opportunity to lead a healthier life than most.</p>
+            <p class="indent">You can harm others with your bitterness. Your successful weapon attacks deal an extra 1 poison damage. This damage increases by 1 at 4th, 8th, 12th, and 16th level. </p>
+        </description>
+        <sheet>
+            <description>Your successful weapon attacks deal an extra 1 poison damage. </description>
+            <description level="4">Your successful weapon attacks deal an extra 2 poison damage. </description>
+            <description level="8">Your successful weapon attacks deal an extra 3 poison damage. </description>
+            <description level="12">Your successful weapon attacks deal an extra 4 poison damage. </description>
+            <description level="16">Your successful weapon attacks deal an extra 5 poison damage. </description>
+        </sheet>
+    </element>
+    <element name="Bitter - Bitter Knowledge (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_BITTER_KNOWLEDGE">
+        <description>
+            <p>Bitterness may seem like an unpleasant taste, but it provides one with very powerful abilites. The taste of bitter folk gives them the advantage in combat aas well as an opportunity to lead a healthier life than most.</p>
+            <p class="indent">Facing bitter realities has sharpened your mind. You have advantage on Intelligence saving throws. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+        </rules>
+    </element>
+    <element name="Bitter - Aid Tactics (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_AID_TACTICS">
+        <description>
+            <p>Bitterness may seem like an unpleasant taste, but it provides one with very powerful abilites. The taste of bitter folk gives them the advantage in combat aas well as an opportunity to lead a healthier life than most.</p>
+            <p class="indent">Bitterness comes with the knowledge to help others. You are proficient in the Medicine skill. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+        </rules>
+    </element>
+    <element name="Bitter - Wrong Influence (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_WRONG_INFLUENCE">
+        <description>
+            <p>Bitterness may seem like an unpleasant taste, but it provides one with very powerful abilites. The taste of bitter folk gives them the advantage in combat aas well as an opportunity to lead a healthier life than most.</p>
+            <p class="indent">Thanks to your bitter (almost alcoholic) presence, you have  advantage on Charisma (Persuasion) checks in inns and taverns. </p>
+        </description>
+        <sheet>
+            <description>You have advantage on Charisma (Persuasion) checks in inns and taverns. </description>
+        </sheet>
+    </element>
+    <element name="Bitter - Already Bitter (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_ALREADY_BITTER">
+        <description>
+            <p>Bitterness may seem like an unpleasant taste, but it provides one with very powerful abilites. The taste of bitter folk gives them the advantage in combat aas well as an opportunity to lead a healthier life than most.</p>
+            <p class="indent">You don't have disadvantage on ability checks while frightened. </p>
+        </description>
+        <sheet>
+            <description>You don't have disadvantage on ability checks while frightened.</description>
+        </sheet>
+    </element>
+    <element name="Bitter - After Taste (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_AFTER_TASTE">
+        <description>
+            <p>Bitterness may seem like an unpleasant taste, but it provides one with very powerful abilites. The taste of bitter folk gives them the advantage in combat aas well as an opportunity to lead a healthier life than most.</p>
+            <p class="indent">Choose a skill in which you are proficient at the end of each long rest. You have advantage on the next check you make with  that skill. </p>
+        </description>
+        <sheet>
+            <description>Choose a skill in which you are proficient at the end of each long rest. You have advantage on the next check you make with  that skill.</description>
+        </sheet>
+    </element>
+    <element name="Sweet - Candied (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_CANDIED">
+        <description>
+            <p>Sweet folk are usually energetic and full of life. They ususally make good teammates and use their variety of powers to help others.</p>
+            <p class="indent">You can candify your body, making it harder, without using an action. When you choose to do so, you gain a +1 bonus to AC for  10 minutes. Once you use this feature, you must finish a long rest to use it again. </p>
+            <p class="indent">This bonus becomes +2 when you reach 10th level and +3 when you reach 18th level. </p>
+        </description>
+        <sheet usage="1/Long rest">
+            <description>You can candify your body, making it harder, without using an action. When you choose to do so, you gain a +1 bonus to AC for 10 minutes. Once you use this feature, you must finish a long rest to use it again.</description>
+            <description level="10">You can candify your body, making it harder, without using an action. When you choose to do so, you gain a +2 bonus to AC for 10 minutes. Once you use this feature, you must finish a long rest to use it again.</description>
+            <description level="18">You can candify your body, making it harder, without using an action. When you choose to do so, you gain a +3 bonus to AC for 10 minutes. Once you use this feature, you must finish a long rest to use it again.</description>
+        </sheet>
+    </element>
+    <element name="Sweet - Energize! (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_ENERGIZE">
+        <description>
+            <p>Sweet folk are usually energetic and full of life. They ususally make good teammates and use their variety of powers to help others.</p>
+            <p class="indent">You can energize yourself in the moment at the cost of wearing yourself out later. On your turn, you can take one additional  action and gain one level of exhaustion. That action can be used only to take the Attack (one  weapon attack only), Dash, Disengage, Hide, or Use an Object action. You can only use this feature once on a single turn. </p>
+        </description>
+        <sheet usage="1/Turn">
+            <description>On your turn, you can take one additional action and gain one level of exhaustion. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object  action. You can only use this feature once on a single turn. </description>
+        </sheet>
+    </element>
+    <element name="Sweet - Jellylike (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_JELLYLIKE">
+        <description>
+            <p>Sweet folk are usually energetic and full of life. They ususally make good teammates and use their variety of powers to help others.</p>
+            <p class="indent">Your body is made of jelly. You can extend your limbs by 5 feet. While making a melee attack, you can increase your reach by 5 feet. </p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest. </p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>While making a melee attack, you can increase your reach by 5 feet. </description>
+        </sheet>
+    </element>
+    <element name="Sweet - Fortress of Dessert (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_FORTRESS_OF_DESSERT">
+        <description>
+            <p>Sweet folk are usually energetic and full of life. They ususally make good teammates and use their variety of powers to help others.</p>
+            <p class="indent">Your sweetness cannot be breached. You have advantage on Charisma saving throws. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+        </rules>
+    </element>
+    <element name="Sweet - Sweet Tooth (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_SWEET_TOOTH">
+        <description>
+            <p>Sweet folk are usually energetic and full of life. They ususally make good teammates and use their variety of powers to help others.</p>
+            <p class="indent">You are intensely sweet. Whenever a creature hits you with a bite attack, it takes 1 poison damage. </p>
+        </description>
+        <sheet>
+            <description>Whenever a creature hits you with a bite attack, it takes 1 poison damage.</description>
+        </sheet>
+    </element>
+    <element name="Sweet - Irresistible ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_IRRESISTIBLE">
+        <description>
+            <p>Sweet folk are usually energetic and full of life. They ususally make good teammates and use their variety of powers to help others.</p>
+            <p class="indent">Your sugary existence makes you an irresistible delight. You have advantage on Charisma checks while romancing another creature. </p>
+        </description>
+        <sheet>
+            <description>You have advantage on Charisma checks while romancing another creature.</description>
+        </sheet>
+    </element>
+    <element name="Sweet - Sweet Words (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_SWEET_WORDS">
+        <description>
+            <p>Sweet folk are usually energetic and full of life. They ususally make good teammates and use their variety of powers to help others.</p>
+            <p class="indent">Your words can sooth a friend in hard times. When a friendly creature that you can see within 30 feet of you makes a saving throw against being frightened, you can grant  advantage on the saving throw as a reaction. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>
+        </description>
+        <sheet usage="1/Long Rest" action="Reaction">
+            <description>When a friendly creature that you can see within 30 feet of you makes a saving throw against being frightened, you can grant advantage on the saving throw as a reaction. </description>
+        </sheet>
+    </element>
+    <element name="Sour - Acidic Affinity ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_ACIDIC_AFFINITY">
+        <description>
+            <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Sour - Resilience of Flavor ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_RESILIENCE_OF_FLAVOR">
+        <description>
+            <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Sour - Citric Edge ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_CITRIC_EDGE">
+        <description>
+            <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Sour - Vitamin Protection ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_VITAMIN_PROTECTION">
+        <description>
+            <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Sour - Reduced Risks ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_REDUCED_RISKS">
+        <description>
+            <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Sour - Harming Acidity ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_HARMING_ACIDITY">
+        <description>
+            <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Sour - Type-C Healing ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_TYPE_C_HEALING">
+        <description>
+            <p>The mouth-puckering sensation of sourness can be overwhelming. But such a sensation is necessary in a world where unpleasant realities are just as prominent as the pleasant ones.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Salty - Too Much! ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_TOO_MUCH">
+        <description>
+            <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Salty - Briny Affect ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_BRINY_AFFECT">
+        <description>
+            <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Salty - Necessary Flavor ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_NECESSARY_FLAVOR">
+        <description>
+            <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Salty - Variety ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_VARIETY">
+        <description>
+            <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Salty - Fasting Build ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_FASTING_BUILD">
+        <description>
+            <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Salty - Trance Salt ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_TRANCE_SALT">
+        <description>
+            <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Salty - Salty Attitude ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_SALTY_ATTITUDE">
+        <description>
+            <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Savory - Aquired Taste ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_AQUIRED_TASTE">
+        <description>
+            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Savory - Double Decker ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_DOUBLE_DECKER">
+        <description>
+            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Savory - Power of Flavor ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_POWER_OF_FLAVOR">
+        <description>
+            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Savory - Savory Retreat ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_SAVORY_RETREAT">
+        <description>
+            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Savory - Enhancing the Taste ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_ENHANCING_THE_TASTE">
+        <description>
+            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Savory - Savoring the Moment ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_SAVORING_THE_MOMENT">
+        <description>
+            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Savory - Master of Mixed Tastes ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_MASTER_OF_MIXED_TASTES">
+        <description>
+            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Fruit - ftrait ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_FTRAIT">
+        <description>
+            <p>With their lively colors and many contributions they make to their live and everyone else's, fruit folk enrich life aroud them. Whethera tough, succulent strawberry or a delicious, nutritious banana-cream pie, a food with fuit in it is a great addition to the party.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>

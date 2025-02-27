@@ -1,0 +1,31 @@
+<elements>
+    <info>
+        <name>Languages</name>
+        <description>The Foodfolk tags to create Foodfolk from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/languages.xml"/>
+        </update>
+    </info>
+     <element name="Yummish" type="Language" source="Silverplate" id="ID_LANGUAGE_YUMMISH">
+        <supports></supports>
+        <description>
+            <p>Typically spoken by the Foodfolk.</p>
+        </description>
+        <setters>
+            <set name="exotic">false</set>
+            <set name="speakers">Foodfolk</set>
+            <set name="script">—</set>
+        </setters>
+    </element>
+    <element name="Beveric" type="Language" source="Silverplate" id="ID_LANGUAGE_BEVERIC">
+        <supports></supports>
+        <description>
+            <p>Typically spoken by the Beverage People.</p>
+        </description>
+        <setters>
+            <set name="exotic">false</set>
+            <set name="speakers">Beverage people</set>
+            <set name="script">—</set>
+        </setters>
+    </element>
+</elements>

@@ -1,0 +1,9 @@
+<elements>
+    <info>
+        <name>Foodfolk tags</name>
+        <description>The Foodfolk tags to create Foodfolk from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="race-foodfolk.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/race-foodfolk.xml"/>
+        </update>
+    </info>
+</elements>

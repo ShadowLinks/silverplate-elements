@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/source.xml" />
+		</update>
+	</info>
+	<element name="Silverplate" type="Source" source="Core" id="ID_DRS_SILVERPLATE">
+		<description>
+			<p>Step into a world where gastronomy meets fantasy in the Tasty Lands of Silverplate. This delectable yet brutal 5E experience invites you to explore a realm where culinary magic and epic adventure intertwine. Unleash your inner food hero as you embark on a journey filled with savory quests, flavorful characters, and a feast of immersive possibilities.</p>
+			<ul>
+				<li>New Subclasses for every core class</li>
+				<li>New Foodfolk race with endless possiblities</li>
+                <li>Sweet spells and sharp weaponry</li>
+				<li>3 new backgrounds</li>
+				<li>Magic Items</li>
+				<li>And Feats</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="abbreviation">SILVERPLATE</set>
+			<set name="url">https://drspublishing.com/products/silverplate-campaign-setting-tasty-lands-of-silverplate/</set>
+			<set name="image">https://d1vzi28wh99zvq.cloudfront.net/images/13543/450757.webp</set>
+			<set name="author" abbreviation="DRS" url="https://drspublishing.com">Dream Realm Storytellers</set>
+			<set name="third-party">true</set>
+			<set name="release">20230826</set>
+		</setters>
+	</element>
+</elements>

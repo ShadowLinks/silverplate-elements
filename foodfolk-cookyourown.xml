@@ -1,0 +1,52 @@
+<elements>
+    <info>
+        <name>Foodfolk tags</name>
+        <description>The Foodfolk tags to create Foodfolk from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="foodfolk-cookyourown.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/foodfolk-cookyourown.xml"/>
+        </update>
+    </info>
+    <element name="traitname" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfok Tags</set>
+            <set name="keywords">Racial Trait, flavors</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+</elements>
+<!--
+Barbarian, LV03: Primal Knowledge"
+<element name="traitname" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfok Tags</set>
+            <set name="keywords">Racial Trait, flavors</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+-->

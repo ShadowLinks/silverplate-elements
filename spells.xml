@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/spells.xml" />
+		</update>
+	</info>
+    <element name="Alter Smell" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_ALTER_SMELL">
+        <supports>Bard, Druid, Ranger, Wizard</supports>
+        <description>
+            <p>You magically suppress or change the smell of a creature you touch until the spell ends or until you use your action to dismiss it. When you alter a creature's smell, any creature who tries to locate or track it by scent mus succeed on a a Wisdom saving throw or cannot locate or track the target by scent.</p>
+            <p class="indent">At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blight Within" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_BLIGHT_WITHIN">
+        <supports>Cleric, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blood Cauldron" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_BLOOD_CAULDRON">
+        <supports>Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    <element name="Candify" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_CANDIFY">
+        <supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Chili Boost" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_CHILI_BOOST">
+        <supports>Bard, Cleric</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Chopsticks" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_CHOPSTICKS">
+        <supports>Bard, Ranger, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Coating of Many Flavors" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_COATING_OF_MANY_FLAVORS">
+        <supports>Bard, Cleric, Druid, Paladin, Ranger</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Colorful Trail" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_COLORFUL_TRAIL">
+        <supports>Bard, Ranger, Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Cotton Candy Shower" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_COTTON_CANDY_SHOWER">
+        <supports>Cleric, Druid, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Cursed Alteration" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_CURSED_ALTERATION">
+        <supports>Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Deglaze" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_DEGLAZE">
+        <supports>Bard, Druid, Warlock</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Divine Wrapping" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_DIVINE_WRAPPING">
+        <supports>Cleric, Paladin</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Ethereal Eaters" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_ETHEREAL_EATERS">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Fast Equip" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_FAST_EQUIP">
+        <supports>Bard, Cleric, Sorcerer, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Ferment" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_FERMENT">
+        <supports>Druid</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Food Dome" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_FOOD_DOME">
+        <supports>Cleric, Druid, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Freezer" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_FREEZER">
+        <supports>Druid, Ranger, Sorcerer, Warlock</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Frying Blast" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_FRYING_BLAST">
+        <supports>Druid, Ranger, Sorcerer, Warlock</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Garbage Pile" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_GARBAGE_PILE">
+        <supports>Sorcerer, Warlock</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Gourmet Vision" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_GOURMET_VISION">
+        <supports>Bard, Cleric, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Hot and Cold" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_HOT_AND_COLD">
+        <supports>Druid, Paladin, Ranger</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Jello Armor" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_JELLO_ARMOR">
+        <supports>Paladin</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Melted Sugar Swamp" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_MELTED_SUGAR_SWAMP">
+        <supports>Druid, Warlock</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mold Burst" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_MOLD_BURST">
+        <supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Moldy Touch" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_MOLDY_TOUCH">
+        <supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Perfecting Recipe" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_PERFECTING_RECIPE">
+        <supports>Bard, Cleric</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Puppy Eyes" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_PUPPY_EYES">
+        <supports>Bard, Druid, Ranger, Sorcerer</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Raining Spices" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_RAINING_SPICES">
+        <supports>Druid, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Refresh" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_REFRESH">
+        <supports>Bard, Cleric, Druid, Paladin, Ranger</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Self Services" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SELF_SERVICE">
+        <supports>Bard, Cleric, Paladin</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Sense Shelf Life" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SENSE_SHELF_LIFE">
+        <supports>Bard, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Shift to Cake" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SHIFT_TO_CAKE">
+        <supports>Bard, Cleric, Druid</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Shots!" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SHOTS">
+        <supports>Druid, Paladin, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Silver Toothpicks" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SILVER_TOOTHPICKS">
+        <supports>Bard, Cleric, Paladin</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spiking Forks" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SPIKING_FORKS">
+        <supports>Paladin, Sorcerer</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Sugarball" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SUGARBALL">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Temporary Preservation" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_TEMPORARY_PRESERVATION">
+        <supports>Cleric, Druid</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="To the Tooth" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_TO_THE_TOOTH">
+        <supports>Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Twist Consciousness" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_TWIST_CONSCIOUSNESS">
+        <supports>Warlock, Wizard</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Wisdom of Vrot" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_WISDOM_OF_VROT">
+        <supports>Druid</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+<elements>
