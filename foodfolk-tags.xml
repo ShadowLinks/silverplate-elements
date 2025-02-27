@@ -200,11 +200,8 @@
             <p class="indent">Facing bitter realities has sharpened your mind. You have advantage on Intelligence saving throws. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have advantage on Intelligence saving throws. </description>
         </sheet>
-        <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
-        </rules>
     </element>
     <element name="Bitter - Aid Tactics (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_AID_TACTICS">
         <description>
@@ -282,11 +279,8 @@
             <p class="indent">Your sweetness cannot be breached. You have advantage on Charisma saving throws. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have advantage on Charisma saving throws.</description>
         </sheet>
-        <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
-        </rules>
     </element>
     <element name="Sweet - Sweet Tooth (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_SWEET_TOOTH">
         <description>
@@ -297,7 +291,7 @@
             <description>Whenever a creature hits you with a bite attack, it takes 1 poison damage.</description>
         </sheet>
     </element>
-    <element name="Sweet - Irresistible ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_IRRESISTIBLE">
+    <element name="Sweet - Irresistible (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_IRRESISTIBLE">
         <description>
             <p>Sweet folk are usually energetic and full of life. They ususally make good teammates and use their variety of powers to help others.</p>
             <p class="indent">Your sugary existence makes you an irresistible delight. You have advantage on Charisma checks while romancing another creature. </p>
@@ -339,11 +333,8 @@
             <p class="indent">You have advantage on Constitution saving throws. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have advantage on Constitution saving throws.</description>
         </sheet>
-        <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
-        </rules>
     </element>
     <element name="Sour - Citric Edge (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_CITRIC_EDGE">
         <description>
@@ -392,139 +383,1064 @@
             <description>You can use your action to stabilize a creature through your touch.</description>
         </sheet>
     </element>
-    <element name="Salty - Too Much! ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_TOO_MUCH">
+    <element name="Salty - Too Much! (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_TOO_MUCH">
         <description>
             <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
-            <p class="indent"></p>
+            <p class="indent">You can focus all your flavors into one cause. As a reaction, you can choose to gain a +10 bonus to one ability  check, attack roll, or saving throw of your choice. You can choose to use this feature after you  make the roll, but before the GM determines whether the ability check, attack roll, or saving throw succeeds or fails. </p>
+            <p class="indent">Once you use this feature, you must finish a short or long rest to use it again. </p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet action="Reaction" usage="1/Short Rest">
+            <description>As a reaction, you can choose to gain a +10 bonus to one ability  check, attack roll, or saving throw of your choice. You can choose to use this feature after you  make the roll, but before the GM determines whether the ability check, attack roll, or saving throw succeeds or fails.</description>
         </sheet>
     </element>
-    <element name="Salty - Briny Affect ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_BRINY_AFFECT">
+    <!--changed effect increase to add d4 instead of 1-->
+    <element name="Salty - Briny Affect (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_BRINY_AFFECT">
         <description>
             <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
-            <p class="indent"></p>
+            <p class="indent">Being salty, you can make your weapon attacks salty, which requires no action. Salty attacks deal an extra l piercing damage on a hit. </p>
+            <p class="indent">The extra damage increases by 1d4 at 4th, 8th, 12th, and 16th level. </p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest. </p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>You can make your weapon attacks salty, which requires no action. Salty attacks deal an extra ld4 piercing damage on a hit.</description>
+            <description level="4">You can make your weapon attacks salty, which requires no action. Salty attacks deal an extra 2d4 piercing damage on a hit.</description>
+            <description level="8">You can make your weapon attacks salty, which requires no action. Salty attacks deal an extra 3d4 piercing damage on a hit.</description>
+            <description level="12">You can make your weapon attacks salty, which requires no action. Salty attacks deal an extra 4d4 piercing damage on a hit.</description>
+            <description level="16">You can make your weapon attacks salty, which requires no action. Salty attacks deal an extra 5d4 piercing damage on a hit.</description>
         </sheet>
     </element>
-    <element name="Salty - Necessary Flavor ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_NECESSARY_FLAVOR">
+    <element name="Salty - Necessary Flavor (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_NECESSARY_FLAVOR">
         <description>
             <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
-            <p class="indent"></p>
+            <p class="indent">You have advantage on Wisdom saving throws. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have advantage on Wisdom saving throws.</description>
         </sheet>
     </element>
-    <element name="Salty - Variety ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_VARIETY">
+    <element name="Salty - Variety (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_VARIETY">
         <description>
             <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
-            <p class="indent"></p>
+            <p class="indent">You are proficient with two kitchen weapons (p.143) of your choice. </p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Proficiency" name="Variety" supports="kitchen-weapons" number="2" />
+        </rules>
     </element>
-    <element name="Salty - Fasting Build ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_FASTING_BUILD">
+    <element name="Salty - Fasting Build (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_FASTING_BUILD">
         <description>
             <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
-            <p class="indent"></p>
+            <p class="indent">Your components can sustain you longer without food or water. You only need to consume half a pound of food and half a gallon of water per day to be able to survive. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>You only need to consume half a pound of food and half a gallon of water per day to be able to survive.</description>
         </sheet>
     </element>
-    <element name="Salty - Trance Salt ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_TRANCE_SALT">
+    <element name="Salty - Trance Salt (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_TRANCE_SALT">
         <description>
             <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
-            <p class="indent"></p>
+            <p class="indent">Instead of sleeping, you can meditate deeply, remaining semi-conscious, for 6 hours a day. After resting in this way, you gain  the benefits of a long rest. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>Instead of sleeping, you can meditate deeply, remaining semi-conscious, for 6 hours a day. After resting in this way, you gain  the benefits of a long rest.</description>
         </sheet>
     </element>
-    <element name="Salty - Salty Attitude ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_SALTY_ATTITUDE">
+    <element name="Salty - Salty Attitude (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_SALTY_ATTITUDE">
         <description>
             <p>The salt enhances every other flavor, salty folk enhance society with their presence in it. They are mostly jack-of-all-trades sort of folk and are willing to do what must be done.</p>
-            <p class="indent"></p>
+            <p class="indent">You've had it with empty words. You can choose to have advantage on a Charisma (Intimidation) check. </p>
+            <p class="indent">Once you use this feature, you must finish a short or long rest to use it again. </p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>You can choose to have advantage on a Charisma (Intimidation) check.</description>
         </sheet>
     </element>
-    <element name="Savory - Aquired Taste ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_AQUIRED_TASTE">
+    <element name="Savory - Aquired Taste (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_AQUIRED_TASTE">
         <description>
-            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
-            <p class="indent"></p>
+            <p>Savory folk tend to be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent">You can increase two ability scores of your choice by 1, up to a maximum of 20. You can't increase the same ability score twice with this feature. </p>
         </description>
-        <sheet>
+        <sheet >
             <description></description>
         </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Aquired Taste" supports="Custom Ability Score Increase 1" number="2"/>
+        </rules>
     </element>
-    <element name="Savory - Double Decker ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_DOUBLE_DECKER">
+    <element name="Savory - Double Decker (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_DOUBLE_DECKER">
         <description>
-            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
-            <p class="indent"></p>
+            <p>Savory folk tend to be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent">Your body is bigger than most. Your size is Large. You can increase your Strength and Constitution scores up to 22, instead of 20. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your size is Large. You can increase your Strength and Constitution scores up to 22, instead of 20.</description>
         </sheet>
+        <rules>
+            <grant type="Size" id="ID_SIZE_LARGE"/>
+            <stat name="strength:max" value="2"/>
+            <stat name="constitution:max" value="2"/>
+        </rules>
     </element>
-    <element name="Savory - Power of Flavor ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_POWER_OF_FLAVOR">
+    <element name="Savory - Power of Flavor (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_POWER_OF_FLAVOR">
         <description>
-            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
-            <p class="indent"></p>
+            <p>Savory folk tend to be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent">You have advantage on Strength saving throws. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have advantage on Strength saving throws.</description>
         </sheet>
     </element>
-    <element name="Savory - Savory Retreat ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_SAVORY_RETREAT">
+    <element name="Savory - Savory Retreat (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_SAVORY_RETREAT">
         <description>
-            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
-            <p class="indent"></p>
+            <p>Savory folk tend to be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent">If you're planning to return, it's not running away but a tactical retreat. When you take the Disengage action, your speed increases by 10 feet only for that action. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you take the Disengage action, your speed increases by 10 feet only for that action.</description>
         </sheet>
     </element>
-    <element name="Savory - Enhancing the Taste ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_ENHANCING_THE_TASTE">
+    <element name="Savory - Enhancing the Taste (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_ENHANCING_THE_TASTE">
         <description>
-            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
-            <p class="indent"></p>
+            <p>Savory folk tend to be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent">When a creature that you can see within 30 feet of you takes damage, you can enhance the taste of the damage as a  reaction, increasing the damage by ld4. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>When a creature that you can see within 30 feet of you takes damage, you can enhance the taste of the damage as a  reaction, increasing the damage by ld4.</description>
         </sheet>
     </element>
-    <element name="Savory - Savoring the Moment ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_SAVORING_THE_MOMENT">
+    <element name="Savory - Savoring the Moment (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_SAVORING_THE_MOMENT">
         <description>
-            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
-            <p class="indent"></p>
+            <p>Savory folk tend to be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent">You are good at remembering the finest details in the most critical moments. As an action, you can recall a piece of information you've read before, an image you've seen before, or anything else you may have come across in the past. </p>
+            <p class="indent">Once you use this feature, you cannot do so again for one week. </p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Week">
+            <description>As an action, you can recall a piece of information you've read before, an image you've seen before, or anything else you may have come across in the past.</description>
         </sheet>
     </element>
-    <element name="Savory - Master of Mixed Tastes ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_MASTER_OF_MIXED_TASTES">
+    <element name="Savory - Master of Mixed Tastes (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_MASTER_OF_MIXED_TASTES">
         <description>
-            <p>Savory folk tend ot be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
-            <p class="indent"></p>
+            <p>Savory folk tend to be more physical both in social and combat situations. They are self assured folk who dont shy away from action.</p>
+            <p class="indent">You learn one of the following languages of your choice: Draconic, Giant, or Goblin. </p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Language" name="Master of Mixed Tastes" supports="ID_LANGUAGE_DRACONIC|ID_LANGUAGE_GIANT|ID_LANGUAGE_GOBLIN" />
+        </rules>
     </element>
-    <element name="Fruit - ftrait ()" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_FTRAIT">
+    <element name="Fruit - Vibrant Colors (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_VIBRANT_COLORS">
         <description>
             <p>With their lively colors and many contributions they make to their live and everyone else's, fruit folk enrich life aroud them. Whethera tough, succulent strawberry or a delicious, nutritious banana-cream pie, a food with fuit in it is a great addition to the party.</p>
+            <p class="indent">You are colored in the most beautiful tones available in nature. You can cast the blur spell, without expending a spell slot and requiring no components. </p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest. </p>
+            <p class="indent">Also, your Charisma score increases by 1, up to a maximum of 20. </p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>You can cast the blur spell, without expending a spell slot and requiring no components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BLUR" />
+            <stat name="Charisma" value="1" />
+        </rules>
+    </element>
+    <element name="Fruit - Fructose Blast (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_FRUCTOSE_BLAST">
+        <description>
+            <p>With their lively colors and many contributions they make to their live and everyone else's, fruit folk enrich life aroud them. Whethera tough, succulent strawberry or a delicious, nutritious banana-cream pie, a food with fuit in it is a great addition to the party.</p>
+            <p class="indent">You reach forward and use your action to release a blast of pure energy. Every creature in a 15-foot cone must make a Dexterity saving throw (DC = 8 + your Charisma modifier + your proficiency bonus). A creature takes 2d6 force damage on a failed save, or half as much damage on a successful one. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. The damage increases by 1d6 at 4th, 8th, 12th, and 16th level. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, every creature in a 15-foot cone must make a DC {{fructoseblast:dc}} Dexterity saving throw. A creature takes 2d6 force damage on a failed save, or half as much damage on a successful one.</description>
+            <description level="4">As an action, every creature in a 15-foot cone must make a DC {{fructoseblast:dc}} Dexterity saving throw. A creature takes 3d6 force damage on a failed save, or half as much damage on a successful one.</description>
+            <description level="8">As an action, every creature in a 15-foot cone must make a DC {{fructoseblast:dc}} Dexterity saving throw. A creature takes 4d6 force damage on a failed save, or half as much damage on a successful one.</description>
+            <description level="12">As an action, every creature in a 15-foot cone must make a DC {{fructoseblast:dc}} Dexterity saving throw. A creature takes 5d6 force damage on a failed save, or half as much damage on a successful one.</description>
+            <description level="16">As an action, every creature in a 15-foot cone must make a DC {{fructoseblast:dc}} Dexterity saving throw. A creature takes 6d6 force damage on a failed save, or half as much damage on a successful one.</description>
+        </sheet>
+        <rules>
+            <stat name="fructoseblast:dc" value="8" bonus="base" />
+            <stat name="fructoseblast:dc" value="charisma:modifier" />
+            <stat name="fructoseblast:dc" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Fruit - Pulp Reality (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_PULP_REALITY">
+        <description>
+            <p>With their lively colors and many contributions they make to their live and everyone else's, fruit folk enrich life aroud them. Whethera tough, succulent strawberry or a delicious, nutritious banana-cream pie, a food with fuit in it is a great addition to the party.</p>
+            <p class="indent">. As a fruit, your body is made out of pulps. When healed, these pulps react and recover themselves. Whenever you regain hit  points, you regain an extra ld4 hit points. </p>
+        </description>
+        <sheet>
+            <description>Whenever you regain hit  points, you regain an extra ld4 hit points.</description>
+        </sheet>
+    </element>
+    <element name="Fruit - Me Juice (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_ME_JUICE">
+        <description>
+            <p>With their lively colors and many contributions they make to their live and everyone else's, fruit folk enrich life aroud them. Whethera tough, succulent strawberry or a delicious, nutritious banana-cream pie, a food with fuit in it is a great addition to the party.</p>
+            <p class="indent">You are full of juice, which you can use as nourishment. By dealing yourself 1 damage, you can produce enough juice to keep a  creature sustained for a day. </p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>By dealing yourself 1 damage, you can produce enough juice to keep a  creature sustained for a day.</description>
+        </sheet>
+    </element>
+    <element name="Fruit - Berry Toughness (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_BERRY_TOUGHNESS">
+        <description>
+            <p>With their lively colors and many contributions they make to their live and everyone else's, fruit folk enrich life aroud them. Whethera tough, succulent strawberry or a delicious, nutritious banana-cream pie, a food with fuit in it is a great addition to the party.</p>
+            <p class="indent">Your berries protect you in harsh conditions. You can negate the effects of exhaustion for 10 minutes. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can negate the effects of exhaustion for 10 minutes.</description>
+        </sheet>
+    </element>
+    <element name="Fruit - Seeds! (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_SEEDS">
+        <description>
+            <p>With their lively colors and many contributions they make to their live and everyone else's, fruit folk enrich life aroud them. Whethera tough, succulent strawberry or a delicious, nutritious banana-cream pie, a food with fuit in it is a great addition to the party.</p>
+            <p class="indent">There are seeds in your body that prevent your immediate demise. When you roll a 20 on a death saving throw, one of your seeds germinates and you regain 10 hit points. </p>
+            <p class="indent">Once you use this feature, a week has to pass for you to benefit from it again. </p>
+        </description>
+        <sheet usage="1/Week">
+            <description>When you roll a 20 on a death saving throw, one of your seeds germinates and you regain 10 hit points.</description>
+        </sheet>
+    </element>
+    <element name="Fruit - Flower Protection (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_FLOWER_PROTECTIONS">
+        <description>
+            <p>With their lively colors and many contributions they make to their live and everyone else's, fruit folk enrich life aroud them. Whethera tough, succulent strawberry or a delicious, nutritious banana-cream pie, a food with fuit in it is a great addition to the party.</p>
+            <p class="indent">The flowers you have around your body keep you comfortable in bad weather. You are unharmed by temperatures as low as -20 degrees Fahrenheit. If you have the Preservable feature, you are unharmed by temperatures as low as -70 degrees Fahrenheit. </p>
+        </description>
+        <sheet>
+            <description>You are unharmed by temperatures as low as -20 degrees Fahrenheit.</description>
+            <description requirements="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_PRESERVABLE">You are unharmed by temperatures as low as -70 degrees Fahrenheit.</description>
+        </sheet>
+    </element>
+    <element name="Vegetable - Main Course (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_MAIN_COURSE">
+        <description>
+            <p>Vegetable foodfolk tend to settle in or around the wilderness. They are sturdy folk who value community, family, and friendship.</p>
+            <p class="indent">Containing one of the most vital ingredients of all food, your Constitution score increases by 1, up to a maximum of 20. </p>
+            <p class="indent">Additionally, as a bonus action, you can choose to have a +10 bonus to Dexterity (Stealth) checks among other vegetables for 10 minutes. Once you use this feature, you must finish a long rest to use it again. </p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Long Rest">
+            <description>As a bonus action, you can choose to have a +10 bonus to Dexterity (Stealth) checks among other vegetables for 10 minutes.</description>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="Constitution" value="1"/>
+        </rules>
+    </element>
+    <element name="Vegetable - Pip (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_PIP">
+        <description>
+            <p>Vegetable foodfolk tend to settle in or around the wilderness. They are sturdy folk who value community, family, and friendship.</p>
+            <p class="indent">As an action, you draw yourself into your pip, covering yourself with the thick shell of your core. When you do so, you can't move, take any actions, bonus actions, or reactions. The pip has AC 17, 30 hit points, and immunity to poison and psychic damage. You return to your normal form when you choose to do so, or when the pip is broken. If the pip is  broken as a result of dropping to 0 hit points, any excess damage carries over to you. </p>
+        </description>
+        <sheet>
+            <description>As an action, you draw yourself into your pip, covering yourself with the thick shell of your core. When you do so, you can't move, take any actions, bonus actions, or reactions. The pip has AC 17, 30 hit points, and immunity to poison and psychic damage. You return to your normal form when you choose to do so, or when the pip is broken. If the pip is  broken as a result of dropping to 0 hit points, any excess damage carries over to you.</description>
+        </sheet>
+    </element>
+    <element name="Vegetable - Power of the Rooted Ones (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_POWER_OF_THE_ROOTED_ONES">
+        <description>
+            <p>Vegetable foodfolk tend to settle in or around the wilderness. They are sturdy folk who value community, family, and friendship.</p>
+            <p class="indent">You can cast the entangle spell once with this feature, and you regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for this spell. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast the entangle spell once with this feature, and you regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for this spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" />
+        </rules>
+    </element>
+    <element name="Vegetable - Born Underground (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_BORN_UNDERGROUND">
+        <description>
+            <p>Vegetable foodfolk tend to settle in or around the wilderness. They are sturdy folk who value community, family, and friendship.</p>
+            <p class="indent">You have tremorsense out to a range of 15 feet. </p>
+        </description>
+        <sheet>
+            <description>You have tremorsense out to a range of 15 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_TREMORSENSE" />
+        </rules>
+    </element>
+    <element name="Vegetable - One of Them (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_ONE_OF_THEM">
+        <description>
+            <p>Vegetable foodfolk tend to settle in or around the wilderness. They are sturdy folk who value community, family, and friendship.</p>
+            <p class="indent">You are proficient with the herbalism kit. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+        </rules>
+    </element>
+    <element name="Vegetable - Returning to Roots (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_RETURNING TO ROOTS">
+        <description>
+            <p>Vegetable foodfolk tend to settle in or around the wilderness. They are sturdy folk who value community, family, and friendship.</p>
+            <p class="indent">When you finish a long rest while your torso is completely submerged in the ground, you regain 5 temporary hit points. This feature also functions if you finish a long rest in an underground tunnel, a cave, a dungeon, etc. </p>
+        </description>
+        <sheet>
+            <description>When you finish a long rest while your torso is completely submerged in the ground, you regain 5 temporary hit points. This feature also functions if you finish a long rest in an underground tunnel, a cave, a dungeon, etc.</description>
+        </sheet>
+    </element>
+    <element name="Vegetable - Advanced Vegetable Combat (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_ADVANCED_VEGETABLE_COMBAT">
+        <description>
+            <p>Vegetable foodfolk tend to settle in or around the wilderness. They are sturdy folk who value community, family, and friendship.</p>
+            <p class="indent">You have advantage on an attack roll against a creature if at least one other foodfolk with the Vegetable tag that isn't incapacitated is within 5 feet of the creature. </p>
+        </description>
+        <sheet>
+            <description>You have advantage on an attack roll against a creature if at least one other foodfolk with the Vegetable tag that isn't incapacitated is within 5 feet of the creature.</description>
+        </sheet>
+    </element>
+    <element name="Grain - Thick (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_THICK">
+        <description>
+            <p>Sturdy, filling, brave folk that are great with weapons, grains are an indispensable part of Silverplate. They are filled with energy and cautious when they need to be; with the ability to be deliciously chewy as well as delectably crunchy. They tend to be down to earth folk, though their wrath is to be avoided.</p>
+            <p class="indent">You can have resistance to one of the following damage types of your choice; bludgeoning, piercing, or slashing. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Condition" name="Thick" supports="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+        </rules>
+    </element>
+    <element name="Grain - Grain Weapon Training (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GRAIN_WEAPON_TRAINING">
+        <description>
+            <p>Sturdy, filling, brave folk that are great with weapons, grains are an indispensable part of Silverplate. They are filled with energy and cautious when they need to be; with the ability to be deliciously chewy as well as delectably crunchy. They tend to be down to earth folk, though their wrath is to be avoided.</p>
+            <p class="indent">You are proficient with the great frying pan, the frying pan, the rolling pin, and the hand mixers. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <select type="Proficiency" name="Grain Weapon Training" supports="ID_DRS_SILVERPLATE_WEAPON_GREAT_FRYING_PAN|ID_DRS_SILVERPLATE_WEAPON_FRYING_PAN|ID_DRS_SILVERPLATE_WEAPON_GREAT_ROLLING_PIN|ID_DRS_SILVERPLATE_WEAPON_HAND_MIXER" />
+    </element>
+    <element name="Grain - Pop! (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_POP">
+        <description>
+            <p>Sturdy, filling, brave folk that are great with weapons, grains are an indispensable part of Silverplate. They are filled with energy and cautious when they need to be; with the ability to be deliciously chewy as well as delectably crunchy. They tend to be down to earth folk, though their wrath is to be avoided.</p>
+            <p class="indent">When you take fire damage, your next successful attack within 1 minute deals an extra 1d6 fire damage. </p>
+        </description>
+        <sheet>
+            <description>When you take fire damage, your next successful attack within 1 minute deals an extra 1d6 fire damage.</description>
+        </sheet>
+    </element>
+    <element name="Grain - Whole Grain Form (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_WHOLE_GRAIN_FORM">
+        <description>
+            <p>Sturdy, filling, brave folk that are great with weapons, grains are an indispensable part of Silverplate. They are filled with energy and cautious when they need to be; with the ability to be deliciously chewy as well as delectably crunchy. They tend to be down to earth folk, though their wrath is to be avoided.</p>
+            <p class="indent">As a bonus action, you transform into a whole grain form of yourself, regaining hit points equal to ld4 + your Wisdom modifier. </p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest. </p>
+        </description>
+        <sheet action="Bonus Action" usage="{{proficiency}}/Long rest">
+            <description>As a bonus action, you transform into a whole grain form of yourself, regaining hit points equal to 1d4 + {{wisdom:modifier}}</description>
+        </sheet>
+    </element>
+    <element name="Grain - Gluten (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GLUTEN">
+        <description>
+            <p>Sturdy, filling, brave folk that are great with weapons, grains are an indispensable part of Silverplate. They are filled with energy and cautious when they need to be; with the ability to be deliciously chewy as well as delectably crunchy. They tend to be down to earth folk, though their wrath is to be avoided.</p>
+            <p class="indent">Your body is glutenous. You can extend your limbs by 5 feet. While making a melee attack, you can increase your reach by 5 feet. </p>
+        </description>
+        <sheet>
+            <description> While making a melee attack, you can increase your reach by 5 feet.</description>
+        </sheet>
+    </element>
+    <element name="Grain - Climbing the Bean Pole (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_CLIMBING_THE_BEAN_POLE">
+        <description>
+            <p>Sturdy, filling, brave folk that are great with weapons, grains are an indispensable part of Silverplate. They are filled with energy and cautious when they need to be; with the ability to be deliciously chewy as well as delectably crunchy. They tend to be down to earth folk, though their wrath is to be avoided.</p>
+            <p class="indent">You have a climbing speed of 20 feet. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="speed:climb" value="20" />
+        </rules>
+    </element>
+    <element name="Grain - Balanced Diet (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_BALANCED_DIET">
+        <description>
+            <p>Sturdy, filling, brave folk that are great with weapons, grains are an indispensable part of Silverplate. They are filled with energy and cautious when they need to be; with the ability to be deliciously chewy as well as delectably crunchy. They tend to be down to earth folk, though their wrath is to be avoided.</p>
+            <p class="indent">While trying to keep your balance on narrow surfaces, you have advantage on Dexterity (Acrobatics) checks. </p>
+        </description>
+        <sheet>
+            <description>While trying to keep your balance on narrow surfaces, you have advantage on Dexterity (Acrobatics) checks.</description>
+        </sheet>
+    </element>
+    <element name="Meat - Protein Buff (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_PROTEIN_BUFF">
+        <description>
+            <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
             <p class="indent"></p>
         </description>
         <sheet>
             <description></description>
+        </sheet>
+    </element>
+    <element name="Meat - Fatty Protection (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_FATTY_PROTECTIOn">
+        <description>
+            <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Meat - The Fatter The Better (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_THE_FATTER_THE_BETTER">
+        <description>
+            <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
+            <p class="indent">When you reach 3rd level, you can cast the enlarge/reduce spell once with this feature, using only the spell's enlarging effects, and regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for this spell. </p>
+        </description>
+        <sheet>
+            <description level="3">You can cast the enlarge/reduce spell once with this feature, using only the spell's enlarging effects, and regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for this spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
+        </rules>
+    </element>
+    <element name="Meat - Sea Foodfolk (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_SEA_FOODFOLK">
+        <description>
+            <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Meat - Survival of the Finest (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_SURVIVAL_OF_THE_FINEST">
+        <description>
+            <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Meat - Raw Power (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_RAW_POWER">
+        <description>
+            <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Meat - Heavy Temple (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_HEAVY_TEMPLE">
+        <description>
+            <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Dairy - Calcify (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_CALCIFY">
+        <description>
+            <p>A great addition to any healthy diet, dairy folk place great importance on preservation and maintenance of well-being. They are tough nuts to crack in combat and in life as they are famous for their durability. They try to ensure harmony and peace in the lives of others.</p>
+            <p class="indent">When you take damage, you can use a reaction to harden your body and lower the damage in an amount equal to ld8 plus your Constitution modifier. </p>
+            <p class="indent">You can use this feature a number of times equal to your Constitution modifier. You regain any expended uses when you finish a long rest. </p>
+            <p class="indent">This reduction increases to 2d8 at 9th and 3d8 at 18th level. </p>
+        </description>
+        <sheet>
+            <description>When you take damage, you can use a reaction to harden your body and lower the damage in an amount equal to ld8 plus {{constitution:modifier}}</description>
+            <description level="9">When you take damage, you can use a reaction to harden your body and lower the damage in an amount equal to 2d8 plus {{constitution:modifier}}</description>
+            <description level="13">When you take damage, you can use a reaction to harden your body and lower the damage in an amount equal to 3d8 plus {{constitution:modifier}}</description>
+        </sheet>
+    </element>
+    <element name="Dairy - Abolish Poison (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_ABOLISH_POISON">
+        <description>
+            <p>A great addition to any healthy diet, dairy folk place great importance on preservation and maintenance of well-being. They are tough nuts to crack in combat and in life as they are famous for their durability. They try to ensure harmony and peace in the lives of others.</p>
+            <p class="indent">You have resistance to poison damage. Also, you can cast the detect poison and disease spell once with this feature, and  you regain the ability to do so when you finish a long rest. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast the detect poison and disease spell once with this feature.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" />
+        </rules>
+    </element>
+    <element name="Dairy - Soothing Milk 4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_SOOTHING_MILK">
+        <description>
+            <p>A great addition to any healthy diet, dairy folk place great importance on preservation and maintenance of well-being. They are tough nuts to crack in combat and in life as they are famous for their durability. They try to ensure harmony and peace in the lives of others.</p>
+            <p class="indent">You can cast the sleep spell once with this feature, and you regain the ability to do so when you finish a long rest. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast the sleep spell once with this feature.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SLEEP" />
+        </rules>
+    </element>
+    <element name="Dairy - Lactic Ferment (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_LACTIC_FERMENT">
+        <description>
+            <p>A great addition to any healthy diet, dairy folk place great importance on preservation and maintenance of well-being. They are tough nuts to crack in combat and in life as they are famous for their durability. They try to ensure harmony and peace in the lives of others.</p>
+            <p class="indent">You can cast the disguise self spell once with this feature, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for this spell, and you can only assume the form of another dairy product with this spell. </p>
+        </description>
+        <sheet>
+            <description>You can cast the disguise self spell once with this feature with Charisma and you can only assume the form of another dairy product with this spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+        </rules>
+    </element>
+    <element name="Dairy - Common Sweet Point (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_COMMON_SWEET_POINT">
+        <description>
+            <p>A great addition to any healthy diet, dairy folk place great importance on preservation and maintenance of well-being. They are tough nuts to crack in combat and in life as they are famous for their durability. They try to ensure harmony and peace in the lives of others.</p>
+            <p class="indent">You have advantage on Charisma checks against foodfolk that have the Sweet character tag. </p>
+        </description>
+        <sheet>
+            <description>You have advantage on Charisma checks against foodfolk that have the Sweet character tag.</description>
+        </sheet>
+    </element>
+    <element name="Dairy - Ancient (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_ANCIENT">
+        <description>
+            <p>A great addition to any healthy diet, dairy folk place great importance on preservation and maintenance of well-being. They are tough nuts to crack in combat and in life as they are famous for their durability. They try to ensure harmony and peace in the lives of others.</p>
+            <p class="indent">You can live up to 450 years.</p>
+        </description>
+        <sheet>
+            <description>You can live up to 450 years.</description>
+        </sheet>
+    </element>
+    <element name="Dairy - Skimmed (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_SKIMMED">
+        <description>
+            <p>A great addition to any healthy diet, dairy folk place great importance on preservation and maintenance of well-being. They are tough nuts to crack in combat and in life as they are famous for their durability. They try to ensure harmony and peace in the lives of others.</p>
+            <p class="indent">Your weight is halved. </p>
+        </description>
+        <sheet>
+            <description>Your weight is halved.</description>
+        </sheet>
+    </element>
+    <element name="Bake/Roasted - Hot From the Oven (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_HOT_FROM_THE_OVEN">
+        <description>
+            <p>Baked/Roasted foodfolk prefer the heat, as they are born through fire and flames. They are often courageous and adventurous.</p>
+            <p class="indent">Your Charisma score increases by 1, up to a maximum of 20. </p>
+            <p class="indent">You can cast the charm person spell once with this feature, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for this spell. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast the charm person spell once with this feature with Charisma.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" />
+            <stat name="Charisma" value="1"/>
+        </rules>
+    </element>
+    <element name="Bake/Roasted - Ovenborn (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_OVENBORN">
+        <description>
+            <p>Baked/Roasted foodfolk prefer the heat, as they are born through fire and flames. They are often courageous and adventurous.</p>
+            <p class="indent">You are proficient with the great oven shovel and the oven shovel. </p>
+            <p class="indent">Also, while making a weapon attack using one of these weapons, you can use your reaction to have advantage on an attack roll. </p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest. </p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest" action="Reaction">
+            <description>while making a weapon attack using a oven shovel or great oven shovel, you can use your reaction to have advantage on an attack roll.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_OVEN_SHOVEL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_OVEN_SHOVEL" />
+        </rules>
+    </element>
+    <element name="Bake/Roasted - Kneading Pockets (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_KNEADING_POCKETS">
+        <description>
+            <p>Baked/Roasted foodfolk prefer the heat, as they are born through fire and flames. They are often courageous and adventurous.</p>
+            <p class="indent">Your carrying capacity is doubled. </p>
+        </description>
+        <sheet>
+            <description>Your carrying capacity is doubled.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_DOUBLED" />
+        </rules>
+    </element>
+    <element name="Bake/Roasted - Baked But Not Forgotten (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_BAKED_BUT_NOT_FORGOTTEN">
+        <description>
+            <p>Baked/Roasted foodfolk prefer the heat, as they are born through fire and flames. They are often courageous and adventurous.</p>
+            <p class="indent">You have lived most of your life as a piece of dough, experiencing many things and witnessing history itself. You have proficiency in the History skill. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+        </rules>
+    </element>
+    <element name="Bake/Roasted - Crusty (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_CRUSTY">
+        <description>
+            <p>Baked/Roasted foodfolk prefer the heat, as they are born through fire and flames. They are often courageous and adventurous.</p>
+            <p class="indent">You need less armor parts to cover the weak points of your body. You can buy nonmagical armor at half the price. </p>
+        </description>
+        <sheet>
+            <description>You need less armor parts to cover the weak points of your body. You can buy nonmagical armor at half the price.</description>
+        </sheet>
+    </element>
+    <element name="Bake/Roasted - Puffy (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_PUFFY">
+        <description>
+            <p>Baked/Roasted foodfolk prefer the heat, as they are born through fire and flames. They are often courageous and adventurous.</p>
+            <p class="indent">You take half damage from falling. </p>
+        </description>
+        <sheet>
+            <description>You take half damage from falling.</description>
+        </sheet>
+    </element>
+    <element name="Bake/Roasted - Always Hot (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_ALWAYS_HOT">
+        <description>
+            <p>Baked/Roasted foodfolk prefer the heat, as they are born through fire and flames. They are often courageous and adventurous.</p>
+            <p class="indent">You are unharmed by temperatures as high as 250 degrees Fahrenheit. Additionally, whenever you take fire damage, your inner heat reduces the damage by 1. </p>
+        </description>
+        <sheet>
+            <description>You are unharmed by temperatures as high as 250 degrees Fahrenheit. Additionally, whenever you take fire damage, your inner heat reduces the damage by 1.</description>
+        </sheet>
+    </element>
+    <element name="Fried - No Pain (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_NO_PAIN">
+        <description>
+            <p>Those who've been fried have endured the highest of temperatures and risen out of the sizzling oil stronger than ever. Free spirits with endless curiosity, fried foodfolk can be seen in every corner of Silverplate.</p>
+            <p class="indent">As an action, you cover yourself in deep fried oil that protects you from harm. You gain 10 temporary hit points for 8 hours. While you have the temporary hit points granted by this feature, weapon attacks rolls against you are made with disadvantage. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you cover yourself in deep fried oil that protects you from harm. You gain 10 temporary hit points for 8 hours. While you have the temporary hit points granted by this feature, weapon attacks rolls against you are made with disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Fried - Vengeance of the Fried (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_VENGEANCE_OF_THE_FRIED">
+        <description>
+            <p>Those who've been fried have endured the highest of temperatures and risen out of the sizzling oil stronger than ever. Free spirits with endless curiosity, fried foodfolk can be seen in every corner of Silverplate.</p>
+            <p class="indent">You can use your action to exhale frying energy. All creatures in a 15- foot cone must make a Dexterity saving throw  (DC = 8 + your Constitution modifier + your proficiency bonus). A creature takes 2d6 fire damage on  a failed save, or half as much on a successful one. </p>
+            <p class="indent">This damage increases by 1d6 when you reach 6th level, 12th level, and 18th level. </p>
+        </description>
+        <sheet>
+            <description></description>
+            <description level="6">You can use your action to exhale frying energy. All creatures in a 15- foot cone must make a DC {{vengeanceofthefried:dc}} Dexterity saving throw. A creature takes 2d6 fire damage on a failed save, or half as much on a successful one.</description>
+            <description level="12">You can use your action to exhale frying energy. All creatures in a 15- foot cone must make a DC {{vengeanceofthefried:dc}} Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much on a successful one.</description>
+            <description level="18">You can use your action to exhale frying energy. All creatures in a 15- foot cone must make a DC {{vengeanceofthefried:dc}} Dexterity saving throw. A creature takes 4d6 fire damage on a failed save, or half as much on a successful one.</description>
+        </sheet>
+        <rules>
+            <stat name="vengeanceofthefried:dc" value="8" bonsu="base"/>
+            <stat name="vengeanceofthefried:dc" value="{{proficiency}}" />
+            <stat name="vengeanceofthefried:dc" value="constitution:modifier" />
+        </rules>
+    </element>
+    <element name="Fried - Might of the Fried (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_MIGHT_OF_THE_FRIED">
+        <description>
+            <p>Those who've been fried have endured the highest of temperatures and risen out of the sizzling oil stronger than ever. Free spirits with endless curiosity, fried foodfolk can be seen in every corner of Silverplate.</p>
+            <p class="indent">When you reach 3rd level, you can cast the scorching ray spell once with this feature and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for this spell. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description level="3">You can cast the scorching ray spell once with this feature with Charisma.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" />
+        </rules>
+    </element>
+    <element name="Fried - Fried Weapon Training (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_FRIED_WEAPON_TRAINING">
+        <description>
+            <p>Those who've been fried have endured the highest of temperatures and risen out of the sizzling oil stronger than ever. Free spirits with endless curiosity, fried foodfolk can be seen in every corner of Silverplate.</p>
+            <p class="indent">You are proficient with the frying pan, the great frying pan, and throwing picks. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FRYING_PAN" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_FRYING_PAN" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_THROWING_PICK" />
+        </rules>
+    </element>
+    <element name="Fried - Deep Fried (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_DEEP_FRIED">
+        <description>
+            <p>Those who've been fried have endured the highest of temperatures and risen out of the sizzling oil stronger than ever. Free spirits with endless curiosity, fried foodfolk can be seen in every corner of Silverplate.</p>
+            <p class="indent">You can read, speak, and write Deep Speech. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+        </rules>
+    </element>
+    <element name="Fried - Air Fried (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_AIR_FRIED">
+        <description>
+            <p>Those who've been fried have endured the highest of temperatures and risen out of the sizzling oil stronger than ever. Free spirits with endless curiosity, fried foodfolk can be seen in every corner of Silverplate.</p>
+            <p class="indent">Your jump distance is tripled. </p>
+        </description>
+        <sheet>
+            <description>Your jump distance is tripled.</description>
+        </sheet>
+    </element>
+    <element name="Fried - Greasy Grip (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_GREASY_GRIP">
+        <description>
+            <p>Those who've been fried have endured the highest of temperatures and risen out of the sizzling oil stronger than ever. Free spirits with endless curiosity, fried foodfolk can be seen in every corner of Silverplate.</p>
+            <p class="indent">Creatures have disadvantage on Strength (Athletics) checks against you while grappling you. </p>
+        </description>
+        <sheet>
+            <description>Creatures have disadvantage on Strength (Athletics) checks against you while grappling you.</description>
+        </sheet>
+    </element>
+    <element name="Boiled/Steamed - Steam Discharge (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_STEAM_DISCHARGE">
+        <description>
+            <p>Molded inside piping hot water or divine steam, boiled and steamed foodfolk can use the heat trapped inside their bodies to protect themselves. They can thrive in and around water, and usually become guards, alchemists, or assassins.</p>
+            <p class="indent">As an action, you can release the steam inside you to hide. For 1 minute, creatures that rely on sight have disadvantage on attack rolls against you.</p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain any expended  uses when you finish a long rest. </p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>As an action, you can release the steam inside you to hide. For 1 minute, creatures that rely on sight have disadvantage on attack rolls against you.</description>
+        </sheet>
+    </element>
+    <element name="Boiled/Steamed - Mist-ic Resistance (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_MISTIC_RESISTANCE">
+        <description>
+            <p>Molded inside piping hot water or divine steam, boiled and steamed foodfolk can use the heat trapped inside their bodies to protect themselves. They can thrive in and around water, and usually become guards, alchemists, or assassins.</p>
+            <p class="indent">The mystic powers of steam protect you against magic. When you fail a saving throw against a spell or other magical effect, you can choose to succeed instead. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you fail a saving throw against a spell or other magical effect, you can choose to succeed instead.</description>
+        </sheet>
+    </element>
+    <element name="Boiled/Steamed - Release Fog (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_RELEASE_FOG">
+        <description>
+            <p>Molded inside piping hot water or divine steam, boiled and steamed foodfolk can use the heat trapped inside their bodies to protect themselves. They can thrive in and around water, and usually become guards, alchemists, or assassins.</p>
+            <p class="indent">You can cast the fog cloud spell once with this feature and you regain the ability to do so when you finish a long rest. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast the fog cloud spell once with this feature.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" />
+        </rules>
+    </element>
+    <element name="Boiled/Steamed - Hot Pot (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_HOT_POT">
+        <description>
+            <p>Molded inside piping hot water or divine steam, boiled and steamed foodfolk can use the heat trapped inside their bodies to protect themselves. They can thrive in and around water, and usually become guards, alchemists, or assassins.</p>
+            <p class="indent">While completely submerged in water, you regain 1 hit point at the end of each of your turns. You can't regain hit points in this way if your current hit points are more than half of your hit point maximum or you have O hit points. </p>
+        </description>
+        <sheet>
+            <description>While completely submerged in water, you regain 1 hit point at the end of each of your turns. You can't regain hit points in this way if your current hit points are more than half of your hit point maximum or you have O hit points.</description>
+        </sheet>
+    </element>
+    <element name="Boiled/Steamed - Ancient Wisdom of Steam Masters (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_ANCIENT_WISDOM_OF_STEAM_MASTERS">
+        <description>
+            <p>Molded inside piping hot water or divine steam, boiled and steamed foodfolk can use the heat trapped inside their bodies to protect themselves. They can thrive in and around water, and usually become guards, alchemists, or assassins.</p>
+            <p class="indent">You are proficient with alchemist's supplies. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+        </rules>
+    </element>
+    <element name="Boiled/Steamed - Art of the Dark Boiling (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_ART_OF THE_DARK_BOILING">
+        <description>
+            <p>Molded inside piping hot water or divine steam, boiled and steamed foodfolk can use the heat trapped inside their bodies to protect themselves. They can thrive in and around water, and usually become guards, alchemists, or assassins.</p>
+            <p class="indent">You are proficient with poisoner's kit. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+        </rules>
+    </element>
+    <element name="Boiled/Steamed - Insipid (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_INSIPID">
+        <description>
+            <p>Molded inside piping hot water or divine steam, boiled and steamed foodfolk can use the heat trapped inside their bodies to protect themselves. They can thrive in and around water, and usually become guards, alchemists, or assassins.</p>
+            <p class="indent">You are familiar with tastelessness because of overboiling. When you become tasteless, you can end the condition as an action. Once you use this feature, a week has to pass for you to use it again. </p>
+        </description>
+        <sheet usage="1/Week">
+            <description>When you become tasteless, you can end the condition as an action.</description>
+        </sheet>
+    </element>
+    <element name="Fresh - Fresh Start (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_FRESH_START">
+        <description>
+            <p>Bursting with raw talent, fresh foodfolk are some of the most cheerful people of Silverplate. Full of vigor and vitality, they are living proof that one does not have to go through a range of procedures to be both strong and delicious.</p>
+            <p class="indent">You have advantage on the first ability check, attack roll, or saving throw  you make after rolling for initiative. </p>
+            <p class="indent">Also, when you suffer exhaustion, you negate the effects of the last level of exhaustion you've taken, except for the effects of 6th level exhaustion. </p>
+        </description>
+        <sheet>
+            <description>You have advantage on the first ability check, attack roll, or saving throw  you make after rolling for initiative. Also, when you suffer exhaustion, you negate the effects of the last level of exhaustion you've taken, except for the effects of 6th level exhaustion.</description>
+        </sheet>
+    </element>
+    <element name="Fresh - Spark of Life (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_SPARK_OF_LIFE">
+        <description>
+            <p>Bursting with raw talent, fresh foodfolk are some of the most cheerful people of Silverplate. Full of vigor and vitality, they are living proof that one does not have to go through a range of procedures to be both strong and delicious.</p>
+            <p class="indent">You have resistance to necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to necrotic damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+    <element name="Fresh - Refresh (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_REFRESH">
+        <description>
+            <p>Bursting with raw talent, fresh foodfolk are some of the most cheerful people of Silverplate. Full of vigor and vitality, they are living proof that one does not have to go through a range of procedures to be both strong and delicious.</p>
+            <p class="indent">You can cast the detect poison and disease or purify food and drink spell once with this feature, and you regain the ability to do  so when you finish a long rest. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast the detect poison and disease or purify food and drink spell once with this feature.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" />
+            <grant type="Spell" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" />
+        </rules>
+    </element>
+    <element name="Fresh - Cutting Board (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_CUTTING_BOARD">
+        <description>
+            <p>Bursting with raw talent, fresh foodfolk are some of the most cheerful people of Silverplate. Full of vigor and vitality, they are living proof that one does not have to go through a range of procedures to be both strong and delicious.</p>
+            <p class="indent">You are proficient with the cutting knife and the wargrater. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CUTTING_KNIFE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARGRATER" />
+        </rules>
+    </element>
+    <element name="Fresh - Straight From the Source (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_STRAIGHT_FROM_THE_SOURCE">
+        <description>
+            <p>Bursting with raw talent, fresh foodfolk are some of the most cheerful people of Silverplate. Full of vigor and vitality, they are living proof that one does not have to go through a range of procedures to be both strong and delicious.</p>
+            <p class="indent">You can read, speak, and write a language of your choice. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Language" name="Language, " supports="Standard||Exotic" />
+        </rules>
+    </element>
+    <element name="Fresh - Always in Season (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_ALWAYS_IN_SEASON">
+        <description>
+            <p>Bursting with raw talent, fresh foodfolk are some of the most cheerful people of Silverplate. Full of vigor and vitality, they are living proof that one does not have to go through a range of procedures to be both strong and delicious.</p>
+            <p class="indent">You have advantage on saving throws against spells and other magical effects that decrease your ability scores or that give disadvantage on your ability checks. </p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against spells and other magical effects that decrease your ability scores or that give disadvantage on your ability checks.</description>
+        </sheet>
+    </element>
+    <element name="Fresh - Unprocessed (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_UNPROCESSED">
+        <description>
+            <p>Bursting with raw talent, fresh foodfolk are some of the most cheerful people of Silverplate. Full of vigor and vitality, they are living proof that one does not have to go through a range of procedures to be both strong and delicious.</p>
+            <p class="indent">If you fail a saving throw against a spell or another magical effect that deals necrotic damage, you can reroll the die and must use the new roll. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>If you fail a saving throw against a spell or another magical effect that deals necrotic damage, you can reroll the die and must use the new roll.</description>
+        </sheet>
+    </element>
+    <element name="Dried - Absorbing Heal (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_ABSORBING_HEAL">
+        <description>
+            <p>Dried foodfolk have lost a certain degree of water. However, this is not a deficiency, but a miracle of life. They can live longer than most other foodfolk, and the sun doesn't have as much of an adverse effect on them.</p>
+            <p class="indent">You regain ld4 hit points at the start of your turn if you have at least l hit point. You can regain up to 50 hit points using this feature. You regain any expended uses when you finish a long rest. </p>
+        </description>
+        <sheet usage="50hp/Long Rest">
+            <description>You regain ld4 hit points at the start of your turn if you have at least l hit point. You can regain up to 50 hit points using this feature.</description>
+        </sheet>
+    </element>
+    <element name="Dried - Dried Tenacity (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DRIED_TENACITY">
+        <description>
+            <p>Dried foodfolk have lost a certain degree of water. However, this is not a deficiency, but a miracle of life. They can live longer than most other foodfolk, and the sun doesn't have as much of an adverse effect on them.</p>
+            <p class="indent">Your size is Small. Your speed increases by 5 feet, and you can take the Dash action as a bonus action. </p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Your size is Small. Your speed increases by 5 feet, and you can take the Dash action as a bonus action</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed" value="5" />
+            <grant type="Size" id="ID_SIZE_SMALL" />
+        </rules>
+    </element>
+    <element name="Dried - Desiccated (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DESICCATED">
+        <description>
+            <p>Dried foodfolk have lost a certain degree of water. However, this is not a deficiency, but a miracle of life. They can live longer than most other foodfolk, and the sun doesn't have as much of an adverse effect on them.</p>
+            <p class="indent">You can cast the barkskin spell once with this feature, and you regain the ability to do so when you finish a long rest. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast the barkskin spell once with this feature.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" />
+        </rules>
+    </element>
+    <element name="Dried - Dried Under the Sun (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DRIED_UNDER_THE_SUN">
+        <description>
+            <p>Dried foodfolk have lost a certain degree of water. However, this is not a deficiency, but a miracle of life. They can live longer than most other foodfolk, and the sun doesn't have as much of an adverse effect on them.</p>
+            <p class="indent">You have advantage on Wisdom (Perception) checks under bright light and sunlight. </p>
+        </description>
+        <sheet>
+            <description>You have advantage on Wisdom (Perception) checks under bright light and sunlight.</description>
+        </sheet>
+    </element>
+    <element name="Dried - Long Live the Dry King/Queen (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_LONG_LIVE_THE_DRY_KING_QUEEN">
+        <description>
+            <p>Dried foodfolk have lost a certain degree of water. However, this is not a deficiency, but a miracle of life. They can live longer than most other foodfolk, and the sun doesn't have as much of an adverse effect on them.</p>
+            <p class="indent">You can live up to 400 years instead of 200. </p>
+        </description>
+        <sheet>
+            <description>You can live up to 400 years instead of 200.</description>
+        </sheet>
+    </element>
+    <element name="Dried - Dried Pilgram (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DRIED_PILGRAM">
+        <description>
+            <p>Dried foodfolk have lost a certain degree of water. However, this is not a deficiency, but a miracle of life. They can live longer than most other foodfolk, and the sun doesn't have as much of an adverse effect on them.</p>
+            <p class="indent">You have advantage on saving throws against exhaustion while walking for long distances without taking a rest. </p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against exhaustion while walking for long distances without taking a rest.</description>
+        </sheet>
+    </element>
+    <element name="Dried - Most Endurant of All Food (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_MOST_ENDURANT_OF_ALL_FOOD">
+        <description>
+            <p>Dried foodfolk have lost a certain degree of water. However, this is not a deficiency, but a miracle of life. They can live longer than most other foodfolk, and the sun doesn't have as much of an adverse effect on them.</p>
+            <p class="indent">When you take damage from a nonmagical attack, you take 1 damage less. When you reach 10th level, you take 1 damage less from magical attacks as well. </p>
+        </description>
+        <sheet>
+            <description>When you take damage from a nonmagical attack, you take 1 damage less.</description>
+            <description level="10">When you take damage from a nonmagical or magical attacks, you take 1 damage less.</description>
+        </sheet>
+    </element>
+    <element name="Grilled/Smoked - Tempered with Fire (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_TEMPERED_WITH_FIRE">
+        <description>
+            <p>Grilled/smoked foodfolk carry the fire of creation within. Some of the bravest and hardiest of foodfolk, the grilled and the smoked are no stranger to fire or hardship. They live their life to the fullest, and use their burning passion to achieve their goals.</p>
+            <p class="indent">You have resistance to fire damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+    <element name="Grilled/Smoked - Smoke Link (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_SMOKE_LINK">
+        <description>
+            <p>Grilled/smoked foodfolk carry the fire of creation within. Some of the bravest and hardiest of foodfolk, the grilled and the smoked are no stranger to fire or hardship. They live their life to the fullest, and use their burning passion to achieve their goals.</p>
+            <p class="indent">As a bonus action, you send your thoughts to a creature of your choice within 60 feet of you, as a barely visible cloud of smoke. This way, you can communicate with the target telepathically even if you don't share a  language. However, the target must be able to understand a language. </p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>As a bonus action, you send your thoughts to a creature of your choice within 60 feet of you, as a barely visible cloud of smoke. This way, you can communicate with the target telepathically even if you don't share a  language. However, the target must be able to understand a language.</description>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Grilled/Smoked - Embrace of the Smoke (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_EMBRACE_OF_THE_SMOKE">
+        <description>
+            <p>Grilled/smoked foodfolk carry the fire of creation within. Some of the bravest and hardiest of foodfolk, the grilled and the smoked are no stranger to fire or hardship. They live their life to the fullest, and use their burning passion to achieve their goals.</p>
+            <p class="indent">As a bonus action, you surround yourself with smoke for 1 minute. For the duration, you have advantage on Dexterity (Stealth) checks. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>
+        </description>
+        <sheet action="Bonus Action" usage="Long Rest">
+            <description>As a bonus action, you surround yourself with smoke for 1 minute. For the duration, you have advantage on Dexterity (Stealth) checks.</description>
+        </sheet>
+    </element>
+    <element name="Grilled/Smoked - Tested by the Grill (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_TESTED_BY_THE GRILL">
+        <description>
+            <p>Grilled/smoked foodfolk carry the fire of creation within. Some of the bravest and hardiest of foodfolk, the grilled and the smoked are no stranger to fire or hardship. They live their life to the fullest, and use their burning passion to achieve their goals.</p>
+            <p class="indent">You have advantage on saving throws against being frightened. </p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against being frightened.</description>
+        </sheet>
+    </element>
+    <element name="Grilled/Smoked - Fuel For Your Own Flames (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_FUEL_FOR_YOUR_OWN_FLAMES">
+        <description>
+            <p>Grilled/smoked foodfolk carry the fire of creation within. Some of the bravest and hardiest of foodfolk, the grilled and the smoked are no stranger to fire or hardship. They live their life to the fullest, and use their burning passion to achieve their goals.</p>
+            <p class="indent">You know which wood is best for grilling. You are proficient with woodcarver's tools. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Grilled/Smoked - Acolyte of Smoke and Flames (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_ACOLYTE_OF_SMOKE_AND_FLAMES">
+        <description>
+            <p>Grilled/smoked foodfolk carry the fire of creation within. Some of the bravest and hardiest of foodfolk, the grilled and the smoked are no stranger to fire or hardship. They live their life to the fullest, and use their burning passion to achieve their goals.</p>
+            <p class="indent">You know Ignan.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+        </rules>
+    </element>
+    <element name="Grilled/Smoked - Loved by the Gods (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_LOVED_BY_THE_GODS">
+        <description>
+            <p>Grilled/smoked foodfolk carry the fire of creation within. Some of the bravest and hardiest of foodfolk, the grilled and the smoked are no stranger to fire or hardship. They live their life to the fullest, and use their burning passion to achieve their goals.</p>
+            <p class="indent">You are beloved by the divine, or at least the people around you think so. People believe that funerals, weddings, or other gatherings you witness are blessed by the gods. </p>
+        </description>
+        <sheet>
+            <description>You are beloved by the divine, or at least the people around you think so. People believe that funerals, weddings, or other gatherings you witness are blessed by the gods.</description>
+        </sheet>
+    </element>
+    <element name="Blended/Squeezed - All in Bits (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_ALL_IN_BITS">
+        <description>
+            <p>Mixed in the great bowl of creation, Blended/Squeezed foodfolk are the sum of all the ingredients that create them. Flexible folk, they are able to blend in everywhere.</p>
+            <p class="indent">You have resistance to one of the following damage types of your choice; bludgeoning or slashing. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Condition" name="All In Bits" supports="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+        </rules>
+    </element>
+    <element name="Blended/Squeezed - Shake It Up (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_SHAKE_IT_UP">
+        <description>
+            <p>Mixed in the great bowl of creation, Blended/Squeezed foodfolk are the sum of all the ingredients that create them. Flexible folk, they are able to blend in everywhere.</p>
+            <p class="indent">When you suffer a critical hit, you can choose to suffer a normal hit instead by relocating your ingredients as a reaction. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest"> 
+            <description>When you suffer a critical hit, you can choose to suffer a normal hit instead by relocating your ingredients as a reaction.</description>
+        </sheet>
+    </element>
+    <element name="Blended/Squeezed - Mixed Shake (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_MIXED_SHAKE">
+        <description>
+            <p>Mixed in the great bowl of creation, Blended/Squeezed foodfolk are the sum of all the ingredients that create them. Flexible folk, they are able to blend in everywhere.</p>
+            <p class="indent">At the end of each long rest, you gain the benefits of a feature of your choice from this list (Foodfolk tags), losing the benefits of the previous feature. However, the chosen feature must be worth 3 points. </p>
+        </description>
+        <sheet>
+            <description>At the end of each long rest, you gain the benefits of a feature of your choice from this list (Foodfolk tags), losing the benefits of the  previous feature. However, the chosen feature must be worth 3 points.</description>
+        </sheet>
+    </element>
+    <element name="Blended/Squeezed - Blend of Colors (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_BLEND_OF_COLORS">
+        <description>
+            <p>Mixed in the great bowl of creation, Blended/Squeezed foodfolk are the sum of all the ingredients that create them. Flexible folk, they are able to blend in everywhere.</p>
+            <p class="indent">You can cast the color spray spell once with this feature, and you regain the ability to do so when you finish a long rest. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast the color spray spell once with this feature.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_COLOR_SPRAY" />
+        </rules>
+    </element>
+    <element name="Blended/Squeezed - Fresh Friend (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_FRESH_FRIEND">
+        <description>
+            <p>Mixed in the great bowl of creation, Blended/Squeezed foodfolk are the sum of all the ingredients that create them. Flexible folk, they are able to blend in everywhere.</p>
+            <p class="indent">You have advantage on Charisma checks against fresh people.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Blended/Squeezed - Blend of Cultures (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_BLEND_OF_CULTURES">
+        <description>
+            <p>Mixed in the great bowl of creation, Blended/Squeezed foodfolk are the sum of all the ingredients that create them. Flexible folk, they are able to blend in everywhere.</p>
+            <p class="indent">You can read, speak, and write a language of your choice. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Language" name="Language, " supports="Standard||Exotic" />
+        </rules>
+    </element>
+    <element name="Blended/Squeezed - Blendin' In (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_BLENDIN_IN">
+        <description>
+            <p>Mixed in the great bowl of creation, Blended/Squeezed foodfolk are the sum of all the ingredients that create them. Flexible folk, they are able to blend in everywhere.</p>
+            <p class="indent">You can make a Charisma (Performance) check instead of a Dexterity (Stealth) check to hide in crowds. </p>
+        </description>
+        <sheet>
+            <description>You can make a Charisma (Performance) check instead of a Dexterity (Stealth) check to hide in crowds.</description>
         </sheet>
     </element>
 </elements>

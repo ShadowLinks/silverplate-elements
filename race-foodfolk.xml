@@ -6,4 +6,200 @@
             <file name="race-foodfolk.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/race-foodfolk.xml"/>
         </update>
     </info>
+    <element name="Foodfolk" type="Race" source="Silverplate" id="ID_DRS_SILVERPLATE_RACE_FOODFOLK">
+        <description>
+            <p></p>
+            <h4>COOK YOURSELF</h4>
+            <p>Silverplate. As a player, you decide whether you want to play as a deliciously dangerous hamburger, a vicious pirate cup of tea, or an unyielding hero pie, and your character gains features depending on what food you are. </p>
+            <p class="indent">To create a tasty character, you need to decide what kind of delicacy you are by choosing character tags. </p>
+            <p class="indent">There are pools of features under each tag. Once you choose at least one character tag from each of the categories given below, you have access to the features listed under it, meaning you can choose your own features from this pool. </p>
+            <p class="indent">The total number of points of the features you choose can't exceed 40. To elaborate, you can choose ten 4-point features, three 12-point features  and one 4-point feature, or any other combination of features of your choice as long as the sum of  their points does not exceed 40. The point cost of each feature has been given in parentheses next  to it. Build your own character in the way you like. Cook yourself!</p>
+            <h4>CHARACTER TAGS</h4>
+            <p><strong><i>What are you?</i></strong> You can be either a Food or Beverage.</p>
+            <p><strong><i>How do you taste?</i></strong> Your taste can be Bitter, Sweet, Sour, Salty, or Savory. Depending on the food or beverage you choose, you can have only one flavor, or you can have many.</p>
+            <p><strong><i>Which ingredients do you have?</i></strong> Your recipe can include Fruit(s), Vegetable(s), Grain(s), Meat, or Dairy. Depending on the food or beverage you  choose, you can be made of only one ingredient, or you can be made of many. </p>
+            <p><strong><i>How were you cooked?</i></strong>You can be Baked, Fried/Roasted, Boiled/Steamed, Fresh, Dried, Grilled/ Smoked, or Blended/Squeezed. Depending on the food or beverage you choose, you can go through just one process, or you can go through many. </p>
+            <p class="indent"></p>
+            <h4>Foodfolk Traits</h4>
+            <p></p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> One ability score of your choice increases by 2 and one other ability score of your choice increases by 1. </p>
+            <p class="indent"><strong><em>Age.</em></strong> All foodfolk typically become adults around the age of 20 and can live to be 200 years old. </p>
+            <p class="indent"><strong><em>Size.</em></strong>  Unless stated otherwise in a tag feature, your size is Medium. </p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase (Foodfolk)" supports="Custom Ability Score Increase 2"/>
+            <select type="Ability Score Improvement" name="Ability Score Increase (Foodfolk)" supports="Custom Ability Score Increase 1"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Sub Race" name="Foodfolk People" supports="foodfolk-options" />
+        </rules>
+    </element>
+    <element name="Cheeseburger" type="Sub Race" source="Silverplate" id="ID_DRS_SILVERPLATE_SUB_RACE_CHEESEBURGER">
+        <supports>foodfolk-options</supports>
+        <description>
+            <p>Below, you may find the example of a simple cheeseburger made of bread, melted cheese and a grilled meat patty. </p>
+            <p class="indent"><strong><i>What are you? </i></strong>A cheeseburger has the Food tag. This cheeseburger has taken the Solid Structure feature (6 points). </p>
+            <p class="indent"><strong><i>How do you taste? </i></strong>A cheeseburger can be savory and salty at the same time. This cheeseburger has taken the Double Decker feature (6 points) from the  Savory tag and the Salty Attitude feature (3 points) from the Salty tag. </p>
+            <p class="indent"><strong><i>What are your ingredients? </i></strong>A cheeseburger usually has bread, meat and cheese in it. Therefore, this cheeseburger has the Grain, Meat and Dairy tags.  It has taken the Gluten feature (3 points) from the Grain tag, the Fatter the Better feature (4  points) from the Meat tag and the Ancient feature (3 points) from the Dairy tag. </p>
+            <p class="indent"><strong><i>How were you cooked?</i></strong> The patty of a cheeseburger can be grilled, while the bread can be baked. This cheeseburger has taken the Tempered With Fire feature (12 points) from the Grilled tag and the Always Hot feature (3 points) from the Baked/Roasted tag. </p>
+            <h4>Cheeseburger Traits</h4>
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_SOLID_STRUCTURE" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_DOUBLE_DECKER" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_SALTY_ATTITUDE" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GLUTEN" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_THE_FATTER_THE_BETTER" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_ANCIENT" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_TEMPERED_WITH_FIRE" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_ALWAYS_HOT" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_SOLID_STRUCTURE" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_DOUBLE_DECKER" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_SALTY_ATTITUDE" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GLUTEN" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_THE_FATTER_THE_BETTER" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_ANCIENT" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_TEMPERED_WITH_FIRE" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_ALWAYS_HOT" level="1" />
+        </rules>
+    </element>
+    <!--
+    <element name="Pizza" type="Sub Race" source="Silverplate" id="ID_DRS_SILVERPLATE_SUB_RACE_PIZZA">
+        <supports>foodfolk-options</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <h4>Pizza Traits</h4>
+            <div element="ID__" />
+            <div element="ID___" />
+            <div element="ID____" />
+            <div element="ID_____" />
+            <div element="ID______" />
+            <div element="ID_______" />
+            <div element="ID________" />
+            <div element="ID_________" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID__" level="1" />
+            <grant type="Racial Trait" id="ID___" level="1" />
+            <grant type="Racial Trait" id="ID____" level="1" />
+            <grant type="Racial Trait" id="ID_____" level="1" />
+            <grant type="Racial Trait" id="ID______" level="1" />
+            <grant type="Racial Trait" id="ID_______" level="1" />
+            <grant type="Racial Trait" id="ID________" level="1" />
+            <grant type="Racial Trait" id="ID_________" level="1" />
+        </rules>
+    </element>
+    <element name="Hot Dog" type="Sub Race" source="Silverplate" id="ID_DRS_SILVERPLATE_SUB_RACE_HOT_DOG">
+        <supports>foodfolk-options</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <h4>Hot Dog Traits</h4>
+            <div element="ID__" />
+            <div element="ID___" />
+            <div element="ID____" />
+            <div element="ID_____" />
+            <div element="ID______" />
+            <div element="ID_______" />
+            <div element="ID________" />
+            <div element="ID_________" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID__" level="1" />
+            <grant type="Racial Trait" id="ID___" level="1" />
+            <grant type="Racial Trait" id="ID____" level="1" />
+            <grant type="Racial Trait" id="ID_____" level="1" />
+            <grant type="Racial Trait" id="ID______" level="1" />
+            <grant type="Racial Trait" id="ID_______" level="1" />
+            <grant type="Racial Trait" id="ID________" level="1" />
+            <grant type="Racial Trait" id="ID_________" level="1" />
+        </rules>
+    </element>
+    <element name="Coffee" type="Sub Race" source="Silverplate" id="ID_DRS_SILVERPLATE_SUB_RACE_COFFEE">
+        <supports>foodfolk-options</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <h4>Coffee Traits</h4>
+            <div element="ID__" />
+            <div element="ID___" />
+            <div element="ID____" />
+            <div element="ID_____" />
+            <div element="ID______" />
+            <div element="ID_______" />
+            <div element="ID________" />
+            <div element="ID_________" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID__" level="1" />
+            <grant type="Racial Trait" id="ID___" level="1" />
+            <grant type="Racial Trait" id="ID____" level="1" />
+            <grant type="Racial Trait" id="ID_____" level="1" />
+            <grant type="Racial Trait" id="ID______" level="1" />
+            <grant type="Racial Trait" id="ID_______" level="1" />
+            <grant type="Racial Trait" id="ID________" level="1" />
+            <grant type="Racial Trait" id="ID_________" level="1" />
+        </rules>
+    </element>
+    <element name="Cupcake" type="Sub Race" source="Silverplate" id="ID_DRS_SILVERPLATE_SUB_RACE_CUPCAKE">
+        <supports>foodfolk-options</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <h4>Cupcake Traits</h4>
+            <div element="ID__" />
+            <div element="ID___" />
+            <div element="ID____" />
+            <div element="ID_____" />
+            <div element="ID______" />
+            <div element="ID_______" />
+            <div element="ID________" />
+            <div element="ID_________" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID__" level="1" />
+            <grant type="Racial Trait" id="ID___" level="1" />
+            <grant type="Racial Trait" id="ID____" level="1" />
+            <grant type="Racial Trait" id="ID_____" level="1" />
+            <grant type="Racial Trait" id="ID______" level="1" />
+            <grant type="Racial Trait" id="ID_______" level="1" />
+            <grant type="Racial Trait" id="ID________" level="1" />
+            <grant type="Racial Trait" id="ID_________" level="1" />
+        </rules>
+    </element>-->
+    <element name="Cook Yourself" type="Sub Race" source="Silverplate" id="ID_DRS_SILVERPLATE_SUB_RACE_CUSTOM">
+        <supports>foodfolk-options</supports>
+        <description>
+            <p>Cook yourself! Create your own Foodfolk!</p>
+            <p class="indent">Select any number of traits up to 40 points.</p>
+            <p class="indent">Add traits from the equipment section from the Food Tags category. Dont forget to equip them!</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+    </element>    
 </elements>
+
+<!-- 
+<p class="indent"><strong><i></i></strong></p>
+-->
