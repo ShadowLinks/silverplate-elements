@@ -1,0 +1,253 @@
+<elements>
+    <info>
+        <name>Kitchen Weapons</name>
+        <description>Weapons from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="items-weapons.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-weapons.xml"/>
+        </update>
+    </info>
+    <element name="Weapon Proficiency (Cutting Knife)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CUTTING_KNIFE">
+        <supports>Weapon, Melee, Ranged, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Frying Pan)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FRYING_PAN">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Great Frying Pan)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_FRYING_PAN">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Great Grater)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_GRATER">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Great Oven Shovel)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_OVEN_SHOVEL">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Great Warfork)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_WARFORK">
+        <supports>Weapon, Melee, Ranged, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Great Warspoon)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_WARSPOON">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Hand Mixer)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HAND_MIXER">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Oven Shovel)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_OVEN_SHOVEL">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Rolling Pin)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_ROLLING_PIN">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Throwing Pick)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_THROWING_PICK">
+        <supports>Weapon, Ranged, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Warfork)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARFORK">
+        <supports>Weapon, Melee, Ranged, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (War Grater)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_GRATER">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, kitchen-weapons</supports>
+    </element>
+    <element name="Weapon Proficiency (Warspoon)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARSPOON">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, kitchen-weapons</supports>
+    </element>
+    <element name="Cutting Knife" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_CUTTING_KNIFE">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="range">20/60</set>
+            <set name="damage" type="slashing">1d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CUTTING_KNIFE</set>
+        </setters>
+    </element>
+    <element name="Frying Pan" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_FRYING_PAN">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FRYING_PAN</set>
+        </setters>
+    </element>    
+    <element name="Great Frying Pan" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_CUTTING_KNIFE_GREAT_FRYING_PAN">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="10">10 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">2d6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_FRYING_PAN</set>
+        </setters>
+    </element>
+    <element name="Great Grater" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_CUTTING_KNIFE_GREAT_GRATER">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="6">6 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="Slashing">4d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_GRATER</set>
+        </setters>
+    </element>
+    <element name="Great Oven Shovel" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_GREAT_OVEN_SHOVEL">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">15</set>
+            <set name="weight" lb="6">6 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">1d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_OVEN_SHOVEL</set>
+        </setters>
+    </element>
+    <element name="Great Warfork" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_GREAT_WARFORK">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="weight" lb="8">8 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="range">20/60</set>
+            <set name="damage" type="piercing">2d6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_WARFORK</set>
+        </setters>
+    </element>
+    <element name="Great Warspoon" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_GREAT_WARSPOON">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">30</set>
+            <set name="weight" lb="6">6 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">1d12</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_WARSPOON</set>
+        </setters>
+    </element>
+    <element name="Hand Mixer" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_HAND_MIXER">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HAND_MIXER</set>
+        </setters>
+    </element>
+    <element name="Oven Shovel" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_OVEN_SHOVEL">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d6</set>
+            <set name="versatile">1d8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_OVEN_SHOVEL</set>
+        </setters>
+    </element>
+    <element name="Rolling Pin" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_ROLLING_PIN">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ROLLING_PIN</set>
+        </setters>
+    </element>
+    <element name="Throwing Pick" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_THROWING_PICK">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="range">30/120</set>
+            <set name="damage" type="piercing">1d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_THROWING_PICK</set>
+        </setters>
+    </element>
+    <element name="Warfork" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_WARFORK">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="range">30/120</set>
+            <set name="damage" type="piercing">1d8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WARFORK</set>
+        </setters>
+    </element>
+    <element name="War Grater" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_WAR_GRATER">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, kitchen-weapons</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">2d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_GRATER</set>
+        </setters>
+    </element>
+    <element name="Warspoon" type="Weapon" source="Silverplate" id="ID_DRS_SILVERPLATE_WEAPON_WARSPOON">
+        <supports></supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">3</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WARSPOON</set>
+        </setters>
+    </element>
+
+</elements>
