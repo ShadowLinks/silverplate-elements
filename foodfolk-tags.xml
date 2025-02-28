@@ -785,14 +785,14 @@
             <p class="indent">While you are wearing no armor, your AC is equal to 12 + your Dexterity modifier. You can still benefit from wielding a shield. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>While you are wearing no armor, your AC is equal to 12 + your Dexterity modifier. You can still benefit from wielding a shield.</description>
         </sheet>
         <rules>
-            <stat name="ac:fatty protection:base" value="12"/>
-            <stat name="ac:fatty protection:dexterity" value="dexterity:modifier"/>>
-            <stat name="ac:fatty protection" value="ac:fatty protection:base"/>
-            <stat name="ac:fatty protection" value="ac:fatty protection:dexterity"/>
-            <stat name="ac:calculation" value="ac:fatty protection" bonus="calculation" equipped="[armor:none]" alt="Fatty Protection"/>
+            <stat name="ac:fattyprotection:base" value="12"/>
+            <stat name="ac:fattyprotection:dexterity" value="dexterity:modifier"/>
+            <stat name="ac:fattyprotection" value="ac:fattyprotection:base"/>
+            <stat name="ac:fattyprotection" value="ac:fattyprotection:dexterity"/>
+            <stat name="ac:calculation" value="ac:fattyprotection" bonus="calculation" equipped="[armor:none]" alt="Fatty Protection"/>
         </rules>
     </element>
     <element name="Meat - The Fatter The Better (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_THE_FATTER_THE_BETTER">
