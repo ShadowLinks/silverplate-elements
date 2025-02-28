@@ -1,0 +1,223 @@
+<elements>
+    <info>
+        <name>Backgrounds</name>
+        <description>Backgrounds from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="backgrounds.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/backgrounds.xml"/>
+        </update>
+    </info>
+     <element name="Akorn" type="Background" source="Silverplate" id="ID_DRS_SILVERPLATE_BACKGROUND_AKORN">
+        <description>
+            <p>Outcasts on the Island of Trufbrough (p.118) have long been sent to the Plains of Akorn to live alone in harsh conditions. However, in time, some of these people found each other and formed bands or tribes themselves. These tribes vary in name and culture, but in the end, they are all banished foodfolk. They are all akorns. </p>
+            <p class="indent">Akorns are mostly foodfolk who were shunned by their community, but there are also those who live in the Plains of Akorn by choice. </p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> Survival and one of your choice</li>
+                <li><strong>Tool Proficiencies:</strong> One of your choice</li>
+                <li><strong>Languages:</strong> </li>
+                <li><strong>Equipment:</strong> A traveling bag containing rations for a week, a hammock, a set of tribal clothes, a set of tools, and 15 feet of hempen rope.</li>
+            </ul>
+            <h5>TRIBE</h5>
+            <p>Almost all Akorns have a tribe or a clan to help each other in this life of exile. Most of them treat one another as family. On the other hand, there are foodfolk who wish to stay alone and live in seclusion. You should note that a tribe may determine your characteristics or ideology (see the Plains of Akorn, p.121). To determine what your tribe is, you can roll on the table below, choose from the table below, or create a new tribe that best fits your character. </p>
+            <table>
+                <thead>
+                    <tr><td>d4</td><td>Tribe</td></tr>
+                </thead>
+                <tr><td>1</td><td>Beanbrew Tribe</td></tr>
+                <tr><td>2</td><td>Chai Clan</td></tr>
+                <tr><td>3</td><td>Tribeless</td></tr>
+                <tr><td>4</td><td>Kaju Tribe</td></tr>
+            </table>
+            <div element="ID_DRS_SILVERPLATE_BACKGROUND_FEATURE_HUNTERS_LIFE" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>Akorns live an isolated life, and thus many of them are not familiar with events and discoveries happening elsewhere in the realm. Because of this, they tend to be curious about the world. But since survival was a crucial focus of their life, they can be overly cautious or even paranoid from time to time. </p>
+        </description>
+        <setters>
+            <set name="short">Suvival, 1 skill, 1 tool proficiency</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <select type="Proficiency" name="Skill Proficiency, Akorn" supports="Skill" />
+            <select type="Proficiency" name="Tool Proficiency, Akorn" supports="Tool" />
+            <grant type="Background Feature" id="ID_DRS_SILVERPLATE_BACKGROUND_FEATURE_HUNTERS_LIFE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I love nature and animals.</item>
+                <item id="2">I always act with caution. A hunter can turn into prey within seconds in the wild.</item>
+                <item id="3">I love talking, no matter the subject.</item>
+                <item id="4">Worldly pleasures make no sense to me. </item>
+                <item id="5">I can only find peace in the silence of the night.</item>
+                <item id="6">I hate plains and forests. I've had enough of them for a lifetime. </item>
+                <item id="7">Being alone makes me nervous. </item>
+                <item id="8">Sometimes I get angry very quickly. </item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Freedom. I took life every day just to survive. Now, I'll live my life to the fullest to honor those I've killed. (Chaotic) </item>
+                <item id="2">Nature. I learned the way of the wilderness. Now, I must protect the natural cycle in this world. (Neutral) </item>
+                <item id="3">Survival. I survived what others would call nightmares. I must teach what I've learned to ensure the safety of my loved ones. (Lawful) </item>
+                <item id="4">Revenge. One day, I will return to those who exiled me, and on that day, they will pay with their  lives. (Evil) </item>
+                <item id="5">Power. I became the apex predator in the wilderness. Now, I must become one in the realm. (Evil) </item>
+                <item id="6">Curiosity. I will travel and see the wonders of this realm. (Any) </item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">I am in love with another Akorn. </item>
+                <item id="2">I buried a chest full of valuables somewhere on the island. I must retrieve it. </item>
+                <item id="3">I have a master who taught me everything I know. I must honor them. </item>
+                <item id="4">I once lost someone close to me. This must not happen again. </item>
+                <item id="5">There are people out there who are not as skilled as me. I must save them. </item>
+                <item id="6">I lost everything from my past, except a single person, who I must protect. </item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">Sometimes, I wish I'd died in the wilderness. </item>
+                <item id="2">The past weighs on me heavily. I have nightmares most nights. </item>
+                <item id="3">My survival is the most important thing, even if it costs lives. </item>
+                <item id="4">When I'm in danger, I can be overly violent. </item>
+                <item id="5">I'm not comfortable around others. </item>
+                <item id="6">I fear that if I do something wrong, people will abandon me instantly. </item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Hunter's Life" type="Background Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_BACKGROUND_FEATURE_HUNTERS_LIFE">
+        <description>
+            <p>You learned to live in the harsh wilderness of the Plains of Akorn and made your land of exile your home. Whenever you need to make a Wisdom (Survival) check to find tracks, hunt, or avoid natural hazards, you can add your Intelligence  modifier (minimum zero) to the result.</p>
+        </description>
+        <sheet alt="Hunter's Life">
+            <description>Whenever you need to make a Wisdom (Survival) check to find tracks, hunt, or avoid natural hazards, you can add your Intelligence  modifier (minimum zero) to the result.</description>
+        </sheet>
+    </element>
+    <element name="Leftover" type="Background" source="Silverplate" id="ID_DRS_SILVERPLATE_BACKGROUND_LEFTOVER">
+        <description>
+            <p>Sometimes people decide to live on their own and sometimes society pushes them outside, treating them like a stranger. Either way, solitary life leaves its effects on foodfolk, and they become leftovers. As time passes while they live on their own, they start to look pale, stale, and tired. Despite this, most leftovers don't want to reclaim their place in society, since being alone is another way to experience life. </p>
+            <p class="indent">As a leftover, you were cast out by your people or you decided to live alone, cutting your ties with most other foodfolk. In time, your body adapted to the situation, making you recognizable as a leftover. No matter the reason, you are a lone wolf who learned to survive on your own. </p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> Perception, Survival</li>
+                <li><strong>Tool Proficiencies:</strong> One type of artisan's tools</li>
+                <li><strong>Languages:</strong> </li>
+                <li><strong>Equipment:</strong> A small knife, a traveling bag containing a set of common clothes, a waterskin, a reminder of your old home, and a belt pouch containing 20 gp </li>
+            </ul>
+            <div element="ID_DRS_SILVERPLATE_BACKGROUND_FEATURE_WISDOM_OF_THE_OUTCAST" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>Leftovers tend to prioritize their own best interests. For them, life isn't the pursuit of an ultimate goal, but a journey to be appreciated. Of course, there are more pessimistic leftovers around, bitter at their isolation, believing only vengeance can make them feel better. Since they have no common place to gather and discuss their views, leftovers are divided into wise hermits and vengeful outcasts. </p>
+        </description>
+        <setters>
+            <set name="short">Perception, Survival, 1 artisan tool proficiency</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <select type="Proficiency" name="Tool Proficiency, Leftover" supports="Artisan" />
+            <grant type="Background Feature" id="ID_DRS_SILVERPLATE_BACKGROUND_FEATURE_WISDOM_OF_THE_OUTCAST" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I like to prank people when I first meet them. </item>
+                <item id="2">I tend to be serious around strangers. </item>
+                <item id="3">I am a goofy person. If I enjoy doing something, I'll do it. </item>
+                <item id="4">I am fond of books. I like to collect good stories. </item>
+                <item id="5">I may live alone but meeting new people is always fun. </item>
+                <item id="6">I like to solve my problems by force. </item>
+                <item id="7">I believe no matter how I live my life, it will be glorious. </item>
+                <item id="8">What happened to me is a punishment given to me by higher beings. </item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Destiny. I have a destiny and I will not yield until I fulfill it. (Any) </item>
+                <item id="2">Humble. I managed to live with nothing. I will continue to do so by donating my earnings. (Good) </item>
+                <item id="3">Kindness. I have forgiven those in my past but I will not let others share my fate. (Good) </item>
+                <item id="4">Vengeance. All those who once harmed me must be eliminated. (Evil) </item>
+                <item id="5">Pessimist. I lost everything when I left my home. I will never be that person again. (Any) </item>
+                <item id="6">Wisdom. I will share what I learned in my seclusion with others in need. (Good) </item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">I left my home because I learned a secret that could hurt many people. </item>
+                <item id="2">I stole something that belongs to a noble. They may have shunned me, but I still have it. </item>
+                <item id="3">I lost my family in a horrible event. From that day forward I decided to live on my own. </item>
+                <item id="4">I have forgotten my previous life and I feel lost because of it. </item>
+                <item id="5">I feel guilty about what happened, so I keep the events of my past a secret. </item>
+                <item id="6">I fell in love with the wrong person. They betrayed me and caused me to become a leftover. </item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">When I see a person alone, all I can think about is stealing something from them. </item>
+                <item id="2">I secretly think that I can't change the ways of others because I know that no one can change my own views. </item>
+                <item id="3">I hate talkative people. </item>
+                <item id="4">I have a habit of lying. </item>
+                <item id="5">I fear the arcane powers as I do not understand them fully. </item>
+                <item id="6">When I feel desperate in a fight I tend to flee. </item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Wisdom of the Outcast" type="Background Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_BACKGROUND_FEATURE_WISDOM_OF_THE_OUTCAST">
+        <description>
+            <p>Living by yourself, you have learned to sustain yourself in tough times without relying on others. While foraging in the wild, you can tell if the nourishment you find is edible or not. Also, you have advantage on Wisdom (Survival) checks you make to find temporary shelter in the wilds. </p>
+        </description>
+        <sheet alt="Wisdom of the Outcast">
+            <description>While foraging in the wild, you can tell if the nourishment you find is edible or not. Also, you have advantage on Wisdom (Survival) checks you make to find temporary shelter in the wilds.</description>
+        </sheet>
+    </element>
+    <element name="Pickled" type="Background" source="Silverplate" id="ID_DRS_SILVERPLATE_BACKGROUND_PICKLED">
+        <description>
+            <p>When the kings and queens of old wanted more power, they consulted a most peculiar group of alchemists, who came to their rescue by giving them a potion to empower their soldiers. At first, nothing happened when the warriors drank the elixir, but their children were born different. They were the first pickled foodfolk. Nowadays, pickled folk live in cities in small family groups, or in rural family  settlements away from prying eyes. </p>
+            <p class="indent">As a pickled person, you had a life full of family time and people like you. You listened to stories about the outside world and dreamt about seeing it. When the time came, you left your home behind to become more than yourself, to become a taste the world will never forget.
+</p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> Two of your choice</li>
+                <li><strong>Tool Proficiencies:</strong> </li>
+                <li><strong>Languages:</strong> Yummish and one other language of your choice</li>
+                <li><strong>Equipment:</strong> A traveling bag containing rations for a week, a set of common clothes, a jar of vinegar, and a belt pouch containing 10 gp </li>
+            </ul>
+            <div element="ID_DRS_SILVERPLATE_BACKGROUND_FEATURE_GREW_IN_A_JAR" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>Pickled folk can be naive and quick to put themselves in danger. However, most of them are also brave and adventurous souls. They like to learn new things and seek interesting stories to take part in. </p>
+        </description>
+        <setters>
+            <set name="short">2 skills, Yummish, 1 language</set>
+        </setters>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Pickled" number="2" supports="Skill" />
+            <grant type="Language" id="ID_LANGUAGE_YUMMISH" />
+            <select type="Language" name="Language, Pickled" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_DRS_SILVERPLATE_BACKGROUND_FEATURE_GREW_IN_A_JAR" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I want to see the world. </item>
+                <item id="2">Other foodfolk find me too angry; I just think they are not bold enough. </item>
+                <item id="3">I get along with every type of food. </item>
+                <item id="4">My spicy nature makes me attractive to other foodfolk. </item>
+                <item id="5">I am a hardworking pickle. </item>
+                <item id="6">I like my bravery to be challenged. </item>
+                <item id="7">I like to take any information with a grain of salt. </item>
+                <item id="8">I like to use too many gestures. </item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Immortality. There is nothing I won't do to live for all eternity. (Chaotic Evil) </item>
+                <item id="2">Explorer. I want to taste every kind of food. (Any) </item>
+                <item id="3">Celebrity. I will be the most famous pickled adventurer of Silverplate. (Any) </item>
+                <item id="4">Ruler. I want to build the Great Pickle Kingdom foretold in the legends. (Lawful) </item>
+                <item id="5">Knowledge. I want to teach my culture to other foodfolk and learn about theirs. (Neutral) </item>
+                <item id="6">Protector. I want to protect those who aided my fellow pickles. (Good) </item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">I will return to my pickle family one day. </item>
+                <item id="2">I will find those who harmed my community. </item>
+                <item id="3">I will find my missing pickle jar sibling. </item>
+                <item id="4">I will learn about my great ancestors; those from before our family became pickles. </item>
+                <item id="5">I have been trying to find the best foodfolk I can be paired with. </item>
+                <item id="6">I have a precious belonging that I must protect at all times until I pass it to new pickle generations. </item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I am too nosey. </item>
+                <item id="2">I have an extremely salty attitude. </item>
+                <item id="3">I don't trust alchemists. </item>
+                <item id="4">I secretly believe some foodfolk deserve to rot. </item>
+                <item id="5">I can empathize with villains more than heroes. </item>
+                <item id="6">After I saw the world outside, I wanted to return to my jar and never get out of it again. </item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Grew in a Jar" type="Background Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_BACKGROUND_FEATURE_GREW_IN_A_JAR">
+        <description>
+            <p>You became who you are in your homestead with your family like most other pickled folk. You learned to trust each other since others can be unkind. When you meet a pickled person, they tend to trust  you and you become friends. You can ask for small favors if you act friendly toward them. </p>
+            <p class="indent">Newborn pickled foodfolk in a pickle community rest in a huge jar until they grow to be a couple of years old. The pickled foodfolk who've shared a jar are considered jar siblings. They trust each  other and have a bond as if they were family. </p>
+        </description>
+        <sheet alt="Grew in a Jar">
+            <description>When you meet a pickled person, they tend to trust  you and you become friends. You can ask for small favors if you act friendly toward them. Newborn pickled foodfolk in a pickle community rest in a huge jar until they grow to be a couple of years old. The pickled foodfolk who've shared a jar are considered jar siblings. They trust each  other and have a bond as if they were family.</description>
+        </sheet>
+    </element>
+</elements>
