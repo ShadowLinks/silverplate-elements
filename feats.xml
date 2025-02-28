@@ -1,0 +1,108 @@
+<elements>
+    <info>
+        <name>Feats</name>
+        <description>Optional Feats from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/feats.xml"/>
+        </update>
+    </info>
+    <element name="Aftertaste Connoisseur" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_AFTERTASTE_CONNOISSEUR">
+        <requirements></requirements>
+        <description>
+            <p>When you ingest a potion or poison, it leaves an aftertaste until you finish a long rest or consume another potion or poison. As a bonus action, you can use this aftertaste to be affected by the potion or poison that left the aftertaste once more, as if you consumed it again. Once you use this feature, you must finish a long rest to use it again. </p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Long Rest">
+            <description>When you ingest a potion or poison, it leaves an aftertaste until you finish a long rest or consume another potion or poison. As a bonus action, you can use this aftertaste to be affected by the potion or poison that left the aftertaste once more, as if you consumed it again.</description>
+        </sheet>
+    </element>
+    <element name="Allergenic" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_ALLERGENIC">
+        <requirements></requirements>
+        <description>
+            <p>The ingredients that form your body act as a poison for creatures that try to devour you. You have resistance against damage from bite attacks. Whenever a creature successfully makes a bite attack against you, devours you, or consumes you in any other way, it takes 1d10 poison damage.</p>
+            <p class="indent">Also, you can use a small portion of your body to create a poison. By spending 1 hour and dealing 5 necrotic damage to yourself, which can't be reduced by any means, you can extract a vial of poison. You can pour 1 vial of this poison on a weapon to coat it with the poison for 1 minute. For the duration, successful weapon attacks made with a weapon coated with this poison deal an extra 1d4 poison damage.A weapon can only be coated with one vial of this poison at a time. An extracted vial of poison expires after 1 day. Once you extract a vial of poison, you can't extract it again until you finish a long rest. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You have resistance against damage from bite attacks. Whenever a creature successfully makes a bite attack against you, devours you, or consumes you in any other way, it takes 1d10 poison damage. By spending 1 hour and dealing 5 necrotic damage to yourself, which can't be reduced by any means, you can extract a vial of poison. You can pour 1 vial of this poison on a weapon to coat it with the poison for 1 minute. For the duration, successful weapon attacks made with a weapon coated with this poison deal an extra 1d4 poison damage.A weapon can only be coated with one vial of this poison at a time. An extracted vial of poison expires after 1 day.</description>
+        </sheet>
+    </element>
+    <element name="Brand New Recipe" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_BRAND_NEW_RECIPE">
+        <prerequisite>8th level</prerequisite>
+        <requirements>[level:8]</requirements>
+        <description>
+            <p>As you gain experience and live long enough to learn new recipes and encounter new tastes that you haven't tasted before, you can choose to enhance your own taste with extra flavors. You gain 12 points that you can spend to acquire new features from character tags (p. 6). When you gain this feature, you can choose from the pool of features from your already selected character tags, or select one or more new character tag(s) that areapplicable to your foodfolk character. </p>
+        </description>
+        <sheet>
+            <description>You gain 12 points that you can spend to acquire new features from character tags (p. 6). When you gain this feature, you can choose from the pool of features from your already selected character tags, or select one or more new character tag(s) that areapplicable to your foodfolk character.</description>
+        </sheet>
+    </element>
+    <element name="Cannibal" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_CANNIBAL">
+    <prerequisite>Perform cannibalism every week for a month</prerequisite>
+        <description>
+            <p>The foodfolk differ from ordinary consumables in their sentience and see such foods and beverages as what they are: nourishment. Yet, in a sense, they share the same nutritious flesh and blood. You are not bothered by consuming your peers, as you believe sentience is just a lie foodfolk tell themselves to feel superior. Your heinous cannibalistic beliefs grant you the following benefits: </p>
+            <ul>
+                <li>Increase your Constitution score by 1, to a maximum of 20. </li>
+                <li>You only need to eat and drink once a week and you can sustain yourself by eating and drinking foodfolk. </li>
+                <li>If you deal damage to a creature with the Food or Beverage tag as a result of a successful unarmed strike, you can rip out a piece of the creature and eat or drink it using your reaction. If you do so, you regain a number of hit points equal to your proficiency bonus. </li>
+            </ul>
+            <p class="indent">Most foodfolk see cannibalism as an unacceptable crime. If you cannibalize foodfolk in front of others, they will probably become hostile towards you. </p>
+        </description>
+        <sheet usage="Reaction">
+            <description>You only need to eat and drink once a week and you can sustain yourself by eating and drinking foodfolk. If you deal damage to a creature with the Food or Beverage tag as a result of a successful unarmed strike, you can rip out a piece of the creature and eat or drink it using your reaction. If you do so, you regain {{proficiency}} hit points</description>
+        </sheet>
+        <rules>
+            <stat name="Constitution" value="1" name="Cannibal"/>
+        </rules>
+    </element>
+    <element name="Carbonized" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_CARBONIZED">
+        <description>
+            <p>You've been burned a little too much. Your wounds have healed, but you are constantly aware that something inside you is carbonized. As an action, you can focus on the damage and the memory of your pain. When you do so, the carbonization spreads into a thin layer of hot charcoal on your skin for 1 minute. For the duration, you gain immunity to fire damage, but become vulnerable to bludgeoning damage. When the effect ends, you take 10 fire damage, which cannot be reduced by any means.</p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest. </p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>As an action, you can focus on the damage and the memory of your pain. When you do so, the carbonization spreads into a thin layer of hot charcoal on your skin for 1 minute. For the duration, you gain immunity to fire damage, but become vulnerable to bludgeoning damage. When the effect ends, you take 10 fire damage, which cannot be reduced by any means.</description>
+        </sheet>
+    </element>
+    <element name="Chomped" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_CHOMPED">
+        <description>
+            <p>Something bit off a chunk of your body and the scar persisted even after medical care and healing magic. You carry it as a trophy and proof of your growth through harsh experiences. You gain the following benefits: </p>
+            <ul>
+                <li>Increase your Charisma score by 1, to a maximum of 20. </li>
+                <li>When you attack a creature, the target and its allies within 30 feet of you that can see or hear you must succeed on a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma  modifier) or become frightened of you for 1 minute. A creature frightened by this feature must repeat the saving throw at the end of each of its turns, ending the condition on itself on a  success. A creature that succeeds on the saving throw is immune to this effect for the next 24 hours. </li>
+                <li>You have advantage on saving throws against being frightened. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against being frightened. When you attack a creature, the target and its allies within 30 feet of you that can see or hear you must succeed on a Wisdom saving throw DC {{chomped:dc}}. or become frightened of you for 1 minute. A creature frightened by this feature must repeat the saving throw at the end of each of its turns, ending the condition on itself on a  success. A creature that succeeds on the saving throw is immune to this effect for the next 24 hours.</description>
+        </sheet>
+        <rules>
+            <stat name="Charisma" value="1" />
+            <stat name="chomped:dc" value="8" />
+            <stat name="chomped:dc" value="proficiency" />
+            <stat name="chomped:dc" value="charisma:modifier" />
+        </rules>
+    </element>
+    <element name="Diced but not Forgotten" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_DICED_BUT_NOT_FORGOTTEN">
+        <description>
+            <p>When you drop to O hit points after you take bludgeoning, piercing, or slashing damage, you do not fall unconscious; a piece of your body gets broken, chomped, or spilled instead. Your size becomes one category smaller than your regular size, and your speed decreases by 5 feet. You regain 15 hit points. </p>
+            <p class="indent">When you finish a long rest, your broken, chomped, or spilled parts are restored. You regain your regular size and speed. </p>
+            <p class="indent">Once you benefit from this feature, you must finish a long rest to benefit from it again. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you drop to O hit points after you take bludgeoning, piercing, or slashing damage, you do not fall unconscious; a piece of your body gets broken, chomped, or spilled instead. Your size becomes one category smaller than your regular size, and your speed decreases by 5 feet. You regain 15 hit points. When you finish a long rest, your broken, chomped, or spilled parts are restored. You regain your regular size and speed.</description>
+        </sheet>
+    </element>
+</elements>
+<!-- 
+<element name="name" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+    <prerequisite></prerequisite>
+    <requirements>[level:8]</requirements>
+
+ -->
