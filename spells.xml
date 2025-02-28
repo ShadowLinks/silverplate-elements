@@ -365,161 +365,171 @@
         </setters>
     </element>
     <element name="Frying Blast" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_FRYING_BLAST">
-        <supports>Druid, Ranger, Sorcerer, Warlock</supports>
+        <supports>Druid, Ranger, Sorcerer, Warlock, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You form a boiling orb of cooking oil in your hands and blast it in front of you. Each creature in a 30-foot cone must make a Dexterity saving throw. On a failed save, a creature takes 4dl0 fire damage and suffers one level of the burnt condition (p. 47). On a successful save, the creature takes half as much damage and is not burnt. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the damage increases by ldlO for each slot level above 4th. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">fire</set>
             <set name="level">4</set>
             <set name="school">Evocation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Self (30-foot cone)</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a flask of cooking oil</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Garbage Pile" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_GARBAGE_PILE">
-        <supports>Sorcerer, Warlock</supports>
+        <supports>Sorcerer, Warlock, Spell Saving Throw, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You summon the illusion of a Large pile of rotting garbage teeming with bugs, creating a 20-foot-radius sphere of nauseating gas centered on a point within range. The sphere spreads around corners. When a creature that can smell enters the foul-smelling sphere for the first time, it must succeed on a Wisdom saving throw or take 7d6 psychic damage. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">psychic</set>
             <set name="level">4</set>
-            <set name="school">Evocation</set>
+            <set name="school">Illusion</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">an apple core, a small piece of metal, and a piece of broken glass</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Gourmet Vision" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_GOURMET_VISION">
         <supports>Bard, Cleric, Sorcerer, Warlock, Wizard</supports>
         <description>
-            <p></p>
+            <p>You open your eyes to reality and see the divine recipe of things around you. For the duration, you have truesight out to a range of 30 feet. Also, you can sense one vulnerability, one resistance, and one immunity of creatures that you can see within 60 feet of you. The GM decides the vulnerabilities, resistances, and immunities to be shared with you. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, the duration increases to 1 hour. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">6</set>
-            <set name="school">Evocation</set>
+            <set name="school">Divination</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Self</set>
+            <set name="duration">1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
+            <set name="isRitual">true</set>
         </setters>
     </element>
     <element name="Hot and Cold" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_HOT_AND_COLD">
-        <supports>Druid, Paladin, Ranger</supports>
+        <supports>Druid, Paladin, Ranger, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You alter the temperature of a creature to protect or weaken it against the heat or the cold. Choose a creature within range that you can see. If the target is not willing, it must make a Constitution saving throw. On a failed save, the target gains resistance to either fire or cold damage (your choice). It also gains vulnerability to whichever damage type isn't chosen. </p>
+            <p class="indent">If a target gains resistance to a damage type that it is already resistant to because of this spell, it gains immunity to that damage type for the duration instead. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">4</set>
-            <set name="school">Evocation</set>
+            <set name="school">Transmutation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">a piece of coal, a glass jar, and a small stone</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Jello Armor" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_JELLO_ARMOR">
         <supports>Paladin</supports>
         <description>
-            <p></p>
+            <p>A slimy, glowing jello armor covers your body. The armor has 20 hit points and when you are subjected to damage, it takes the damage instead. If the jello armor drops to 0 hit points, it explodes and any excess damage carries over to you. When the jello armor explodes, each creature within 15 feet of you must succeed on a Dexterity saving throw or take 20 acid damage. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the hit point of the jello armor and the damage of the explosion increases by 3 for each slot level above 5th. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">acid</set>
             <set name="level">5</set>
-            <set name="school">Evocation</set>
+            <set name="school">Abjuration</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Self</set>
+            <set name="duration">1 hour</set>
             <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Melted Sugar Swamp" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_MELTED_SUGAR_SWAMP">
-        <supports>Druid, Warlock</supports>
+        <supports>Druid, Warlock, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>The ground within 15 feet of a point of your choice within range is transformed into a boiling, granulated sugar swamp. The area becomes difficult terrain for the duration and each creature that enters the area for the first time on a turn or  ends its turn in there must make a Dexterity saving throw. A creature takes 4d6 fire damage on a failed save, or half as much damage on a successful one. </p>
+            <p class="indent">When the spell ends, the affected area returns to its previous state. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the radius of the spell increases by 5 feet for each slot level above 5th. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">fire</set>
             <set name="level">5</set>
-            <set name="school">Evocation</set>
+            <set name="school">Transmutation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">a handful of granulated sugar, three tiny stone, a feather</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Mold Burst" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_MOLD_BURST">
-        <supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
+        <supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>When you cast this spell, and as a bonus action on your upcoming turns within the duration, you may attempt to place a mold cyst on a creature that you can see within range. The target must succeed on a Constitution saving throw, or a mold cyst is placed on its body. </p>
+            <p class="indent">Before the spell ends, you can use an action to detonate all the mold cysts you have placed. If you do so, a creature takes ldlO necrotic damage for each cyst placed on it. </p>
+            <p class="indent">When the spell ends, the mold cysts disappear. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">necrotic</set>
             <set name="level">1</set>
-            <set name="school">Evocation</set>
-            <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">15 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">a piece of mold and a piece of meat</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Moldy Touch" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_MOLDY_TOUCH">
-        <supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
+        <supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard, Melee, Spell Attack</supports>
         <description>
-            <p></p>
+            <p>Your hand is covered with a layer of green mold. Make a melee spell attack against the target. On a hit, the target takes ldlO necrotic damage. </p>
+            <p class="indent">This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">necrotic</set>
             <set name="level">0</set>
-            <set name="school">Evocation</set>
+            <set name="school">Necromancy</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">touch</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a small piece of moldy fruit</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
@@ -527,79 +537,81 @@
     <element name="Perfecting Recipe" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_PERFECTING_RECIPE">
         <supports>Bard, Cleric</supports>
         <description>
-            <p></p>
+            <p>You touch a creature and magically perfect its recipe for the duration. Choose one of the target's ability scores and increase it to 24 until the spell ends. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, you can choose an additional ability score for each slot level above 6th. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">6</set>
-            <set name="school">Evocation</set>
+            <set name="school">Enchantment</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 hour</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">a clove of garlic and a pouch of gold dust worth at least 100 gp</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Puppy Eyes" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_PUPPY_EYES">
-        <supports>Bard, Druid, Ranger, Sorcerer</supports>
+        <supports>Bard, Druid, Ranger, Sorcerer, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You look at the creatures in front of you with extreme cuteness. All creatures within a 30-foot cone that can see you must make a Wisdom saving throw. On a failed save, they take 3d8 psychic damage and are charmed for 1 minute. On a successful save, a creature takes half as much damage and is not charmed. A creature that is charmed because of this spell repeats its saving throw at the end of each of its turns, ending the charmed condition on itself on a success. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">psychic</set>
             <set name="level">3</set>
-            <set name="school">Evocation</set>
+            <set name="school">Enchantment</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Self (30-foot cone)</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Raining Spices" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_RAINING_SPICES">
-        <supports>Druid, Sorcerer, Warlock, Wizard</supports>
+        <supports>Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You raise your hands and make dark clouds carrying various spices appear above you. From the clouds, a rain of fiery spices starts to pour. When a friendly creature enters the area for the first time or ends its turn there, it regains ld6 hit points. When a hostile creature enters the area for the first time or ends its turn there, it must succeed on an Intelligence saving throw or take 5d6 fire damage. Creatures who succeed on their saving throw do not need to repeat it, as they understand the spice fire is an illusion. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">fire</set>
             <set name="level">7</set>
-            <set name="school">Evocation</set>
+            <set name="school">Illusion</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Self (120-foot radius)</set>
+            <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Refresh" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_REFRESH">
         <supports>Bard, Cleric, Druid, Paladin, Ranger</supports>
         <description>
-            <p></p>
+            <p>You heal a creature by bestowing your saved energy upon it. Choose a creature within range that you can see. You spend a Hit Die and the target regains a number of hit points equal to 2 + the result of the roll. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the number of hit dice you can spend increases by 1 for each slot level above 1st. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
             <set name="school">Evocation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a handful of coffee beans</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
@@ -607,57 +619,62 @@
     <element name="Self Services" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SELF_SERVICE">
         <supports>Bard, Cleric, Paladin</supports>
         <description>
-            <p></p>
+            <p>A wooden cabinet, 5 feet in all dimensions, illed with blue, green, and red potions appears in an unoccupied space of your choice, within range. A creature can use its bonus action to take a potion from the cabinet and drink it, gaining one of the following beneits according to the color of the potion: </p>
+            <p class="indent">Blue Potion. The creature chooses expended spell slots to recover. The spell slots can have a combined level of 3. </p>
+            <p class="indent">Green Potion. The creature gains a +1 bonus to AC, attack rolls, and saving throws for 1 minute. </p>
+            <p class="indent">Red Potion. The creature regains hit points equal to ld6 plus your spellcasting modifier. </p>
+            <p class="indent">Once a creature benefits from a potion created by this spell, it can't do so again for 24 hours. </p>
+            <p class="indent">The cabinet and potions vanish if it is subjected to damage or the spell ends. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">3</set>
-            <set name="school">Evocation</set>
+            <set name="school">Abjuration</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">any magical potion which is consumed by the spell</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Sense Shelf Life" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SENSE_SHELF_LIFE">
         <supports>Bard, Wizard</supports>
         <description>
-            <p></p>
+            <p>You magically sense the very soul of a creature. When you do so, you learn their age and how much time they have left to live. This accounts only for the end of their natural life and not other causes of death. Whether a creature has a soul or not is determined by the GM. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Evocation</set>
-            <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="school">Divination</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
+            <set name="isRitual">true</set>
         </setters>
     </element>
     <element name="Shift to Cake" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SHIFT_TO_CAKE">
         <supports>Bard, Cleric, Druid</supports>
         <description>
-            <p></p>
+            <p>You choose a willing creature and magically push it 5 feet to an unoccupied space in a direction of your choice, leaving an illusionary duplicate of the creature made of cake in the previous space that becomes the new target of the triggering attack. The illusionary cake duplicate of the creature is then destroyed. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">2</set>
-            <set name="school">Evocation</set>
-            <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 reaction, which you take when a creature that you can see within range is hit with an attack</set>
+            <set name="range">100 feet</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
             <set name="hasMaterialComponent">true</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
@@ -667,79 +684,88 @@
     <element name="Shots!" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SHOTS">
         <supports>Druid, Paladin, Sorcerer, Warlock, Wizard</supports>
         <description>
-            <p></p>
+            <p>You choose 4 willing creatures within range that you can see. A small glass illed with different distilled potions appears in each target's free hand. If a target has no free hands, the glass appears in front of it, drops to the ground, and shatters, spilling its content. Each target can choose which of the following potion appears in their hand and may take a reaction to drink it: </p>
+            <p class="indent">Swirling Pink Flamingo. This glimmering pink potion has a smooth texture. When you drink this shot, you regain 6 hit points. It tastes like berries. </p>
+            <p class="indent">Sky Marine Horizon. This potion consists of two blue liquids with slightly different tints. They don't mix, creating a line between the two blues. When you drink this shot, you have a +3 bonus to your next attack and damage roll. It has a minty flavor. </p>
+            <p class="indent">Sundrop. This potion is a light orange droplet within a transparent liquid. When you drink this shot, your speed increases by 15 feet until the end of your next turn. It has a floral flavor. </p>
+            <p class="indent">Green Dragon Vomit. This potion is a thick green liquid with lots of tiny jelly lumps in it. When you drink this shot, you gain 6 temporary hit points. It has a fresh bitter flavor. </p>
+            <p class="indent">If the target doesn't use its reaction to drink a shot immediately after the spell is cast, the shots lose their potency, taste, and benefits, becoming a nonmagical tasteless fluid. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">3</set>
-            <set name="school">Evocation</set>
+            <set name="school">Conjuration</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">15 feet</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Silver Toothpicks" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SILVER_TOOTHPICKS">
-        <supports>Bard, Cleric, Paladin</supports>
+        <supports>Bard, Cleric, Paladin, Spell Attack</supports>
         <description>
-            <p></p>
+            <p>You conjure a silver toothpick that floats above your head for the duration or until it is expended. When a creature within range takes an action, you can use your reaction to make a ranged spell attack against it with the toothpick, which is then expended. </p>
+            <p class="indent">On a hit, the target takes 2d6 piercing damage and is blinded, or deafened (your choice) until the end of its next turn. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can conjure one additional silver toothpick for each slot level above 2nd. </p>
+            <p class="indent">You can hurl as many toothpicks as you choose using your reaction. Each toothpick requires a separate ranged spell attack. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">piercing</set>
             <set name="level">2</set>
-            <set name="school">Evocation</set>
-            <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a wooden toothpick</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Spiking Forks" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SPIKING_FORKS">
-        <supports>Paladin, Sorcerer</supports>
+        <supports>Paladin, Sorcerer, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You slam the ground and forks burst out to impale anything in their path. The forks appear in a line originating from you that is 60 feet long and 5 feet wide. Each creature in that line must make a Dexterity saving throw, taking 5d6 piercing damage on a failed save, or half as much damage on a successful one. You can create a new line of  forks as a bonus action on each of your consecutive turns until the spell ends. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">piercing</set>
             <set name="level">5</set>
-            <set name="school">Evocation</set>
+            <set name="school">Conjuration</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Self (60-foot line)</set>
+            <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">a golden fork</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Sugarball" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_SUGARBALL">
-        <supports>Sorcerer, Wizard</supports>
+        <supports>Sorcerer, Wizard, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You summon a big ball of caramel between your palms and hurl it at a point within range. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a creature takes 6d8 acid damage and is restrained until the end of its next turn. On a successful save, the creature takes half as much damage and is not restrained. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by ld8 for each slot level above 3rd. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">acid</set>
             <set name="level">3</set>
             <set name="school">Evocation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">150 feet</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a handful of powdered sugar</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
@@ -747,18 +773,18 @@
     <element name="Temporary Preservation" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_TEMPORARY_PRESERVATION">
         <supports>Cleric, Druid</supports>
         <description>
-            <p></p>
+            <p>You touch a willing creature and place a preservation sigil on it. Choose one condition except unconscious and incapacitated. Until the end of the creature's next turn, it is immune to the effects of the chosen condition. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">0</set>
-            <set name="school">Evocation</set>
+            <set name="school">Abjuration</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
@@ -767,60 +793,69 @@
     <element name="To the Tooth" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_TO_THE_TOOTH">
         <supports>Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</supports>
         <description>
-            <p></p>
+            <p>For the duration, you can sense some of the conditions affecting the creatures within 30 feet of you. You know if any of those creatures are affected by the burnt, exhausted, or frozen conditions and their severity according to their level. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
             <set name="school">Evocation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 10 minutes</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">true</set>
         </setters>
     </element>
     <element name="Twist Consciousness" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_TWIST_CONSCIOUSNESS">
-        <supports>Warlock, Wizard</supports>
+        <supports>Warlock, Wizard, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You touch a willing creature and target another creature within range that you can see. If the second creature is unwilling, it must succeed on a Wisdom saving throw to resist the effects of the spell. </p>
+            <p class="indent">If the spell successfully takes effect, the two targets swap bodies. They retain their game statistics, except they exchange their Intelligence, Wisdom, Charisma scores, personalities, and memories. These changes revert to normal when the spell ends. </p>
+            <p class="indent">If you concentrate on this spell for the full duration, the change becomes permanent. Only a wish spell cast on any of the affected creatures can revert this change back to normal. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">9</set>
-            <set name="school">Evocation</set>
+            <set name="school">Enchantment</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 8 hours</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">a spiral piece of a silver cord, a drop of purified water, gold dust worth 18,750 gp which the spell consumes</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Wisdom of Vrot" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_WISDOM_OF_VROT">
         <supports>Druid</supports>
         <description>
-            <p></p>
+            <p>You summon the wisdom of Vrot by carrying their spores and speaking their words. </p>
+            <p class="indent">Vrot's wisdom is revealed to you and you learn your near future, gaining the following benefits for the duration; </p>
+            <ul>
+                <li>You gain +1 bonus to AC</li>
+                <li>You gain a +3 bonus to initiative rolls</li>
+                <li>You have advantage on attack rolls</li>
+                <li>You may recieve cryptic messages about the events that will happen within 1 hour, at the GM's discretion</li>
+            </ul>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">6</set>
-            <set name="school">Evocation</set>
+            <set name="school">Divination</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 hour</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">a mushroom of Vrot</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
