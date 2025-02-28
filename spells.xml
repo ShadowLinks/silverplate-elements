@@ -6,7 +6,7 @@
 		</update>
 	</info>
     <element name="Alter Smell" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_ALTER_SMELL">
-        <supports>Bard, Druid, Ranger, Wizard</supports>
+        <supports>Bard, Druid, Ranger, Wizard, Spell Saving Throw</supports>
         <description>
             <p>You magically suppress or change the smell of a creature you touch until the spell ends or until you use your action to dismiss it. When you alter a creature's smell, any creature who tries to locate or track it by scent mus succeed on a a Wisdom saving throw or cannot locate or track the target by scent.</p>
             <p class="indent">At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
@@ -27,60 +27,62 @@
         </setters>
     </element>
     <element name="Blight Within" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_BLIGHT_WITHIN">
-        <supports>Cleric, Sorcerer, Warlock, Wizard</supports>
+        <supports>Cleric, Sorcerer, Warlock, Wizard, Melee, Spell Attack</supports>
         <description>
-            <p></p>
+            <p>Make a melee spell attack against a target within range. On a hit, the illings or interior materials of the creature begin to rot, and the creature takes 6d10 necrotic damage and becomes tasteless (p. 47) for 1 minute. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage increases by ldlO for each slot level above 5th. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">necrotic</set>
             <set name="level">5</set>
-            <set name="school">Evocation</set>
+            <set name="school">Necromancy</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a handful of ash</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Blood Cauldron" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_BLOOD_CAULDRON">
-        <supports>Warlock, Wizard</supports>
+        <supports>Warlock, Wizard, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You create an empty cauldron with a fiendish face in an unoccupied space that you can see within range. The cauldron lasts for the spell's duration and ills with blood as nearby creatures take damage. When creatures within 30 feet of the cauldron have taken a total of 20 damage, you can use your bonus action to choose a target within 15 feet of the cauldron and make the cauldron move towards it. When you do, the cauldron begins to scream, moves up to the target and explodes. The target must make a Dexterity saving throw, taking 20 necrotic damage on a failed save, or half as much damage on a successful one. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage needed to ill the cauldron and the necrotic damage it deals increases by 10 for each slot level above 2nd. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">necrotic</set>
             <set name="level">2</set>
-            <set name="school">Evocation</set>
+            <set name="school">Necromancy</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">30 feet</set>
+            <set name="duration">1 hour</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a small couldron</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     <element name="Candify" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_CANDIFY">
         <supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
         <description>
-            <p></p>
+            <p>You touch a Tiny nonmagical object that isn't being worn or carried and transform it into candy. You determine its texture and what color it is. This candy does not provide nourishment. If the candy is completely submerged in water, it dissolves and disappears in 1 round. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">0</set>
-            <set name="school">Evocation</set>
+            <set name="school">Transmutation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a piece of candy</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
@@ -88,38 +90,41 @@
     <element name="Chili Boost" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_CHILI_BOOST">
         <supports>Bard, Cleric</supports>
         <description>
-            <p></p>
+            <p>Choose a willing creature within range and boost its inner peppery rage. The target has advantage on weapon attack rolls until the spell ends. </p>
+            <p class="indent">In addition, the first creature hit with a weapon attack made by the target is peppered. A peppered target takes ld4 fire damage at the start of each of its turns until the spell ends. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the fire damage increases by ld4 for each slot level above 2nd. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">fire</set>
             <set name="level">2</set>
-            <set name="school">Evocation</set>
+            <set name="school">Enchantment</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Chopsticks" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_CHOPSTICKS">
-        <supports>Bard, Ranger, Wizard</supports>
+        <supports>Bard, Ranger, Wizard, Spell Attack, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You conjure a pair of wooden chopsticks out of thin air that hovers above you, moving with you for the duration of the spell. When you cast the spell, and as a bonus action on your upcoming turns within the duration, you can make two ranged spell attacks against a creature within range or two different creatures within range. On a hit, a chopstick deals ld4 piercing damage. </p>
+            <p class="indent">If you hit the same creature with two chopsticks on a turn, you can choose to grapple it with the chopsticks. The target must succeed on a Dexterity saving throw or be grappled until the spell ends or until you release it. It can also repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save. The chopsticks can't be used to attack as long as they are grappling a creature. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">piercing</set>
             <set name="level">1</set>
-            <set name="school">Evocation</set>
-            <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
@@ -128,98 +133,106 @@
     <element name="Coating of Many Flavors" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_COATING_OF_MANY_FLAVORS">
         <supports>Bard, Cleric, Druid, Paladin, Ranger</supports>
         <description>
-            <p></p>
+            <p>A semi-transparent coating (of a color you choose when you cast the spell) covers you. The coating helps you preserve your flavor. </p>
+            <p class="indent">For the duration, you have advantage on ability checks and saving throws to avoid being burnt, frozen, or tasteless (p. 47). </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, you can also end the burnt, frozen, or tasteless condition on yourself. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Evocation</set>
+            <set name="school">Abjuration</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Self</set>
+            <set name="duration">1 hour</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a handful of herbs and spices</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Colorful Trail" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_COLORFUL_TRAIL">
-        <supports>Bard, Ranger, Warlock, Wizard</supports>
+        <supports>Bard, Ranger, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You touch a creature after throwing a handful of edible sprinkles on them, marking them for 1 hour. If the creature is unwilling, it must succeed on a Charisma saving throw to resist the effect of this spell. While marked, the creature leaves an invisible trail in the air that persists until the spell ends. The creatures that can see the trail perceive it as a glimmering colorful line originating from the place the spell was cast, following the course the target has taken. </p>
+            <p class="indent">While casting the spell, you can choose up to 4 willing creatures within 10 feet of you. These creatures are able to see the invisible trail. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">1</set>
-            <set name="school">Evocation</set>
+            <set name="school">Illusion</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a handful of edible sprinkles</set>
             <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
+            <set name="isRitual">true</set>
         </setters>
     </element>
     <element name="Cotton Candy Shower" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_COTTON_CANDY_SHOWER">
-        <supports>Cleric, Druid, Wizard</supports>
+        <supports>Cleric, Druid, Wizard, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>Pink chunks of large cotton candy appear out of thin air and rain down around a point of your choice within range. If there are natural clouds above you, those clouds turn into cotton candy and rain down instead. The cotton candy batters a 30-foot-radius centered on the point. Each creature in the area must make a Dexterity saving throw, taking 10d4 acid damage on a failed save, or half as much on a successful one. </p>
+            <p class="indent">Dry solid surfaces in the area become covered in 5 feet of cotton candy for 1 minute. Each creature that starts its turn in the cotton candy or that enters it on its turn must make a Dexterity saving throw. On a failed save, the creature is  restrained as long as it remains in the cotton candy or until it breaks free. A creature restrained by the cotton candy can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained. </p>
+            <p class="indent">The cotton candy dissolves in water. A 5-foot cube of cotton candy exposed to at least a cup of water dissolves in 1 round. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">acid</set>
             <set name="level">7</set>
             <set name="school">Evocation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">300 feet</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a cotton candy cone</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Cursed Alteration" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_CURSED_ALTERATION">
-        <supports>Warlock, Wizard</supports>
+        <supports>Warlock, Wizard, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You target a creature within range that you can see and the linen doll is incinerated in your hand. The target must succeed on a Wisdom saving throw or transform into a random humanoid unknown to most foodfolk, such as an elf, human, or half-orc. The transformation lasts for the duration, or until the target drops to O hit points or dies. </p>
+            <p class="indent">The target retains its game statistics but it is limited in the actions it can perform by the nature of its new form. The target's gear melds into the new form; it can't activate, use, wield, or otherwise benefit from any of its equipment. The target has 20d8 hit points in its new form, and when it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. </p>
+            <p class="indent">Certain humanoid creatures such as humans, elves, dwarves are not known to foodfolk and if they encounter such a creature, they treat them as abominations trying to devour them. Each foodfolk (except you) within 30 feet of the transformed creature that can see the creature must succeed on a Wisdom saving throw or become frightened of the creature for 1 minute. Even if a creature succeeds on the saving throw, it must repeat it upon coming within 30 feet of the transformed creature or starting its turn there. </p>
+            <p class="indent">When the transformation ends, the creature becomes disgusted and horrified by the form that has been forced upon it. The creature suffers long-term madness and has disadvantage on attack rolls, ability checks, and saving throws for 1 hour. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">9</set>
-            <set name="school">Evocation</set>
+            <set name="school">Transmutation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">20 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">a small humanoid doll made of linen and felled with cotton soaked in ammonia</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Deglaze" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_DEGLAZE">
-        <supports>Bard, Druid, Warlock</supports>
+        <supports>Bard, Druid, Warlock, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You target a creature within range that can hear you and utter a word that can shatter its mind, inflicting unbearable pain; as if the target's body were carved inside out and boiled. The creature must make a Wisdom saving throw. On a failed save, the creature takes 7d8 + 20 psychic damage and becomes tasteless for 1 minute. On a successful save, the creature takes half as much damage and does not become tasteless. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">psychic</set>
             <set name="level">6</set>
-            <set name="school">Evocation</set>
+            <set name="school">Enchantment</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
@@ -228,19 +241,20 @@
     <element name="Divine Wrapping" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_DIVINE_WRAPPING">
         <supports>Cleric, Paladin</supports>
         <description>
-            <p></p>
+            <p>You touch a willing creature and a holy glow wraps its body. Until the spell ends, the target reduces the damage it takes from successful attacks made against it by ld6. This excludes critical hits. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the target takes 3d6 less damage instead of ld6. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">3</set>
-            <set name="school">Evocation</set>
+            <set name="school">Abjuration</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 minute</set>
             <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a little piece of metal sheet</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
@@ -248,18 +262,20 @@
     <element name="Ethereal Eaters" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_ETHEREAL_EATERS">
         <supports>Sorcerer, Wizard</supports>
         <description>
-            <p></p>
+            <p>You bore your hands into your body and take out pieces of your hungry soul. These pieces form 4 feeding souls shaped like small ethereal spheres with large mouths illed with sharp teeth. The feeding souls appear in the nearest unoccupied spaces to you and remain for the duration of the spell or until killed. </p>
+            <p class="indent">You can touch a well-fed feeding soul as a bonus action to absorb it back. If you do, the feeding soul is destroyed and you regain 7 hit points. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the spell creates two more feeding souls for each slot level above 4th. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">4</set>
-            <set name="school">Evocation</set>
+            <set name="school">Necromancy</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
-            <set name="hasVerbalComponent">true</set>
+            <set name="range">Self</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
@@ -268,39 +284,39 @@
     <element name="Fast Equip" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_FAST_EQUIP">
         <supports>Bard, Cleric, Sorcerer, Wizard</supports>
         <description>
-            <p></p>
+            <p>For the duration of the spell, any object of your choice that you touch that isn't being worn or carried is teleported to a container of your choice that you are carrying, as long as the object can fit into the container. When you cast this spell on an armor that isn't being worn or carried, you can choose to don it instead of sending it into a container. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">0</set>
-            <set name="school">Evocation</set>
+            <set name="school">Conjuration</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Ferment" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_FERMENT">
-        <supports>Druid</supports>
+        <supports>Druid, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You target a creature within range. The target must succeed on a Constitution saving throw or its body starts to ferment and produce alcohol. The target has disadvantage on attack rolls, Dexterity saving throws and Dexterity checks for the duration. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">2</set>
-            <set name="school">Evocation</set>
+            <set name="school">Transmutation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">120 feet</set>
+            <set name="duration">1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a pinch of yeast</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
@@ -308,39 +324,41 @@
     <element name="Food Dome" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_FOOD_DOME">
         <supports>Cleric, Druid, Wizard</supports>
         <description>
-            <p></p>
+            <p>You conjure a 15-inch diameter silver platter in an unoccupied space within range. The silver platter remains for the duration, hovers 5 feet above the ground, and can carry up to 20 lbs. It can be moved, but if lowered or raised, it returns to its 5 feet position as soon as it is let go. When there is food on the platter, you can use an action to speak a command word, covering the platter with a silver dome that protects the food inside, preserving its freshness and temperature for the duration. </p>
+            <p class="indent">If the spell ends while there is food inside, the silver platter disappears and the food falls to the ground. </p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">0</set>
-            <set name="school">Evocation</set>
+            <set name="school">Conjuration</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">30 feet</set>
+            <set name="duration">1 year</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a silver coin</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Freezer" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_FREEZER">
-        <supports>Druid, Ranger, Sorcerer, Warlock</supports>
+        <supports>Druid, Ranger, Sorcerer, Warlock, Spell Attack, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You create a shard of ice and throw it at a target within range. Make a ranged spell attack. On a hit, the target takes 3d10 cold damage and must succeed on a Constitution saving throw or suffer one level of the frozen condition. </p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can create an additional shard and target an additional creature for each slot level above 2nd, up to a maximum of five shards. You make a separate ranged spell attack for each shard. </p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">cold</set>
             <set name="level">2</set>
             <set name="school">Evocation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
+            <set name="materialComponent">a crystal shard</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
