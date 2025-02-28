@@ -67,6 +67,7 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
+    </element>
     <element name="Candify" type="Spell" source="Silverplate" id="ID_DRS_SILVERPLATE_SPELL_CANDIFY">
         <supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
         <description>
