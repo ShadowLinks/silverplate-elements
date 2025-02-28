@@ -108,7 +108,7 @@
             <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_SKILLS" />
             <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_POWER_OF_FLAVOR" />
             <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_PROTEIN_BUFF" />
-            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_FATTY_PROTECTIOn" />
+            <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_FATTY_PROTECTION" />
             <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GRAIN_WEAPON_TRAINING" />
             <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_HOT_POT" />
 
@@ -121,7 +121,7 @@
             <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_SKILLS" level="1" />
             <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_POWER_OF_FLAVOR" level="1" />
             <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_PROTEIN_BUFF" level="1" />
-            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_FATTY_PROTECTIOn" level="1" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_FATTY_PROTECTION" level="1" />
             <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GRAIN_WEAPON_TRAINING" level="1" />
             <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_HOT_POT" level="1" />
 

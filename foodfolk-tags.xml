@@ -55,7 +55,7 @@
             <select type="Proficiency" name="Food Skills" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL" />
         </rules>
     </element>
-    <element name="Food - Foot Tools (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_TOOLS">
+    <element name="Food - Food Tools (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_TOOLS">
         <description>
             <p>Food People are those whose bondy consists of solid materials. They have been fighting for their place in Silverplate since the First Age.</p>
             <p class="indent">You are taught the ancient ways of the food people. You are proficient with one of the following tools of your choice: cook's  utensils, potter's tools, or mason's tools. </p>
@@ -768,20 +768,32 @@
     <element name="Meat - Protein Buff (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_PROTEIN_BUFF">
         <description>
             <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
-            <p class="indent"></p>
+            <p class="indent">You have proficiency in Strength saving throws. </p>
+            <p class="indent">Also, as a bonus action, you can choose to increase your Strength score by 2 for 1 minute, up to a maximum of 30. </p>
+            <p class="indent">You can benefit from this feature only once at a time. You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest. </p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+            <description>As a bonus action, you can choose to increase your Strength score by 2 for 1 minute, up to a maximum of 30. You can benefit from this feature only once at a time.</description>
         </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+        </rules>
     </element>
-    <element name="Meat - Fatty Protection (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_FATTY_PROTECTIOn">
+    <element name="Meat - Fatty Protection (6)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_FATTY_PROTECTION">
         <description>
             <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
-            <p class="indent"></p>
+            <p class="indent">While you are wearing no armor, your AC is equal to 12 + your Dexterity modifier. You can still benefit from wielding a shield. </p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <stat name="ac:fatty protection:base" value="12"/>
+            <stat name="ac:fatty protection:dexterity" value="dexterity:modifier"/>>
+            <stat name="ac:fatty protection" value="ac:fatty protection:base"/>
+            <stat name="ac:fatty protection" value="ac:fatty protection:dexterity"/>
+            <stat name="ac:calculation" value="ac:fatty protection" bonus="calculation" equipped="[armor:none]" alt="Fatty Protection"/>
+        </rules>
     </element>
     <element name="Meat - The Fatter The Better (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_THE_FATTER_THE_BETTER">
         <description>
@@ -798,37 +810,41 @@
     <element name="Meat - Sea Foodfolk (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_SEA_FOODFOLK">
         <description>
             <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
-            <p class="indent"></p>
+            <p class="indent">You can breathe undewater.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can breathe undewater.</description>
         </sheet>
     </element>
     <element name="Meat - Survival of the Finest (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_SURVIVAL_OF_THE_FINEST">
         <description>
             <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
-            <p class="indent"></p>
+            <p class="indent">Thanks to your ingredients, you have an increased chance of survival. You have a +1 bonus to Wisdom (Survival) checks. </p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <stat name="survival:misc" value="1" />
+        </rules>
     </element>
     <element name="Meat - Raw Power (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_RAW_POWER">
         <description>
             <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
-            <p class="indent"></p>
+            <p class="indent">While making an attack, you can use a reaction to channel your inner raw power and have advantage on the attack roll. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>            
         </description>
-        <sheet>
-            <description></description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description>While making an attack, you can use a reaction to channel your inner raw power and have advantage on the attack roll.</description>            
         </sheet>
     </element>
     <element name="Meat - Heavy Temple (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_HEAVY_TEMPLE">
         <description>
             <p>Meat is chock full of protein in addition to containing many healthy minerals and nutrients. Cooked or raw, fatty or lean; there are many stories in Silverplate where pieces of meat star as the brave heroes.</p>
-            <p class="indent"></p>
+            <p class="indent">Your body is a temple dedicated to muscle-powered deities. You can flex your muscles and double your carrying capacity for 1 hour. Once you use this feature, you must finish a long rest to use it again. </p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can flex your muscles and double your carrying capacity for 1 hour.</description>
         </sheet>
     </element>
     <element name="Dairy - Calcify (12)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_CALCIFY">
@@ -1125,7 +1141,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
         </rules>
     </element>
-    <element name="Boiled/Steamed - Art of the Dark Boiling (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_ART_OF THE_DARK_BOILING">
+    <element name="Boiled/Steamed - Art of the Dark Boiling (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_ART_OF_THE_DARK_BOILING">
         <description>
             <p>Molded inside piping hot water or divine steam, boiled and steamed foodfolk can use the heat trapped inside their bodies to protect themselves. They can thrive in and around water, and usually become guards, alchemists, or assassins.</p>
             <p class="indent">You are proficient with poisoner's kit. </p>
@@ -1328,7 +1344,7 @@
             <description>As a bonus action, you surround yourself with smoke for 1 minute. For the duration, you have advantage on Dexterity (Stealth) checks.</description>
         </sheet>
     </element>
-    <element name="Grilled/Smoked - Tested by the Grill (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_TESTED_BY_THE GRILL">
+    <element name="Grilled/Smoked - Tested by the Grill (4)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_TESTED_BY_THE_GRILL">
         <description>
             <p>Grilled/smoked foodfolk carry the fire of creation within. Some of the bravest and hardiest of foodfolk, the grilled and the smoked are no stranger to fire or hardship. They live their life to the fullest, and use their burning passion to achieve their goals.</p>
             <p class="indent">You have advantage on saving throws against being frightened. </p>

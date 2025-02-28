@@ -6,29 +6,2672 @@
             <file name="foodfolk-cookyourown.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/foodfolk-cookyourown.xml"/>
         </update>
     </info>
-    <element name="traitname" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_">
+    <element name="Food - Preserveable (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FOOD_PRESERVABLE">
         <compendium display="false"/>
         <description>
             <p>
                 <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
             </p>
             <div class="reference">
-                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_"/>
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_PRESERVABLE"/>
             </div>
         </description>
         <setters>
             <set name="category">Foodfolk Tags</set>
-            <set name="keywords">Racial Trait, flavors</set>
+            <set name="keywords">Racial Trait, food</set>
             <set name="slot">misc</set>
             <set name="inventory-hidden">true</set>
         </setters>
         <rules>
-            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_PRESERVABLE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
         </rules>
     </element>
+    <element name="Food - Solid Structure (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FOOD_SOLID_STRUCTURE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_SOLID_STRUCTURE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, food</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_SOLID_STRUCTURE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Food - Darkvision (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FOOD_DARKVISION">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_DARKVISION"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, food</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_DARKVISION" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Food - Food Skills (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FOOD_FOOD_SKILLS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_SKILLS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, food</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_SKILLS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Food - Food Tools (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FOOD_FOOD_TOOLS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_TOOLS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, food</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_TOOLS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Food - Food Language (3" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FOOD_FOOD_LANGUAGE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_LANGUAGE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, food</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_FOOD_LANGUAGE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Food - Aroma Sense (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FOOD_AROMA_SENSE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_AROMA_SENSE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, food</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FOOD_AROMA_SENSE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Beverage - Liquid Form (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BEVERAGE_LIQUID_FORM">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_LIQUID_FORM"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, beverage</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_LIQUID_FORM" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Beverage - Fluid Body (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BEVERAGE_FLUID_BODY">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_FLUID_BODY"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, beverage</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_FLUID_BODY" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Beverage - Darkvision (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BEVERAGE_DARKVISION">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_DARKVISION"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, beverage</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_DARKVISION" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Beverage - Beverage Skills (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BEVERAGE_BEVERAGE_SKILLS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_BEVERAGE_SKILLS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, beverage</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_BEVERAGE_SKILLS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Beverage - Beverage Tools (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BEVERAGE_BEVERAGE_TOOLS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_BEVERAGE_TOOLS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, beverage</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_BEVERAGE_TOOLS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Beverage - Beverage Language (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BEVERAGE_BEVERAGE_LANGUAGE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_BEVERAGE_LANGUAGES"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, beverage</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_BEVERAGE_LANGUAGES" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Beverage - Hiding Lid (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BEVERAGE_HIDING_LID">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_HIDING_LID"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, beverage</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BEVERAGE_HIDING_LID" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bitter - Antioxidants (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BITTER_ANTIOXIDANTS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_ANTIOXIDANTS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, bitter</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_ANTIOXIDANTS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bitter - Bitter Strikes (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BITTER_BITTER_STRIKES">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_BITTER_STRIKES"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, bitter</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_BITTER_STRIKES" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bitter - Bitter Knowledge (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BITTER_BITTER_KNOWLEDGE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_BITTER_KNOWLEDGE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, bitter</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_BITTER_KNOWLEDGE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bitter - Aid Tactics (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BITTER_AID_TACTICS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_AID_TACTICS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, bitter</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_AID_TACTICS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bitter - Wrong Influence (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BITTER_WRONG_INFLUENCE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_WRONG_INFLUENCE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, bitter</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_WRONG_INFLUENCE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bitter - Already Bitter (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BITTER_ALREADY_BITTER">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_ALREADY_BITTER"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, bitter</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_ALREADY_BITTER" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bitter - After Taste (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BITTER_AFTER_TASTE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_AFTER_TASTE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, bitter</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BITTER_AFTER_TASTE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sweet - Candied (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SWEET_CANDIED">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_CANDIED"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sweet</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_CANDIED" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sweet - Energize! (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SWEET_ENERGIZE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_ENERGIZE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sweet</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_ENERGIZE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sweet - Jellylike (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SWEET_JELLYLIKE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_JELLYLIKE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sweet</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_JELLYLIKE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sweet - Fortress of Dessert (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SWEET_FORTRESS_OF_DESSERT">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_FORTRESS_OF_DESSERT"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sweet</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_FORTRESS_OF_DESSERT" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sweet - Sweet Tooth (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SWEET_SWEET_TOOTH">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_SWEET_TOOTH"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sweet</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_SWEET_TOOTH" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sweet - Sweet Words (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SWEET_SWEET_WORDS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_SWEET_WORDS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sweet</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_SWEET_WORDS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sweet - Irresistible (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SWEET_IRRESISTIBLE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_IRRESISTIBLE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sweet</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SWEET_IRRESISTIBLE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sour - Acidic Affinity (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SOUR_ACIDIC_AFFINITY">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_ACIDIC_AFFINITY"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sour</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_ACIDIC_AFFINITY" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sour - Resilience of Flavor (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SOUR_RESILIENCE_OF_FLAVOR">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_RESILIENCE_OF_FLAVOR"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sour</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_RESILIENCE_OF_FLAVOR" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sour - Citric Edge (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SOUR_CITRIC_EDGE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_CITRIC_EDGE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sour</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_CITRIC_EDGE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sour - Vitamin Protection (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SOUR_VITAMIN_PROTECTION">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_VITAMIN_PROTECTION"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sour</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_VITAMIN_PROTECTION" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sour - Reduced Risks (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SOUR_REDUCED_RISKS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_REDUCED_RISKS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sour</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_REDUCED_RISKS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sour - Harming Acidity (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SOUR_HARMING_ACIDITY">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_HARMING_ACIDITY"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sour</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_HARMING_ACIDITY" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Sour - Type-C Healing (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SOUR_TYPE_C_HEALING">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_TYPE_C_HEALING"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, sour</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SOUR_TYPE_C_HEALING" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Salty - Too Much! (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SALTY_TOO_MUCH">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_TOO_MUCH"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, salty</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_TOO_MUCH" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Salty - Briny Affect (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SALTY_BRINY_AFFECT">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_BRINY_AFFECT"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, salty</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_BRINY_AFFECT" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Salty - Necessary Flavor (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SALTY_NECESSARY_FLAVOR">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_NECESSARY_FLAVOR"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, salty</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_NECESSARY_FLAVOR" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Salty - Variety (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SALTY_VARIETY">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_VARIETY"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, salty</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_VARIETY" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Salty - Fasting Build (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SALTY_FASTING_BUILD">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_FASTING_BUILD"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, salty</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_FASTING_BUILD" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Salty - Trance Salt (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SALTY_TRANCE_SALT">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_TRANCE_SALT"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, salty</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_TRANCE_SALT" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Salty - Salty Attitude (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SALTY_SALTY_ATTITUDE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_SALTY_ATTITUDE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, salty</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SALTY_SALTY_ATTITUDE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Savory - Aquired Taste (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SAVORY_AQUIRED_TASTE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_AQUIRED_TASTE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, savory</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_AQUIRED_TASTE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Savory - Double Decker (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SAVORY_DOUBLE_DECKER">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_DOUBLE_DECKER"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, savory</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_DOUBLE_DECKER" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Savory - Power of Flavor (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SAVORY_POWER_OF_FLAVOR">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_POWER_OF_FLAVOR"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, savory</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_POWER_OF_FLAVOR" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Savory - Savory Retreat (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SAVORY_SAVORY_RETREAT">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_SAVORY_RETREAT"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, savory</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_SAVORY_RETREAT" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Savory - Enhancing the Taste (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SAVORY_ENHANCING_THE_TASTE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_ENHANCING_THE_TASTE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, savory</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_ENHANCING_THE_TASTE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Savory - Savoring the Moment (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SAVORY_SAVORING_THE_MOMENT">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_SAVORING_THE_MOMENT"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, savory</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_SAVORING_THE_MOMENT" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Savory - Master of Mixed Tastes (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_SAVORY_MASTER_OF_MIXED_TASTES">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_MASTER_OF_MIXED_TASTES"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, flavor, savory</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_SAVORY_MASTER_OF_MIXED_TASTES" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fruit - Vibrant Colors (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRUIT_VIBRANT_COLORS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_VIBRANT_COLORS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, fruit</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_VIBRANT_COLORS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fruit - Fructose Blast (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRUIT_FRUCTOSE_BLAST">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_FRUCTOSE_BLAST"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, fruit</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_FRUCTOSE_BLAST" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fruit - Pulp Reality (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRUIT_PULP_REALITY">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_PULP_REALITY"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, fruit</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_PULP_REALITY" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fruit - Me Juice (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRUIT_ME_JUICE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_ME_JUICE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, fruit</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_ME_JUICE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fruit - Berry Toughness (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRUIT_BERRY_TOUGHNESS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_BERRY_TOUGHNESS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, fruit</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_BERRY_TOUGHNESS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fruit - Seeds! (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRUIT_SEEDS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_SEEDS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, fruit</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_SEEDS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fruit - Flower Protection (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRUIT_FLOWER_PROTECTION">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_FLOWER_PROTECTIONS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, fruit</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRUIT_FLOWER_PROTECTIONS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Vegetable - Main Course (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_VEGETABLE_MAIN_COURSE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_MAIN_COURSE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, vegetable</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_MAIN_COURSE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Vegetable - Pip (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_VEGETABLE_PIP">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_PIP"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, vegetable</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_PIP" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Vegetable - Born Underground (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_VEGETABLE_BORN_UNDERGROUND">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_BORN_UNDERGROUND"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, vegetable</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_BORN_UNDERGROUND" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Vegetable - One of Them (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_VEGETABLE_ONE_OF_THEM">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_ONE_OF_THEM"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, vegetable</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_ONE_OF_THEM" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Vegetable - Returning to Roots (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_VEGETABLE_RETURNING_TO_ROOTS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_RETURNING"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, vegetable</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_RETURNING" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Vegetable - Advanced Vegetable Combat (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_VEGETABLE_ADVANCED_VEGETABLE_COMBAT">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_ADVANCED_VEGETABLE_COMBAT"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, vegetable</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_ADVANCED_VEGETABLE_COMBAT" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Vegetable - Power of the Rooted Ones (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_VEGETABLE_POWER_OF_THE_ROOTED_ONES">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_POWER_OF_THE_ROOTED_ONES"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, vegetable</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_VEGETABLE_POWER_OF_THE_ROOTED_ONES" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grain - Thick (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRAIN_THICK">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_THICK"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, grain</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_THICK" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grain - Grain Weapon Training (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRAIN_GRAIN_WEAPON_TRAINING">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GRAIN_WEAPON_TRAINING"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, grain</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GRAIN_WEAPON_TRAINING" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grain - Pop! (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRAIN_POP">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_POP"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, grain</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_POP" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grain - Whole Grain Form (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRAIN_WHOLE_GRAIN_FORM">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_WHOLE_GRAIN_FORM"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, grain</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_WHOLE_GRAIN_FORM" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grain - Gluten (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRAIN_GLUTEN">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GLUTEN"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, grain</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_GLUTEN" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grain - Climbing the Bean Pole (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRAIN_CLIMBING_THE_BEAN_POLE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_CLIMBING_THE_BEAN_POLE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, grain</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_CLIMBING_THE_BEAN_POLE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grain - Balanced Diet (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRAIN_BALANCED_DIET">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_BALANCED_DIET"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, grain</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRAIN_BALANCED_DIET" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Meat - Protein Buff (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_MEAT_PROTEIN_BUFF">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_PROTEIN_BUFF"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, meat</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_PROTEIN_BUFF" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Meat - Fatty Protection (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_MEAT_FATTY_PROTECTION">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_FATTY_PROTECTION"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, meat</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_FATTY_PROTECTION" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Meat - The Fatter The Better (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_MEAT_THE_FATTER_THE_BETTER">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_THE_FATTER_THE_BETTER"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, meat</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_THE_FATTER_THE_BETTER" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Meat - Sea Foodfolk (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_MEAT_SEA_FOODFOLK">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_SEA_FOODFOLK"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, meat</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_SEA_FOODFOLK" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Meat - Survival of the Finest (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_MEAT_SURVIVAL_OF_THE_FINEST">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_SURVIVAL_OF_THE_FINEST"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, meat</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_SURVIVAL_OF_THE_FINEST" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Meat - Raw Power (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_MEAT_RAW_POWER">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_RAW_POWER"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, meat</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_RAW_POWER" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Meat - Heavy Temple (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_MEAT_HEAVY_TEMPLE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_HEAVY_TEMPLE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, meat</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_MEAT_HEAVY_TEMPLE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dairy - Calcify (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DAIRY_CALCIFY">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_CALCIFY"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, dairy</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_CALCIFY" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dairy - Abolish Poison (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DAIRY_ABOLISH_POISON">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_ABOLISH_POISON"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, dairy</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_ABOLISH_POISON" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dairy - Soothing Milk 4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DAIRY_SOOTHING_MILK">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_SOOTHING_MILK"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, dairy</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_SOOTHING_MILK" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dairy - Lactic Ferment (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DAIRY_LACTIC_FERMENT">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_LACTIC_FERMENT"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, dairy</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_LACTIC_FERMENT" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dairy - Common Sweet Point (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DAIRY_COMMON_SWEET_POINT">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_COMMON_SWEET_POINT"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, dairy</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_COMMON_SWEET_POINT" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dairy - Ancient (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DAIRY_ANCIENT">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_ANCIENT"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, dairy</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_ANCIENT" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dairy - Skimmed (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DAIRY_SKIMMED">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_SKIMMED"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, ingerdient, dairy</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DAIRY_SKIMMED" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bake/Roasted - Hot From the Oven (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BAKEDROASTED_HOT_FROM_THE_OVEN">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_HOT_FROM_THE_OVEN"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, baked, roasted</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_HOT_FROM_THE_OVEN" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bake/Roasted - Ovenborn (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BAKEDROASTED_OVENBORN">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_OVENBORN"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, baked, roasted</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_OVENBORN" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bake/Roasted - Kneading Pockets (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BAKEDROASTED_KNEADING_POCKETS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_KNEADING_POCKETS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, baked, roasted</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_KNEADING_POCKETS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bake/Roasted - Baked But Not Forgotten (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BAKEDROASTED_BAKED_BUT_NOT_FORGOTTEN">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_BAKED_BUT_NOT_FORGOTTEN"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, baked, roasted</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_BAKED_BUT_NOT_FORGOTTEN" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bake/Roasted - Crusty (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BAKEDROASTED_CRUSTY">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_CRUSTY"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, baked, roasted</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_CRUSTY" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bake/Roasted - Puffy (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BAKEDROASTED_PUFFY">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_PUFFY"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, baked, roasted</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_PUFFY" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Bake/Roasted - Always Hot (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BAKEDROASTED_ALWAYS_HOT">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_ALWAYS_HOT"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, baked, roasted</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BAKEDROASTED_ALWAYS_HOT" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fried - No Pain (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRIED_NO_PAIN">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_NO_PAIN"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_NO_PAIN" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fried - Vengeance of the Fried (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRIED_VENGEANCE_OF_THE_FRIED">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_VENGEANCE_OF_THE_FRIED"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_VENGEANCE_OF_THE_FRIED" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fried - Might of the Fried (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRIED_MIGHT_OF_THE_FRIED">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_MIGHT_OF_THE_FRIED"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_MIGHT_OF_THE_FRIED" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fried - Fried Weapon Training (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRIED_FRIED_WEAPON_TRAINING">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_FRIED_WEAPON_TRAINING"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_FRIED_WEAPON_TRAINING" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fried - Deep Fried (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRIED_DEEP_FRIED">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_DEEP_FRIED"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_DEEP_FRIED" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fried - Air Fried (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRIED_AIR_FRIED">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_AIR_FRIED"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_AIR_FRIED" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fried - Greasy Grip (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRIED_GREASY_GRIP">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_GREASY_GRIP"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRIED_GREASY_GRIP" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Boiled/Steamed - Steam Discharge (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BOILEDSTEAMED_STEAM_DISCHARGE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_STEAM_DISCHARGE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, boiled, steamed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_STEAM_DISCHARGE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Boiled/Steamed - Mist-ic Resistance (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BOILEDSTEAMED_MISTIC_RESISTANCE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_MISTIC_RESISTANCE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, boiled, steamed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_MISTIC_RESISTANCE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Boiled/Steamed - Release Fog (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BOILEDSTEAMED_RELEASE_FOG">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_RELEASE_FOG"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, boiled, steamed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_RELEASE_FOG" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Boiled/Steamed - Hot Pot (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BOILEDSTEAMED_HOT_POT">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_HOT_POT"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, boiled, steamed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_HOT_POT" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Boiled/Steamed - Ancient Wisdom of Steam Masters (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BOILEDSTEAMED_ANCIENT_WISDOM_OF_STEAM_MASTERS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_ANCIENT_WISDOM_OF_STEAM_MASTERS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, boiled, steamed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_ANCIENT_WISDOM_OF_STEAM_MASTERS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Boiled/Steamed - Art of the Dark Boiling (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BOILEDSTEAMED_ART_OF_THE_DARK_BOILING">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_ART_OF_THE_DARK_BOILING"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, boiled, steamed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_ART_OF_THE_DARK_BOILING" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Boiled/Steamed - Insipid (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BOILEDSTEAMED_INSIPID">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_INSIPID"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, boiled, steamed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BOILEDSTEAMED_INSIPID" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fresh - Fresh Start (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRESH_FRESH_START">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_FRESH_START"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fresh</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_FRESH_START" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fresh - Spark of Life (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRESH_SPARK_OF_LIFE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_SPARK_OF_LIFE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fresh</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_SPARK_OF_LIFE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fresh - Refresh (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRESH_REFRESH">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_REFRESH"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fresh</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_REFRESH" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fresh - Cutting Board (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRESH_CUTTING_BOARD">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_CUTTING_BOARD"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fresh</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_CUTTING_BOARD" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fresh - Straight From the Source (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRESH_STRAIGHT_FROM_THE_SOURCE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_STRAIGHT_FROM_THE_SOURCE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fresh</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_STRAIGHT_FROM_THE_SOURCE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fresh - Always in Season (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRESH_ALWAYS_IN_SEASON">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_ALWAYS_IN_SEASON"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fresh</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_ALWAYS_IN_SEASON" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Fresh - Unprocessed (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_FRESH_UNPROCESSED">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_UNPROCESSED"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, fresh</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_UNPROCESSED" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dried - Absorbing Heal (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DRIED_ABSORBING_HEAL">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_ABSORBING_HEAL"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, dried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_ABSORBING_HEAL" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dried - Dried Tenacity (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DRIED_DRIED_TENACITY">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DRIED_TENACITY"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, dried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DRIED_TENACITY" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dried - Desiccated (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DRIED_DESICCATED">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DESICCATED"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, dried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DESICCATED" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dried - Dried Under the Sun (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DRIED_DRIED_UNDER_THE_SUN">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DRIED_UNDER_THE_SUN"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, dried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DRIED_UNDER_THE_SUN" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dried - Long Live the Dry King/Queen (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DRIED_LONG_LIVE_THE_DRY_KINGQUEEN">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_LONG_LIVE_THE_DRY_KING_QUEEN"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, dried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_LONG_LIVE_THE_DRY_KING_QUEEN" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dried - Dried Pilgram (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DRIED_DRIED_MOST_DRIED_PILGRAM">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DRIED_PILGRAM"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, dried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_DRIED_PILGRAM" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Dried - Most Endurant of All Food (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_DRIED_MOST_ENDURANT_OF_ALL_FOOD">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_MOST_ENDURANT_OF_ALL_FOOD"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, dried</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_DRIED_MOST_ENDURANT_OF_ALL_FOOD" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grilled/Smoked - Tempered with Fire (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRILLEDSMOKED_TEMPERED_WITH_FIRE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_TEMPERED_WITH_FIRE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, grilled, smoked</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_TEMPERED_WITH_FIRE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grilled/Smoked - Smoke Link (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRILLEDSMOKED_SMOKE_LINK">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_SMOKE_LINK"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, grilled, smoked</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_SMOKE_LINK" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grilled/Smoked - Embrace of the Smoke (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRILLEDSMOKED_EMBRACE_OF_THE_SMOKE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_EMBRACE_OF_THE_SMOKE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, grilled, smoked</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_EMBRACE_OF_THE_SMOKE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grilled/Smoked - Tested by the Grill (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRILLEDSMOKED_TESTED_BY_THE_GRILL">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_TESTED_BY_THE_GRILL"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, grilled, smoked</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_TESTED_BY_THE_GRILL" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grilled/Smoked - Fuel For Your Own Flames (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRILLEDSMOKED_FUEL_FOR_YOUR_OWN_FLAMES">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_FUEL_FOR_YOUR_OWN_FLAMES"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, grilled, smoked</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_FUEL_FOR_YOUR_OWN_FLAMES" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grilled/Smoked - Acolyte of Smoke and Flames (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRILLEDSMOKED_ACOLYTE_OF_SMOKE_AND_FLAMES">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_ACOLYTE_OF_SMOKE_AND_FLAMES"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, grilled, smoked</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_ACOLYTE_OF_SMOKE_AND_FLAMES" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Grilled/Smoked - Loved by the Gods (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_GRILLEDSMOKED_LOVED_BY_THE_GODS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_LOVED_BY_THE_GODS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, grilled, smoked</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_LOVED_BY_THE_GODS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Blended/Squeezed - All in Bits (12)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BLENDEDSQUEEZED_ALL_IN_BITS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_ALL_IN_BITS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, blended, squeezed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_ALL_IN_BITS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Blended/Squeezed - Shake It Up (6)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BLENDEDSQUEEZED_SHAKE_IT_UP">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_SHAKE_IT_UP"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, blended, squeezed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_SHAKE_IT_UP" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Blended/Squeezed - Mixed Shake (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BLENDEDSQUEEZED_MIXED_SHAKE">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_MIXED_SHAKE"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, blended, squeezed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_MIXED_SHAKE" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Blended/Squeezed - Blend of Colors (4)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BLENDEDSQUEEZED_BLEND_OF_COLORS">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_BLEND_OF_COLORS"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, blended, squeezed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_BLEND_OF_COLORS" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Blended/Squeezed - Fresh Friend (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BLENDEDSQUEEZED_FRESH_FRIEND">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_FRESH_FRIEND"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, blended, squeezed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_FRESH_FRIEND" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Blended/Squeezed - Blend of Cultures (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BLENDEDSQUEEZED_BLEND_OF_CULTURES">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_BLEND_OF_CULTURES"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, blended, squeezed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_BLEND_OF_CULTURES" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+    <element name="Blended/Squeezed - Blendin' In (3)" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BLENDEDSQUEEZED_BLENDIN_IN">
+        <compendium display="false"/>
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_BLENDIN_IN"/>
+            </div>
+        </description>
+        <setters>
+            <set name="category">Foodfolk Tags</set>
+            <set name="keywords">Racial Trait, cooked, blended, squeezed</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_BLENDED_SQUEEZED_BLENDIN_IN" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
+        </rules>
+    </element>
+
 </elements>
+
+
 <!--
-<element name="traitname" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_">
+    <element name="traitname" type="Item" source="Silverplate" id="ID_DRS_SILVERPLATE_ITEM_RT_BLENDEDSQUEEZED_">
         <compendium display="false"/>
         <description>
             <p>
@@ -40,7 +2683,7 @@
         </description>
         <setters>
             <set name="category">Foodfolk Tags</set>
-            <set name="keywords">Racial Trait, flavors</set>
+            <set name="keywords">Racial Trait, cooked, blended, squeezed</set>
             <set name="slot">misc</set>
             <set name="inventory-hidden">true</set>
         </setters>
@@ -48,5 +2691,7 @@
             <grant type="Racial Trait" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_" requirements="ID_DRS_SILVERPLATE_RACE_FOODFOLK" />
         </rules>
     </element>
-</elements>
+
+
+
 -->
