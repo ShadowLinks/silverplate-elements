@@ -50,7 +50,7 @@
             <description>You only need to eat and drink once a week and you can sustain yourself by eating and drinking foodfolk. If you deal damage to a creature with the Food or Beverage tag as a result of a successful unarmed strike, you can rip out a piece of the creature and eat or drink it using your reaction. If you do so, you regain {{proficiency}} hit points</description>
         </sheet>
         <rules>
-            <stat name="Constitution" value="1" name="Cannibal"/>
+            <stat name="Constitution" value="1" />
         </rules>
     </element>
     <element name="Carbonized" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_CARBONIZED">
@@ -90,8 +90,227 @@
         <sheet usage="1/Long Rest">
             <description>When you drop to O hit points after you take bludgeoning, piercing, or slashing damage, you do not fall unconscious; a piece of your body gets broken, chomped, or spilled instead. Your size becomes one category smaller than your regular size, and your speed decreases by 5 feet. You regain 15 hit points. When you finish a long rest, your broken, chomped, or spilled parts are restored. You regain your regular size and speed.</description>
         </sheet>
+    </element><element name="Durable Packaging" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_DURABLE_PACKAGING">
+        <description>
+            <p>Your body, in some cases a cup or a bowl, is tougher than normal, which provides you with additional natural protection. You gain the following benefits: </p>
+            <ul>
+                <li>Increase your Constitution score by 1, to a maximum of 20. </li>
+                <li>While you are not wearing armor, you have a +1 bonus to AC. </li>
+                <li>When you are dealt 10 or more damage, you can use your reaction to subtract ldl0 from it. Once you use this feature, you must finish a long rest to use it again. </li>
+            </ul>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>While you are not wearing armor, you have a +1 bonus to AC. When you are dealt 10 or more damage, you can use your reaction to subtract ldl0 from it.</description>
+        </sheet>
+        <rules>
+            <stat name="Constitution" value="1"/>
+            <stat name="ac:calculation" value="1" bonus="calculation" equipped="[armor:none]" alt="Durable Packaging"/>
+        </rules>
+    </element>
+    <element name="Faster Food" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_FASTER_FOOD">
+        <description>
+            <p>You have trained yourself to become faster in martial combat, both to deliver a faster killing blow and to escape one. You gain the following benefits: </p>
+            <ul>
+                <li>Increase your Dexterity score by 1, to a maximum of 20. </li>
+                <li>Whenever you drop to 0 hit points as a result of an attack, roll a d20. On a 20, you dodge the attack or endure the damage, dropping to 1 hit point instead. </li>
+                <li>Your speed increases by 15 feet. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Whenever you drop to 0 hit points as a result of an attack, roll a d20. On a 20, you dodge the attack or endure the damage, dropping to 1 hit point instead.</description>
+        </sheet>
+        <rules>
+            <stat name="Dexterity" value="1" />
+            <stat name="Speed" value="15" />
+        </rules>
+    </element>
+    <element name="Glazed" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_GLAZED">
+        <description>
+            <p>Over many battles you have endured and emerged victorious, slaying numerous enemies and glazing yourself with their blood. Your body is coated in a shiny color of your choice. You gain the following benefits: </p>
+            <ul>
+                <li>When a creature within 5 feet of you touches you or hits you with a melee attack, you can use your reaction to splash them with your glaze, dealing ld8 acid damage to the creature. </li>
+                <li>You gain a number of temporary hit points equal to your Charisma modifier (minimum one) every 10 minutes. </li>
+                <li>You have resistance against damage dealt by nonmagical projectiles. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When a creature within 5 feet of you touches you or hits you with a melee attack, you can use your reaction to splash them with your glaze, dealing ld8 acid damage to the creature. You gain {{charisma:modifier}} temporary hit points every 10 minutes. You have resistance against damage dealt by nonmagical projectiles.</description>
+        </sheet>
+    </element>
+    <element name="Great Chef" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_GREAT_CHEF">
+        <description>
+            <p></p>You are a master in the kitchen and you can use kitchenware expertly. You gain the following benefits: 
+            <ul>
+                <li>Increase your Strength or Dexterity score by 1, to a maximum of 20. </li>                
+                <li>You gain proficiency in three weapons of your choice from the kitchen weaponry table (p. 143). </li>
+                <li>You gain proficiency with brewer's supplies and cook's utensils. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Improvement (Great Chef)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+            <select type="Proficiency" name="Kitchen Tool Proficiency (Great Chef)" supports="kitchen-weapons" number="3" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+        </rules>
+    </element>
+    <element name="High Viscosity" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_HIGH_VISCOSITY">
+        <prerequisite>A viscous body structure</prerequisite>
+        <description>
+            <p>The fluids that you are composed of have a high rate of resistance against external forces that make you move. You gain the following benefits: </p>
+            <ul>
+                <li>Increase your Strength or Dexterity score by 1, to a maximum of 20. </li>                
+                <li>You have advantage on ability checks and saving throws against being shoved or knocked prone. </li>
+                <li>You gain the benefits of the spider climb spell. This is not a magical effect. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have advantage on ability checks and saving throws against being shoved or knocked prone. You gain the benefits of the spider climb spell. This is not a magical effect.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Improvement (High Viscosity)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+        </rules>
+    </element>
+    <element name="Hungry for More" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_HUNGRY_FOR_MORE">
+        <description>
+            <p>You want more. You've acquired a taste for something that pleases you and you ache for more of it, be it power, excitement, or any other craving. You sharpen your skills, train your mind, and ready yourself for the challenges this path might put before you so that nothing can stop you from getting what you desire. You gain the following benefits: </p>
+            <ul>
+                <li>Increase an ability score of your choice by 1, to a maximum of 20. </li>                
+                <li>You become proficient in a skill of your choice. </li>
+                <li>At the end of each long rest, choose one condition. Until the end of your next long rest, you have advantage on ability checks and saving throws made against the chosen condition. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>At the end of each long rest, choose one condition. Until the end of your next long rest, you have advantage on ability checks and saving throws made against the chosen condition.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Hungry for More" supports="Custom Ability Score Increase 1" />
+            <select type="Proficiency" name="Skill Proficiency, Hungry for More" supports="Skill" />
+        </rules>
+    </element>
+    <element name="Kitchen Ware Tosser" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_KITCHENWARE_TOSSER">
+        <description>
+            <p>You are excellent at throwing kitchen weaponry (p.143) that has the thrown property. You gain the following benefits: </p>
+            <ul>
+                <li>Increase your Strength score by 1, to a maximum of 20. </li>                
+                <li>Your throwing range is doubled for these weapons. </li>
+                <li>You have a +1 bonus to attack and damage rolls made with these weapons. </li>
+                <li>When you are making a weapon attack against a creature using these weapons, you can choose to throw them with a special technique. If you do so, the weapon is stuck in the creature on a hit. At the start of each of the creature's turns, while the weapon remains stuck, the creature takes ld6 necrotic damage. The creature can remove the weapon as a bonus action. The effects of this feature don't stack. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your throwing range with kitchen weaponry with the thrown property is doubled and you have +1 to attack and damage rolls with them. When you are making a weapon attack against a creature using these weapons, you can choose to throw them with a special technique. If you do so, the weapon is stuck in the creature on a hit. At the start of each of the creature's turns, while the weapon remains stuck, the creature takes ld6 necrotic damage. The creature can remove the weapon as a bonus action. The effects of this feature don't stack.</description>
+        </sheet>
+        <rules>
+            <stat name="Strength" value="1" />
+        </rules>
+    </element>
+    <element name="Mold Hunter" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_MOLD_HUNTER">
+        <description>
+            <p>You've had enough fights with the rotten and now you know how to track them down and identify them. You gain the following benefits: </p>
+            <ul>
+                <li>Increase an ability score of your choice by 1, to a maximum of 20. </li>                
+                <li>You have advantage on attack rolls against the undead. </li>
+                <li>You can smell molded creatures within 30 feet of you. You can sense their directions, but you can't pinpoint their locations or understand their types and identities. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have advantage on attack rolls against the undead. You can smell molded creatures within 30 feet of you. You can sense their directions, but you can't pinpoint their locations or understand their types and identities.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Mold Hunter" supports="Custom Ability Score Increase 1" />
+        </rules>
+    </element>
+    <element name="Nutritional" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_NUTRITIONAL">
+        <description>
+            <p>You are illed with healthy and organic ingredients. You gain the following beneits: </p>
+            <ul>
+                <li>Increase your Strength or Constitution score by 1, to a maximum of 20. </li>                
+                <li>Since your body is always healthy, you are immune to disease. </li>
+                <li>Whenever you regain hit points, you regain ld4 extra hit points. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You are immune to disease. Whenever you regain hit points, you regain ld4 extra hit points.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Improvement (High Viscosity)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION" />
+        </rules>
+    </element>
+    <element name="Rainbow-Sprinkled" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_RAINBOW_SPRINKLED">
+        <prerequisite>The Sweet tag</prerequisite>
+        <description>
+            <p>Your body is decorated with beautiful and colorful sprinkles. You gain the following benefits: </p>
+            <ul>
+                <li>While you are not wearing armor, you have a +1 bonus to AC. You can use a shield and still gain this benefit. </li>                
+                <li>You can use your bonus action to cast the color spray spell without expending a spell slot. You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest. </li>
+                <li>You have advantage on Charisma (Persuasion) checks against creatures without the Sweet tag. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>While you are not wearing armor, you have a +1 bonus to AC. You can use a shield and still gain this benefit. You can use your bonus action to cast the color spray spell without expending a spell slot. You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest. You have advantage on Charisma (Persuasion) checks against creatures without the Sweet tag.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_COLOR_SPRAY" />
+            <stat name="ac:calculation" value="1" bonus="calculation" equipped="[armor:none]" alt="Rainbow Sprinkled"/>
+        </rules>
+    </element>
+    <element name="Shared Tastes" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_SHARED_TASTES">
+        <description>
+            <p>Your flavor has played a part in your adventures, and you are good at connecting with others of similar taste. You gain the following benefits: </p>
+            <ul>
+                <li>Increase your Charisma score by 1, to a maximum of 20. </li>                
+                <li>You can communicate telepathically with creatures that have the same alignment as you within 30 feet, but you still need to share a language to be able to understand each other. A creature you communicate with in this way can also respond to you telepathically while within range. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You can communicate telepathically with creatures that have the same alignment as you within 30 feet, but you still need to share a language to be able to understand each other. A creature you communicate with in this way can also respond to you telepathically while within range.</description>
+        </sheet>
+        <rules>
+            <stat name="Charisma" value="1" />
+        </rules>
+    </element>
+    <element name="Splasher" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_SPLASHER">
+        <prerequisite>Some sort of filling, suchas the jelly of a donut or the sauce(s) in lasagna</prerequisite>
+        <description>
+            <p>You are filled with delicious fillings. You gain the following benefits: </p>
+            <ul>               
+                <li>As an action, you can spill your fillings around you. A 10-foot-radius area centered on you becomes difficult terrain. You can move normally within this area as your own fillings don't affect you. </li>
+                <li>As an action, you can splash your fillings in a 15-foot cone originating from you. Each creature in the area must succeed on a Dexterity saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or take 2d4 necrotic damage. </li>
+            </ul>
+            <p class="indent">You can use these benefits a total number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest. </p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>As an action, you can spill your fillings around you. A 10-foot-radius area centered on you becomes difficult terrain. You can move normally within this area as your own fillings don't affect you. As an action, you can splash your fillings in a 15-foot cone originating from you. Each creature in the area must succeed on a Dexterity saving throw DC {{splasher:dc}} or take 2d4 necrotic damage.</description>
+        </sheet>
+        <rules>
+            <stat name="splasher:dc" value="8" bonus="base" />
+            <stat name="splasher:dc" value="proficiency"  />
+            <stat name="splasher:dc" value="constitution:modifier" />            
+        </rules>
+    </element>
+    <element name="Street Food" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_STREET_FOOD">
+        <description>
+            <p>You were cooked on the streets and know your way around people. You gain the following benefits: </p>
+            <ul>
+                <li>Increase your Wisdom or Charisma score by 1, to a maximum of 20. </li>                
+                <li>You have advantage on Wisdom (Insight) and Charisma (Persuasion) checks against humanoid creatures. </li>
+                <li>You gain proficiency with two of the following tools of your choice: cobbler's tools, disguise kit, forgery kit, one gaming set, or thieves' tools. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have advantage on Wisdom (Insight) and Charisma (Persuasion) checks against humanoid creatures.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Improvement (High Viscosity)" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+            <select type="Proficiency" supports="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_THREE_DRAGON_ANTE_SET|ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DRAGONCHESS_SET|ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET|ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET|ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+            
+        </rules>
     </element>
 </elements>
+
 <!-- 
 <element name="name" type="Feat" source="Silverplate" id="ID_DRS_SILVERPLATE_FEAT_">
         <description>
@@ -104,5 +323,9 @@
 
     <prerequisite></prerequisite>
     <requirements>[level:8]</requirements>
-
+<ul>
+                <li></li>                
+                <li></li>
+                <li></li>
+            </ul>
  -->
