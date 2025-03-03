@@ -251,3 +251,174 @@
     </element>
 
 </elements>
+<!-- 
+Colander Arch
+Weapon (any bow), rare (requires attunement)
+
+This bow is cooked mainly by the pastafolk of the Pengriata region, and the silver sieve in the 
+middle is enchanted by the priests of Tarif (p. 59) with divine magic.
+You have a +1 bonus to attack and damage rolls made with this magic weapon.
+Sieving Shot (Requires Attunement). This bow has 3 charges. By speaking its command phrase, "Sieve
+out!", as part of your Attack action, you can shoot three beams of light at targets within 100 feet 
+of you that
+you can see instead of making a normal weapon attack. You can shoot them at one target or several. 
+Each beam deals 1d6 force damage on a hit. This bow regains all
+expended charges daily at dawn.
+
+Elemental Rolling Pin
+Weapon (rolling pin), uncommon
+
+This wooden rolling pin has carved runes and magical glyphs that can wield elemental powers. At 
+each dawn, you can choose one of the following attributes:
+Air. Until the next dawn, whenever you make a successful weapon attack with this weapon, you can 
+use your reaction to cause the weapon to release a magical force. When you do, the target must 
+succeed on a DC l2 Strength saving throw or be pushed back 5 feet to an unoccupied space.
+Earth. The weapon deals an extra ld6 acid damage on each hit until the next dawn.
+Fire. The weapon deals an extra ld4 fire damage on each hit until the next dawn. Also, you can 
+speak this weapon's command word (requires no action), causing it to shed bright light in a l0-foot 
+radius and dim light for an additional l0 feet.
+Water. The weapon deals an extra ld4 cold damage on each hit until the next dawn. Also, while you 
+are holding this weapon, you have swimming speed equal to your walking speed.
+Flame Ice Weapon
+Weapon (any melee), very rare
+You deal an extra ld6 cold damage with successful
+weapon attacks you make with this magic weapon made from flame ice. Also, when you hit a creature 
+with this weapon, the icy structure of the weapon splinters,
+and flames escape from the cracks; the weapon gains a charge. The weapon can hold up to 3 charges 
+and loses a charge each round as it repairs itself. For each
+charge it holds, you deal an extra ld6 fire damage with successful weapon attacks you make with 
+this weapon.
+
+Fork of the Slithering Dragon
+Weapon (warfork), very rare (requires attunement)
+
+This magic weapon was crafted to slay dragons by the master crafters of the Fridge region. It is 
+imbued with a magical effect that is especially harmful to dragons.
+You have a +l bonus to attack and damage rolls made with this magic weapon. This bonus becomes +2 
+when the fork is used against a dragon. Additionally, you can use your action to charge at a 
+creature within 30 feet of you in a straight line. When you do, you move at a very high speed, 
+difficult terrain doesn't slow you down, and you have advantage on saving throws against traps
+until the end of your turn. The target must succeed on a Dexterity saving throw (DC = 8 + your 
+Strength modifier
++ your proficiency bonus) or you strike it with the fork after your charge, dealing ld8 piercing 
+damage plus 2d6 force damage. If the target is a dragon, the fork makes a booming sound that only 
+dragons can hear, dealing an
+additional 2d6 thunder damage to the target.
+
+Golden Celery
+Weapon (longsword), legendary (requires attunement)
+
+Made out of gold and iron, this magic longsword resembles a celery stalk with a handle. It is said 
+that the golden celery was used by a great warrior in the War of the Frying Pan against the molded 
+armies of the Green Witch. According to the legend, the warrior
+fought against hundreds of monsters alone and became victorious, single-handedly saving many 
+innocent lives.
+You have a +3 bonus to attack and damage rolls made with this magic weapon. Additionally, on a hit, 
+golden celery leaves erupt from the stalk, dealing 3d6 radiant damage to hostile creatures within 5 
+feet of the target.
+Gum Bullet
+Weapon (sling bullet), uncommon
+This small, light blue capsule breaks on impact, releasing sticky gum onto the target. If a 
+creature takes damage from the sling bullet, it must succeed on a DC 13 Strength saving throw or 
+become restrained until freed; a Large or larger creature automatically succeeds on the saving 
+throw. A creature within 5 feet of the restrained creature, including itself, can remove the gum 
+using an action, freeing the creature.
+
+Knafeh
+Weapon (greataxe), artifact (requires attunement)
+
+The old sages prophesized the events leading to the world's end, when the Great Eater shall take 
+four
+bites to devour all. These prophecies were never transcribed, and many have been forgotten over 
+time. One prophecy, however, has managed to survive to this day: the one that foretold how the end 
+of days could be averted. One variation of the legend is as follows:
+The son of sugar and cheese shall fall in love with the daughter of pistachio and kataifi; and 
+their adoration shall create a prodigy. With the vigor of sugar, the wisdom of cheese, the courage 
+of pistachios and the kindness of the kataifi, the prodigy alone shall wield a weapon, made in the 
+image of its own body. When the artifact and the prodigy finally become one, the endless meal of 
+the Great Eater shall be done.
+You gain a +4 bonus to attack and damage rolls made with this magic weapon. In addition, the weapon 
+ignores resistance to slashing damage.
+You gain the following features while holding the weapon.
+Vigor. When you take the Attack action, you can make one additional weapon attack with this weapon.
+Wisdom. When you fail a Wisdom saving throw, you can choose to succeed instead. Once this feature 
+is used, it can't be used again until the next dawn.
+Courage. You are immune to being frightened.
+Kindness. When you roll for initiative, you can choose to place yourself at the top of the 
+initiative order, but you must try to end the conflict through persuasion on your first turn in 
+combat; you can't take hostile actions on that turn.
+Destroying This Artifact. This artifact can only be
+destroyed if it is fed to the Great Eater.
+
+Lollyaxe
+Weapon (greataxe), rare
+
+Crafted from the salvaged sugary rocks of Sugarwater Run (p. 113) and enchanted by the hammers of 
+skillful weaponsmiths, the lollyaxe is a deadly delight.
+As a bonus action, you can lick the axe to activate it. The next time you hit a creature with this 
+weapon, you mark the target for 3 rounds. The critical range of
+attacks made against the marked creature increases by
+1. To elaborate, if your attacks score a critical hit on a roll of 19 or 20, your attacks against a 
+marked creature score a critical hit on a roll of 18, 19, or 20. Only one creature can be marked in 
+this way at a time.
+
+Marking Throwing Pick
+Weapon (throwing pick), rare (requires attunement)
+
+This metal pick is imbued with magic for the best of hunters. You have a +1 bonus to attack and 
+damage rolls made with this magic weapon. Also, this weapon has 4 charges. When you hit a creature, 
+you can use a reaction to expend 1 charge to cast the hunter’s mark (1st-level version) spell on 
+the target, except the spell doesn't require concentration and you can't mark another creature when 
+the target drops to 0 hit points. Do not add the extra damage of the hunter’s mark spell for the 
+attack that triggered your reaction. The marking
+throwing pick regains 1d4 expended charges daily at dawn.
+You can recall the throwing pick into your free hand if it's within 300 feet of you (no action 
+required by you), at which point it reappears
+In your hand.
+Mop
+Weapon (quarterstaff), uncommon
+The mop has 6 charges for the following property. It regains 1 expended charge whenever you 
+successfully deal 5 or more damage to an ooze using this weapon.
+Squeeze Out. While holding the weapon, you can use an action to squeeze out the accumulated liquid 
+from the mop and expend 3 charges. When you do so, a filth ooze (p. 155) appears in an unoccupied 
+space within 5 feet of you; if there are no unoccupied spaces within 5 feet of you, you can't use 
+this feature. The filth ooze is friendly to you and your companions. In combat, roll initiative 
+separately for the ooze, which acts on its own turns. The filth ooze can understand simple commands 
+such as move, attack, and defend, and it does its best
+to obey your verbal commands (no actions required by you). If you don't issue any commands to the 
+filth ooze, it defends itself from hostile creatures but otherwise takes no actions. It melts into 
+a dirty liquid after an
+hour or when it drops to 0 hit point
+
+Sizzling Pan
+Weapon (frying pan or great frying pan), uncommon
+
+The sizzling pan is the favorite weapon of many mercenaries in the Great Pistachio Empire (p. 80). 
+When you hit a creature with this weapon, it heats up and gains a charge. If the weapon doesn't 
+gain a charge for 1 minute, it loses all its charges. When the weapon has 3 charges, it bursts into 
+flames, loses all of its charges, deals an additional 2d6 fire damage to any target it
+hits for 1 minute, and can't gain any charges for the duration.
+Sugar-Coated Weapon
+Weapon (any), uncommon (requires attunement)
+Sugar-coated weapons were created by the priests of Krunch (p. 57) who coat weapons with sacred 
+sugar. Creating enough sacred sugar to coat a weapon is a long and exhausting process that takes a 
+month. A priest must pray and sing hymns while holding a cup of sugar for a month, blowing at the 
+cup after each verse. After the process, blacksmiths caramelize the sacred sugar and coat weapons 
+with it.
+A sugar-coated weapon is a magic weapon that deals an extra 1d4 acid or radiant damage (determined 
+by the GM when you first acquire the weapon) to any target it
+hits.
+
+Watermelon Rind Bow
+Weapon (longbow), very rare
+
+This magic item is a large slice of watermelon made into a bow. It is said that these bows are made 
+with a special kind of watermelon that only grows in places with an arcane nature. You have a +2 
+bonus to attack and damage rolls made with this magic weapon.
+Additionally, you can choose to shoot seeds rather than arrows with this weapon. The bow has 30 
+seeds in it. As an action, you can choose to shoot any number of seeds by making a single ranged 
+weapon attack with this weapon. Each seed deals ld4 piercing damage. The bow
+regenerates l0 seeds daily at dawn.
+
+
+-->
