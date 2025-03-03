@@ -26,7 +26,7 @@
         <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SUGAR_RUSH_SUGAR_AVATAR" level="14" />
     </rules>
    </element>
-   <element name="Sugar Rush" type="Archetype Feature" source="source" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SUGAR_RUSH_SUGAR_RUSH">
+   <element name="Sugar Rush" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SUGAR_RUSH_SUGAR_RUSH">
     <description>
         <p>When you choose this path at 3rd level, you learn how to exact vengeance upon those who deny sugar. </p>
         <p class="indent">While raging, you can choose to coat the weapons you are holding with hot, caramelized sugar. Whenever you hit a creature with a weapon attack, it deals an additional ld4 acid damage. If you are using a sugar-coated weapon (p.l55), the extra damage is doubled. </p>
@@ -38,7 +38,7 @@
         <description level="14">While raging, you can choose to coat the weapons you are holding with hot, caramelized sugar. Whenever you hit a creature with a weapon attack, it deals an additional ld8 acid damage. If you are using a sugar-coated weapon (p.l55), the extra damage is doubled.</description>
     </sheet>
    </element>
-   <element name="Glazed Warrior" type="Archetype Feature" source="source" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SUGAR_RUSH_GLAZED_WARRIOR">
+   <element name="Glazed Warrior" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SUGAR_RUSH_GLAZED_WARRIOR">
     <description>
         <p>Beginning at 6th level, you can choose to coat yourself with sugar when you rage. If you do so, you choose one damage type except psychic and gain resistance against it for the duration of the rage. </p>
     </description>
@@ -46,7 +46,7 @@
         <description>You can choose to coat yourself with sugar when you rage. If you do so, you choose one damage type except psychic and gain resistance against it for the duration of the rage.</description>
     </sheet>
    </element>
-   <element name="Sweet Fury" type="Archetype Feature" source="source" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SUGAR_RUSH_SWEET_FURY">
+   <element name="Sweet Fury" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SUGAR_RUSH_SWEET_FURY">
     <description>
         <p>Beginning at 10th level, you can share your rage with your allies. While raging, when you take the Attack action, you can forgo one of your attacks and instill an instant sugar rush in the heart of an ally of your choice within 30 feet of you. That creature can immediately use a reaction to make one weapon attack with a weapon in its hand. </p>
     </description>
@@ -54,7 +54,7 @@
         <description>While raging, when you take the Attack action, you can forgo one of your attacks and instill an instant sugar rush in the heart of an ally of your choice within 30 feet of you. That creature can immediately use a reaction to make one weapon attack with a weapon in its hand.</description>
     </sheet>
    </element>
-   <element name="Sugar Avatar" type="Archetype Feature" source="source" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SUGAR_RUSH_SUGAR_AVATAR">
+   <element name="Sugar Avatar" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SUGAR_RUSH_SUGAR_AVATAR">
     <description>
         <p>Beginning at 14th level, you become an invulnerable juggernaut of sugar when you jump into the fray. </p>
         <p class="indent">When you take damage while raging, reduce the damage you take by 5. You reduce this damage after resistances have been applied. </p>
