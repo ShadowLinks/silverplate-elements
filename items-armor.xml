@@ -39,10 +39,73 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
         </rules>
     </element>
+    <element name="Hardened Taco Shell Armor" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_HARDENED_TACO_SHELL_ARMOR">
+        <description>
+            <p>This armor is crafted from magically reinforced taco shells, which are as light as leather but feel like metal to the touch. While wearing this armor, you have a +1 bonus to AC. </p>
+            <p class="indent"><strong><i>Tortilla Turtle (Requires Attunement).</i></strong> While attuned to this armor, you can speak its command word as a bonus action to increase the armor's AC bonus to +2 for 1 minute. The armor can't be used in this way again until the next dawn. </p>
+        </description>
+        <setters>
+            <set name="keywords">studded leather, taco</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="studded leather">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Studded Leather</set>
+            <set name="enhancement">1</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
+        </rules>
+    </element>
+    <element name="Nutscale Mail" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_NUTSCALE_MAIL">
+        <description>
+            <p>Nutscale mail is designed to allow the elite warriors of the Great Pistachio Empire to move swiftly while enjoying the benefits of medium armor. It is made of countless overlapping nut shells. You have a +1 bonus to AC while wearing this armor. Also, unlike regular scale mail, this  armor does not give you disadvantage on Dexterity (Stealth) checks, and the maximum Dexterity modifier this armor allows is 4 instead of 2. </p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords">scale mail</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="scale mail">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Scale Mail</set>
+            <set name="enhancement">1</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_IGNORE_STEALTH_DISADVANTAGE"/>
+            <stat name="ac:armored:dexterity:cap" value="4" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Sleeve Armor" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_SLEEVE_ARMOR">
+        <description>
+            <p>Worn mainly by the clerics of the Rejuvenation Domain, this armor offers protection against the extreme heat of the wicked. </p>
+            <p class="indent">While wearing this armor, you have resistance to fire damage. In addition, you and everything you  wear and carry are unharmed by temperatures as high as 170 degrees Fahrenheit. </p>
+        </description>
+        <setters>
+            <set name="keywords">half plate, fire resistance</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="half plate">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Half Plate</set>
+        </setters>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+
     
 </elements>
 
 <!--
+<strong><i></i></strong>
+
     <element name="Shield, +1" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
         <description>
             <p>While holding this shield, you have a bonus to AC determined by the shield's rarity. This bonus is in addition to the shield's normal bonus to AC.</p>
@@ -63,17 +126,10 @@
     </element>
 
 
-    <element name="Demon Armor" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
+    <element name="name" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
         <description>
-            <p>While wearing this armor, you gain a +1 bonus to AC, and you can understand and speak Abyssal. In addition, the armor's clawed gauntlets turn unarmed strikes with your hands into magic weapons that deal slashing damage, with a +1 bonus to attack rolls and damage rolls and a damage die of 1d8.</p>
-            <p class="indent">
-                <strong>
-                    <em>Curse. </em>
-                </strong>
-                Once you don this cursed armor, you can't doff it unless you are targeted by the
-                <em>remove curse</em>
-                spell or similar magic. While wearing the armor, you have disadvantage on attack rolls against demons and on saving throws against their spells and special abilities.
-            </p>
+            <p></p>
+            <p class="indent"></p>
         </description>
         <setters>
             <set name="keywords">plate</set>
