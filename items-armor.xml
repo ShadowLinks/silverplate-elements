@@ -6,11 +6,44 @@
             <file name="items-armor.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-armor.xml"/>
         </update>
     </info>
+    <element name="Bento Shield" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_BENTO_SHIELD">
+        <description>
+            <p>Used mostly by mercenaries in the northern regions, this shield can absorb magical power to heal the wielder. While wielding this shield, whenever you succeed on a saving throw against a spell, you can use your reaction to charge the bento shield with magical energies, causing the shield to gain 1 charge. </p>
+            <p class="indent">You can also use a bonus action to expend 1 charge and regain 1d6 hit points while wielding the shield. The shield can hold up to 4 charges, and loses all its charges daily at dawn. </p>
+        </description>
+        <setters>
+            <set name="keywords">shield</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="enhancement"></set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+        </setters>
+    </element>
+    <element name="Cupcake Try Bulwark" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_CUPCAKE_TRAY_BULWARK">
+        <description>
+            <p>This magic shield is forged in the hottest of fires in the Fridge region for the champions of cupcake folk. While wielding this shield, you have resistance to fire damage. Also, whenever you would normally be affected by a spell that deals fire damage, you can use your reaction to cover yourself with the cupcake tray bulwark and gain immunity to fire damage against that spell. </p>
+        </description>
+        <setters>
+            <set name="keywords">shield</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="enhancement"></set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+        </setters>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
     
 </elements>
 
 <!--
-    <element name="Shield, +1" type="Magic Item" source="Dungeon Master’s Guide" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
+    <element name="Shield, +1" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
         <description>
             <p>While holding this shield, you have a bonus to AC determined by the shield's rarity. This bonus is in addition to the shield's normal bonus to AC.</p>
         </description>
@@ -30,7 +63,7 @@
     </element>
 
 
-    <element name="Demon Armor" type="Magic Item" source="Dungeon Master’s Guide" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
+    <element name="Demon Armor" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
         <description>
             <p>While wearing this armor, you gain a +1 bonus to AC, and you can understand and speak Abyssal. In addition, the armor's clawed gauntlets turn unarmed strikes with your hands into magic weapons that deal slashing damage, with a +1 bonus to attack rolls and damage rolls and a damage die of 1d8.</p>
             <p class="indent">
