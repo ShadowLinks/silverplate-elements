@@ -84,6 +84,7 @@
         <description>
             <p>Worn mainly by the clerics of the Rejuvenation Domain, this armor offers protection against the extreme heat of the wicked. </p>
             <p class="indent">While wearing this armor, you have resistance to fire damage. In addition, you and everything you  wear and carry are unharmed by temperatures as high as 170 degrees Fahrenheit. </p>
+            <p class="indent">Also, when subjected to fire damage, you can speak the command word, "Extra sleeve!", as a reaction to negate the damage. If you do so, the armor loses all its magical properties until the next dawn. </p>
         </description>
         <setters>
             <set name="keywords">half plate, fire resistance</set>
