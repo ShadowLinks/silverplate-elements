@@ -6,22 +6,51 @@
             <file name="items-staves.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-staves.xml"/>
         </update>
     </info>
+    <element name="Arcane Candy Cane" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_ARCANE_CANDY_CANE">
+        <description>
+            <p>Made from the magical candy canes of the Canewoods, these staves are mostly used by the wizards in Robeine. It is said that the natural magic of the candy canes amplifies the arcane power of the wielder. While holding this staff, you gain a +1 bonus to spell attack rolls and spell save DCs.</p>
+            <p class="indent">This staff has 10 charges. You can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: color spray (1st-level version, 1 charge), melted sugar swamp* (5th-level version, 6 charges), or sugarball* (3rd-level version, 3 charges).</p>
+            <p class="indent">The staff regains 1d10 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff crumbles into sugar and is destroyed.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">10</set>
+        </setters>
+        <rules>
+            <stat name="spellcasting:attack" value="1"/>
+            <stat name="spellcasting:dc" value="1"/>
+        </rules>
+    </element>
 </elements>
 
 <!-- 
-Arcane Candy Cane
-Staff, rare (requires attunement)
-Made from the magical candy canes of the Canewoods (p. 85), these staves are mostly used by the
-wizards in Robeine. It is said that the natural magic of the candy canes amplifies the arcane power
-of the wielder. While holding this staff, you gain a +1 bonus to spell attack rolls and spell save
-DCs.
-This staff has 10 charges. You can use an action to expend 1 or more of its charges to cast one of
-the
-following spells from it, using your spell save DC and spellcasting ability modifier: color spray
-(1st-level version, 1 charge), melted sugar swamp* (5th-level version, 6 charges), or sugarball*
-(3rd-level version, 3 charges).
-The staff regains 1d10 expended charges daily at dawn. If you expend the last charge, roll a dz0.
-On a 1, the staff crumbles into sugar and is destroyed.
+<strong><i></i></strong>
+<element name="name" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Uncommon</set>
+            <set name="charges">3</set>
+        </setters>
+    </element>
+
 
 Moldbearer
 Staff, uncommon

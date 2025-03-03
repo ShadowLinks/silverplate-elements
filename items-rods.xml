@@ -6,34 +6,55 @@
             <file name="items-rods.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-rods.xml"/>
         </update>
     </info>
+    <element name="Insipid Rod" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_INSIPID_ROD">
+        <description>
+            <p>This is a rod made of completely flavorless rusk. While holding the rod, you are tasteless, can't cast spells, and have immunity to spells. You benefit from this magic item even while tasteless./p>
+        </description>
+        <setters>
+            <set name="keywords">antimagic</set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Legendary</set>
+        </setters>
+    </element>
+    <element name="Rod of Butter" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_ROD_OF_BUTTER">
+        <description>
+            <p>Crafted by the sorcerers of the Fryzzle Dynasty, the rod of butter is designed to amplify the effects of certain spells. While holding this rod, you gain a +1 bonus to spell attack rolls and to spell save DCs of your sorcerer spells.</p>
+            <p class="indent">Also, this rod grants you a new Metamagic option.</p>
+            <p class="indent"><strong><i>Buttery Spell.</i></strong> When you cast a damage-dealing spell that targets only one creature and doesn't have a range of self while holding this rod, you can spend a number of sorcery points equal to the spell's level to double the damage (1 sorcery point if the spell is a cantrip).</p>
+        </description>
+        <setters>
+            <set name="keywords">sorcerer</set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement" addition="sorcerer">true</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <stat name="spellcasting:attack" value="1"/>
+            <stat name="spellcasting:dc" value="1"/>
+        </rules>
+    </element>
+    <element name="Rod of Vitamins" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_ROD_OF_VITAMINS">
+        <description>
+            <p>This magical glass rod contains healing herbs and remedies to be used in a dangerous situation. While holding this rod, you can use your bonus action to activate it, sending it to a target of your choice that you can see within 30 feet of you. The rod revolves around the target for 1 minute, during which the target regains 2 hit points at the end of each of its turns. The rod returns to you at the end of the duration, when you use another bonus action to call it back, or when you fall unconscious. Once a creature regains 20 hit points with this rod, it must finish a long rest to be able to regain hit points in the same way again.</p>
+        </description>
+        <setters>
+            <set name="keywords">healing</set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
 </elements>
-<!-- 
-Insipid Rod
-Rod, legendary (requires attunement)
-
-This is a rod made of completely flavorless rusk. While holding the rod, you are tasteless,
-can't cast spells, and have immunity to spells. You benefit from this magic item even while
-tasteless.
-
-Rod of Butter
-Rod, rare (requires attunement by a sorcerer)
-Crafted by the sorcerers of the Fryzzle Dynasty (p. 86), the rod of butter is designed to amplify
-the effects of certain spells. While holding this rod, you gain a +1
-bonus to spell attack rolls and to spell save DCs of your sorcerer spells.
-Also, this rod grants you a new Metamagic option.
-Buttery Spell. When you cast a damage-dealing spell that targets only one creature and doesn't have
-a range of self while holding this rod, you can spend a number of sorcery points equal to the
-spell's level to double the damage (1 sorcery point if the spell is a cantrip).
-
-Rod of Vitamins
-Rod, uncommon (requires attunement)
-This magical glass rod contains healing herbs and remedies to be used in a dangerous situation.
-While holding this rod, you can use your bonus action to activate it, sending it to a target of
-your choice that you can see within 30 feet of you. The rod revolves around the target for 1
-minute, during which the target regains 2 hit points at the end of each of its turns. The rod
-returns to you at the end of the duration, when you use another bonus action to call it back, or
-when you fall unconscious. Once a creature regains 20 hit points with this rod, it must finish a
-long rest to be able to regain
-hit points in the same way again.
-
--->

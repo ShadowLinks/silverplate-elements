@@ -6,36 +6,46 @@
             <file name="items-potions.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-potions.xml"/>
         </update>
     </info>
+    <element name="Extra Virgin Olive Oil" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_EXTRA_VIRGIN_OLIVE_OIL">
+        <description>
+            <p>When you drink one bottle of this extra virgin olive oil, the tasteless condition ends on you and you have garlic breath until you finish a short or long rest. While you have garlic breath, you can use the following feature:</p>
+            <p class="indent"><strong><i>Exhale Garlic Breath.</i></strong> As a bonus action, you exhale poisonous breath in a 15-foot cone. Each creature in the area must succeed on a DC 13 Constitution saving throw or become poisoned for 3 rounds. Once you use this feature, you no longer have garlic breath.</p>
+        </description>
+        <setters>
+            <set name="keywords">poison, tasteless</set>
+            <set name="category">Potions</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Potion of Bursting Flavors" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_POTION_OF_BURSTING_FLAVORS">
+        <description>
+            <p>When you drink this potion, you gain immunity to becoming tasteless for 1 hour. If you are already tasteless when you drink this potion, the condition ends, but you don't gain immunity to it.</p>
+        </description>
+        <setters>
+            <set name="keywords">tasteless</set>
+            <set name="category">Potions</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Red Hot Chili Poison" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_RED_HOT_CHILI_OIL">
+        <description>
+            <p>This flaming hot, crimson-colored poison made from the extract of red chili pepper seeds is used by foul foodfolk who do not hesitate to inflict pain on their foes to get what they want.</p>
+            <p class="indent">After ingesting this poison, a creature must succeed on a DC 15 Constitution saving throw or have vulnerability to fire damage for 1 minute. At the start of each of its turns for 1d6 rounds, the creature takes 2d6 fire damage whether it succeeded on the saving throw or not, burning from the inside.</p>
+        </description>
+        <setters>
+            <set name="keywords">poison, fire</set>
+            <set name="category">Potions</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
 
 </elements>
-
-<!-- 
-
-Extra Virgin Olive Oil
-Potion, uncommon
-
-When you drink one bottle of this extra virgin olive oil, the tasteless condition (p. 47) ends on
-you and you have garlic breath until you finish a short or long rest. While you have garlic breath,
-you can use the following feature:
-Exhale Garlic Breath. As a bonus action, you exhale poisonous breath in a 15-foot cone. Each
-creature in the area must succeed on a DC 13 Constitution saving throw or become poisoned for 3
-rounds. Once you use this feature, you no longer have garlic breath.
-
-Potion of Bursting Flavors
-Potion, uncommon
-
-When you drink this potion, you gain immunity to becoming tasteless (p. 47) for 1 hour. If you are
-already tasteless when you drink this potion, the condition ends, but you don't gain immunity to
-it.
-
-Red Hot Chili Poison
-Potion, rare
-This flaming hot, crimson-colored poison made from the extract of red chili pepper seeds is used by
-foul foodfolk who do not hesitate to inflict pain on their foes to get what they want.
-After ingesting this poison, a creature must succeed on a DC 15 Constitution saving throw or have
-vulnerability to fire damage for 1 minute. At the start of each of its turns for 1d6 rounds, the
-creature takes 2d6 fire damage whether it succeeded on the saving throw
-or not, burning from the inside.
-
-
--->
