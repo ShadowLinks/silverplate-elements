@@ -1,0 +1,61 @@
+<elements>
+    <info>
+        <name>Magic Armor</name>
+        <description>Magic Armor from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="items-armor.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-armor.xml"/>
+        </update>
+    </info>
+    
+</elements>
+
+<!--
+    <element name="Shield, +1" type="Magic Item" source="Dungeon Master’s Guide" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
+        <description>
+            <p>While holding this shield, you have a bonus to AC determined by the shield's rarity. This bonus is in addition to the shield's normal bonus to AC.</p>
+        </description>
+        <setters>
+            <set name="keywords">shield</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="enhancement">1</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="name-format">{{parent}} +{{enhancement}}</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="1" bonus="enhancement"/>
+        </rules>
+    </element>
+
+
+    <element name="Demon Armor" type="Magic Item" source="Dungeon Master’s Guide" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
+        <description>
+            <p>While wearing this armor, you gain a +1 bonus to AC, and you can understand and speak Abyssal. In addition, the armor's clawed gauntlets turn unarmed strikes with your hands into magic weapons that deal slashing damage, with a +1 bonus to attack rolls and damage rolls and a damage die of 1d8.</p>
+            <p class="indent">
+                <strong>
+                    <em>Curse. </em>
+                </strong>
+                Once you don this cursed armor, you can't doff it unless you are targeted by the
+                <em>remove curse</em>
+                spell or similar magic. While wearing the armor, you have disadvantage on attack rolls against demons and on saving throws against their spells and special abilities.
+            </p>
+        </description>
+        <setters>
+            <set name="keywords">plate</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="cursed">true</set>
+            <set name="armor">Plate</set>
+            <set name="enhancement">1</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
+        </rules>
+    </element>
+-->

@@ -1,0 +1,10 @@
+<elements>
+    <info>
+        <name>Potions</name>
+        <description>Potions from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="items-potions.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-potions.xml"/>
+        </update>
+    </info>
+
+</elements>

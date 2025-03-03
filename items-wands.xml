@@ -1,0 +1,9 @@
+<elements>
+    <info>
+        <name>Magic Wands</name>
+        <description>Magic Wands from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="items-wands.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-wands.xml"/>
+        </update>
+    </info>
+</elements>

@@ -1,0 +1,9 @@
+<elements>
+    <info>
+        <name>Magic Items</name>
+        <description>Magic Items from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="items-wonderous.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-wonderous.xml"/>
+        </update>
+    </info>
+</elements>

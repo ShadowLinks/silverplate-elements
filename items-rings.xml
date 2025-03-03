@@ -1,0 +1,9 @@
+<elements>
+    <info>
+        <name>Magic Rings</name>
+        <description>Magic Rings from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="items-rings.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-rings.xml"/>
+        </update>
+    </info>
+</elements>

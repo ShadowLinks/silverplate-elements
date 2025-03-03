@@ -1,0 +1,9 @@
+<elements>
+    <info>
+        <name>Magic Staves</name>
+        <description>Magic Staves from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name="items-staves.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-staves.xml"/>
+        </update>
+    </info>
+</elements>
