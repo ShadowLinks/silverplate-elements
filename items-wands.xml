@@ -6,47 +6,55 @@
             <file name="items-wands.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-wands.xml"/>
         </update>
     </info>
+    <element name="Chocolate Umbrella" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_CHOCOLATE_UMBRELLA">
+        <description>
+            <p>This closed umbrella is made of frozen chocolate with a wooden handle. The wand has 7 charges. While holding it, you can spend an action to use one of these features:</p>
+            <p class="indent"><strong><i>Hot Chocolate (No Charges Required).</i></strong> 9 ounces of hot chocolate pours from the tip of the chocolate umbrella. You can spend a charge to give your hot chocolate the fruity aroma of your choice. The hot chocolate warms the drinker but does not satiate hunger or thirst.</p>
+            <p class="indent"><strong><i>Pudding (1 Charge).</i></strong> Sticky chocolate pudding erupts from the tip of the wand in a 15-foot cone and remains there for 1 minute. When a creature enters the area for the first time or starts its turn within, it must succeed on a DC 13 Dexterity saving throw or be restrained as long as it remains in the pudding or until it breaks free. A restrained creature can make a DC 15 Strength saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+            <p class="indent"><strong><i>Choco-Shard (2 Charges).</i></strong> You shoot a shard of chocolate from the tip of the wand, making a ranged spell attack against a target within 120 feet of you, using Charisma as your spellcasting ability. On a hit, the creature takes 6d6 necrotic damage.</p>
+            <p class="indent"><strong><i>Choco-Fountain (7 Charges).</i></strong> You summon a chocolate fountain (p. 195) in an unoccupied space that you can see within 60 feet of you. The fountain is an ally to you and your companions. In combat, it acts on its own turn, which is immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger. The summoned chocolate fountain disappears after 1 hour, when its hit points drop to 0, or when you dismiss it (no action required).</p>
+            <p class="indent">The wand regains 1d4 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into little chocolate chips and is destroyed.</p>
+        </description>
+        <setters>
+            <set name="category">Wands</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="type">Wand</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">7</set>
+        </setters>
+    </element>
+    <element name="Wand of Many Spices" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_WAND_OF_MANY_SPICES">
+        <description>
+            <p>This wand looks like a little branch of wood. You can target an edible dish and use the wand as an action to discover its ingredients and cooking methods.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Wands</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="type">Wand</set>
+            <set name="rarity">Common</set>
+        </setters>
+    </element>
+    <element name="Wand of Toothpicks" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
+        <description>
+            <p>This wand looks like a large toothpick with magical markings on it. The wand of toothpicks has 5 charges. While holding it, you can use a bonus action to expend 1 charge to cast the silver toothpicks* spell using a 2nd level spell slot.</p>
+            <p class="indent">The wand regains 1d4 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand loses its magical properties and becomes a mundane item.</p>
+        </description>
+        <setters>
+            <set name="category">Wands</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="type">Wand</set>
+            <set name="rarity">Uncommon</set>
+            <set name="charges">5</set>
+            <set name="attunement" addition="spellcaster">true</set>
+        </setters>
+    </element>
+
+
 </elements>
-
-<!-- 
-Chocolate Umbrella
-Wand, rare
-This closed umbrella is made of frozen chocolate with a wooden handle. The wand has 7 charges.
-While holding it, you can spend an action to use one of these features:
-Hot Chocolate (No Charges Required). 9 ounces of hot chocolate pours from the tip of the chocolate
-umbrella. You can spend a charge to give your hot chocolate the fruity aroma of your choice. The
-hot chocolate warms the drinker but does not satiate hunger or thirst.
-Pudding (1 Charge). Sticky chocolate pudding erupts from the tip of the wand in a 15-foot cone and
-remains there for 1 minute. When a creature enters the area for the first time or starts its turn
-within, it must succeed on a DC 13 Dexterity saving throw or be restrained as long as it remains in
-the pudding or until it breaks free. A restrained creature can make a DC 15 Strength saving throw
-at the end of each of its turns, ending the effect on itself on a success.
-Choco-Shard (2 Charges). You shoot a shard of
-chocolate from the tip of the wand, making a ranged
-spell attack against a target within 120 feet of you, using Charisma as your spellcasting ability.
-On a hit, the creature takes 6d6 necrotic damage.
-Choco-Fountain (7 Charges). You summon a chocolate fountain (p. 195) in an unoccupied space that
-you
-can see within 60 feet of you. The fountain is an ally to you and your companions. In combat, it
-acts on its own turn, which is immediately after yours. It obeys your verbal commands (no action
-required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid
-danger. The summoned chocolate fountain disappears after 1 hour, when its hit points drop to 0, or
-when you dismiss it (no action required).
-The wand regains 1d4 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll
-a d20. On a 1, the wand crumbles into little chocolate chips and is destroyed.
-Wand of Many Spices
-Wand, common
-This wand looks like a little branch of wood. You can target an edible dish and use the wand as an
-action to discover its ingredients and cooking methods.
-
-Wand of Toothpicks
-Wand, uncommon (requires attunement by a spellcaster)
-
-This wand looks like a large toothpick with magical
-markings on it. The wand of toothpicks has 5 charges. While holding it, you can use a bonus action
-to expend 1 charge to cast the silver toothpicks* spell using a 2nd level spell slot.
-The wand regains 1d4 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll
-a d20. On a 1, the wand loses its magical properties and
-becomes a mundane item.
-
--->

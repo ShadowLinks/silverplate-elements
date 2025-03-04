@@ -29,94 +29,76 @@
             <stat name="spellcasting:dc" value="1"/>
         </rules>
     </element>
-</elements>
-
-<!-- 
-<strong><i></i></strong>
-<element name="name" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_">
+    <element name="Moldbearer" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_MOLDBEARER">
         <description>
-            <p></p>
+            <p>Moldbearer is a staff made of hardened mold. The top of the staff is wider than its bottom, and its  tip resembles a crown, representing the dominance of the Green Witch. </p> 
+            <p class="indent">This staff has 6 charges. It can be wielded as a magic quarterstaff. On a successful attack made with this staff, you can deal an extra 1d6 necrotic damage by expending a charge. You can expend only one charge at a time. If a creature drops to 0 hit points and dies as a result of an attack made with Moldbearer, you can immediately expend a charge to make its corpse rise as a molded one (p. 235) an hour after its demise. If the corpse is burned or destroyed, the creature does not turn into a molded one.</p>
+            <p class="indent">The staff regains 1d4 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff turns into mushy mold and is destroyed.</p>            
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">necrotic</set>
             <set name="category">Staffs</set>
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="4">4 lb.</set>
             <set name="slot">onehand</set>
             <set name="weapon">Quarterstaff</set>
             <set name="type">Staff</set>
-            <set name="attunement">true</set>
+            <set name="rarity">Uncommon</set>
+            <set name="charges">6</set>
+        </setters>
+    </element>
+    <element name="Onyx Skewer" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_ONYX_SKEWER">
+        <description>
+            <p>The onyx skewer staves were first used by spellcasters in their battle against the mold in the War of the Frying Pan, where they needed a weapon that both amplified their magical abilities and could be used as a martial weapon.</p>
+            <p class="indent">This staff can be wielded as a spear. You have a +2 bonus to attack and damage rolls made with this magic weapon. You are considered proficient with this specific weapon, and weapon attacks made with this spear deal an extra 1d10 necrotic damage on a hit.</p>
+            <p class="indent">The staff has 10 charges and it regains 1d8 + 2 expended charges daily at dawn. While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: chopstick* (1 charge), cotton candy shower* (7 charges), hot and cold* (4th-level version, 4 charges), jello armor* (5th-level version, 5 charges), magic missile (1st-level version, 1 charge), shots!* (3 charges), silver toothpicks* (2nd-level version, 2 charges), or spiking forks* (5 charges). If you expend the last charge, roll a d20. On a 1, the staff suddenly disappears but reappears (with 1 charge) on your person at the next dawn.</p>
+            <p class="indent">Additionally, you can use the staff to bolster yourself. As an action, you can speak its command word, causing the staff to disappear and gaining temporary hit points equal to double the amount of charges the staff has. When you do, the staff reappears (with 1 charge) on your person at the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="attunement" addition="sorcerer, warlock, or wizard">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="charges">10</set>            
+            <set name="enhancement">2</set>
+        </setters>
+    </element>
+    <element name="Staff of the Fridge" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_STAFF_OF_THE_FRIDGE">
+        <description>
+            <p>This icy staff has a small fridge on top of it which always emits cold. As an action, you can speak one of its two command words; one to make the emission colder, and one to make it warmer. While the emission is warmer, the staff sheds blue dim light in a 10-foot radius. While the emission is colder, the staff sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+            <p class="indent">As an action, you can plant the staff in the ground. While it is planted in the ground, the staff creates a 20-foot-radius dome of cold air. Any creature who enters the dome for the first time or ends its turn within must make a DC 12 Constitution saving throw, taking 1d10 cold damage on a failed save, or half as much damage on a successful one.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold</set>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Staff of the Furnace" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_STAFF_OF_THE_FURNACE">
+        <description>
+            <p>This iron staff has a small furnace on top of it, which is always burning. As an action, you can speak one of its two command words; the one that makes the flames flare up or the one that simmers them down. While the flames are simmered down, the staff sheds red dim light in a l0-foot radius. While the flames are flared up, the staff sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+            <p class="indent">As an action, you can plant the staff in the ground. While it is planted in the ground, the staff creates a 20-foot-radius dome of hot air, which becomes comfortable and dry, regardless of the weather outside. Additionally, while the staff is planted, you (or another creature who knows the command word) can use your bonus action to speak its command word, causing the staff to launch a small flaming sphere at a creature of your choice within 20 feet of it. The staff makes a ranged spell attack (+4 to hit) against a target of your choice within 60 feet of the staff. On a hit, the staff deals ldl0 fire damage. Only one ranged spell attack can be made with this staff in a round.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
             <set name="rarity">Uncommon</set>
             <set name="charges">3</set>
         </setters>
     </element>
-
-
-Moldbearer
-Staff, uncommon
-Moldbearer is a staff made of hardened mold. The top of the staff is wider than its bottom, and its
-tip resembles a crown, representing the dominance of the Green
-Witch.
-This staff has 6 charges. It can be wielded as a magic quarterstaff. On a successful attack made
-with this staff, you can deal an extra 1d6 necrotic damage by expending a charge. You can expend
-only one charge at a time. If a creature drops to 0 hit points and dies as a result of an attack
-made with Moldbearer, you can
-immediately expend a charge to make its corpse rise as a molded one (p. 235) an hour after its
-demise. If the corpse is burned or destroyed, the creature does not turn into a molded one.
-The staff regains 1d4 + 2 expended charges daily at dawn. If you expend the last charge, roll a
-d20. On a 1, the staff turns into mushy mold and is destroyed.
-
-Onyx Skewer
-Staff, very rare (requires attunement by a sorcerer, warlock, or wizard)
-The onyx skewer staves were first used by spellcasters in their battle against the mold in the War
-of the Frying Pan, where they needed a weapon that both amplified their magical abilities and could
-be used as a martial weapon.
-This staff can be wielded as a spear. You have a
-+2 bonus to attack and damage rolls made with this magic weapon. You are considered proficient with
-this specific weapon, and weapon attacks made with this spear deal an extra 1d10 necrotic damage on
-a hit.
-The staff has 10 charges and it regains 1d8 + 2 expended charges daily at dawn. While holding this
-staff, you can use an action to expend 1 or more of its charges to cast one of the following spells
-from it, using your spell save DC and spell attack bonus: chopstick* (1
-charge), cotton candy shower* (7 charges), hot and cold* (4th-level version, 4 charges), jello
-armor* (5th-level version, 5 charges), magic missile (1st-level version, 1 charge), shots!* (3
-charges), silver toothpicks* (2nd-level version, 2 charges), or spiking forks* (5 charges). If you
-expend the last charge, roll a d20. On a 1, the staff suddenly disappears but reappears (with 1
-charge) on your person at the next dawn.
-Additionally, you can use the staff to bolster yourself. As an action, you can speak its command
-word, causing the staff to disappear and gaining temporary hit points equal to double the amount of
-charges the staff has.
-When you do, the staff reappears (with 1 charge) on your person at the next dawn.
-Staff of the Fridge
-Staff, uncommon
-This icy staff has a small fridge on top of it which always emits cold. As an action, you can speak
-one of its two command words; one to make the emission colder, and one to make it warmer. While the
-emission is warmer, the staff sheds blue dim light in a 10-foot radius. While the emission is
-colder, the staff sheds bright light in a 20-foot radius and dim light for an additional 20 feet.
-As an action, you can plant the staff in the ground. While it is planted in the ground, the staff
-creates a 20-foot-radius dome of cold air. Any creature who enters the dome for the first time or
-ends its turn within must make a DC 12 Constitution saving throw, taking 1d10 cold damage on a
-failed save, or half as
-much damage on a successful one.
-
-Staff of the Furnace
-Staff, uncommon
-
-This iron staff has a small furnace on top of it, which is always burning. As an action, you can
-speak one of its two command words; the one that makes the flames flare up or the one that simmers
-them down. While the flames are simmered down, the staff sheds red dim
-light in a l0-foot radius. While the flames are flared up, the staff sheds bright light in a
-20-foot radius and dim light for an additional 20 feet.
-As an action, you can plant the staff in the ground.
-While it is planted in the ground, the staff creates a 20-foot-radius dome of hot air, which
-becomes
-comfortable and dry, regardless of the weather outside. Additionally, while the staff is planted,
-you (or another creature who knows the command word) can use your bonus action to speak its command
-word, causing the staff to launch a small flaming sphere at a creature
-of your choice within 20 feet of it. The staff makes a ranged spell attack (+4 to hit) against a
-target of your choice within 60 feet of the staff. On a hit, the staff deals ldl0 fire damage. Only
-one ranged spell attack
-can be made with this staff in a round.
-
-
--->
+</elements>
