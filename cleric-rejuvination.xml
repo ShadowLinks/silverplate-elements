@@ -1,0 +1,162 @@
+<elements>
+    <info>
+        <name>Rejuvination Domain</name>
+        <description>Rejuvination Domain for Clerics from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name=" cleric-rejuvination.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/cleric-rejuvination.xml"/>
+        </update>
+    </info>
+    <element name="Rejuvination Domain" type="Archetype" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_CLERIC_REJUVINATION">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>Rejuvenation is the form of energy that suffuses and awakens the universe, and keeps the foodfolk of Silverplate going. Forces of rejuvenation provide coffee, fresh fruit, clear water, and all other types of food that symbolize awakening, freshness, and purification. Their clerics know that it is their responsibility to provide such rejuvenation to those in need and to protect the fresh sources. They are aware that it is one of the greatest responsibilities one's shoulders can bear. </p>
+            <p class="indent"></p>
+            <h5 class="caption">CHAOS DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr>
+						<td>Cleric Level</td>
+						<td>Spells</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>1st</td>
+					<td>
+						<em>refresh, purify food and drink</em>
+					</td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td>
+						<em>lesser restoration, protection from poison</em>
+					</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>
+						<em>revivify, shots!</em>
+					</td>
+				</tr>
+				<tr>
+					<td>7th</td>
+					<td>
+						<em>death ward, freedom of movement</em>
+					</td>
+				</tr>
+				<tr>
+					<td>9th</td>
+					<td>
+						<em>greater restoration, hallow</em>
+					</td>
+				</tr>
+			</table>
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_BONUS_PROFICIENCY" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_MORNING_COFFEE" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_PURIFY_FRIENDS" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_CD_FRESH_WATER" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_CD_CAFFEINE_HIGH" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_FRESHIFY" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_KEEPER_OF_THE_COOKED" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_FOOD_SAINT" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK"/>
+            <grant type="Spell" level="1" id="ID_DRS_SILVERPLATE_SPELL_REFRESH"/>
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_LESSER_RESTORATION"/>
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_PROTECTION_FROM_POISON"/>
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_REVIVIFY"/>
+            <grant type="Spell" level="5" id="ID_DRS_SILVERPLATE_SPELL_SHOTS"/>
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_DEATH_WARD"/>
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT"/>
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_GREATER_RESTORATION"/>
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_HALLOW"/>
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_BONUS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_MORNING_COFFEE" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_PURIFY_FRIENDS" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_CD_FRESH_WATER" level="2" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_CD_CAFFEINE_HIGH" level="2" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_FRESHIFY" level="6" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_KEEPER_OF_THE_COOKED" level="8" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_FOOD_SAINT" level="17" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiency" type="Archetype Feature" source="silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_BONUS_PROFICIENCY">
+        <description>
+            <p>When you choose this domain at 1st level, you gain proficiency with heavy armor.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+        </rules>
+    </element>
+    <element name="Morning Coffee" type="Archetype Feature" source="silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_MORNING_COFFEE">
+        <description>
+            <p>At 1st level, you gain the ability to manipulate the line between the fresh and the rotten. Whenever you use a spell of 1st level or higher to restore hit points to a creature, that creature can't have disadvantage on its next roll within 1 hour. </p>
+        </description>
+        <sheet>
+            <description>Whenever you use a spell of 1st level or higher to restore hit points to a creature, that creature can't have disadvantage on its next roll within 1 hour.</description>
+        </sheet>
+    </element>
+    <element name="Purify Friends" type="Archetype Feature" source="silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_PURIFY_FRIENDS">
+        <description>
+            <p>Also starting at 1st level, you can affect your allies with the purify food and drink spell, which ends the poisoned condition and removes all diseases. </p>
+        </description>
+        <sheet>
+            <description>You can affect your allies with the purify food and drink spell, which ends the poisoned condition and removes all diseases.</description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Fresh Water" type="Archetype Feature" source="silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_CD_FRESH_WATER">
+        <description>
+            <p>Starting at 2nd level, you can use your Channel Divinity to rejuvenate those who are hampered. </p>
+            <p class="indent">As an action, you present your holy symbol and make restorative waters flow through your allies. Choose a number of friendly creatures up to your Wisdom modifier within 30 feet of you. Each chosen ally can choose to end one condition of their choice that is affecting them. If the chosen condition is exhaustion, burnt, or frozen, it decreases by 1 level. </p>
+        </description>
+        <sheet usage="Channel Divinity">
+            <description>As an action, you present your holy symbol and make restorative waters flow through your allies. Choose a number of friendly creatures up to your Wisdom modifier within 30 feet of you. Each chosen ally can choose to end one condition of their choice that is affecting them. If the chosen condition is exhaustion, burnt, or frozen, it decreases by 1 level.</description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Caffeine High" type="Archetype Feature" source="silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_CD_CAFFEINE_HIGH">
+        <description>
+            <p>Also starting at 2nd level, you can use your Channel Divinity to empower your allies with caffeine. </p>
+            <p class="indent">As an action, you present your holy symbol and make a number of friendly creatures up to your Wisdom modifier within 30 feet of you feel a caffeine rush. Each chosen ally gains the benefits of a long rest instantly. After 1 minute, they suffer 2 levels of exhaustion. </p>
+        </description>
+        <sheet usage="Channel Divinity">
+            <description>As an action, you present your holy symbol and make {{wisdom:modifier}} friendly creatures within 30 feet of you feel a caffeine rush. Each chosen ally gains the benefits of a long rest instantly. After 1 minute, they suffer 2 levels of exhaustion.</description>
+        </sheet>
+    </element>
+    <element name="Freshify" type="Archetype Feature" source="silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_FRESHIFY">
+        <description>
+            <p>Starting at 6th level, you gain resistance to necrotic damage. </p>
+            <p class="indent">Also, you learn how to immediately freshen an ally who is in need. When you see a creature that drops to O hit points within 3O feet of you, you can use your reaction to have the creature drop to 1 hit point instead. You can use this feature a number of times equal to your Wisdom modifier. You regain any expended uses when you finish a long rest. </p>
+        </description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest" action="Reaction">
+            <description>When you see a creature that drops to O hit points within 3O feet of you, you can use your reaction to have the creature drop to 1 hit point instead. </description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+    <element name="Keeper of the Cooked" type="Archetype Feature" source="silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_KEEPER_OF_THE_COOKED">
+        <description>
+            <p>Starting at 8th level, whenever you cast a spell that has a range of Self, you can change its range to Touch. If the spell has a range of Touch, you can increase it to 30 feet. However, you can't cast damage dealing spells or spells that harm other creatures using this feature. </p>
+        </description>
+        <sheet>
+            <description>Whenever you cast a spell that has a range of Self, you can change its range to Touch. If the spell has a range of Touch, you can increase it to 30 feet. However, you can't cast damage dealing spells or spells that harm other creatures using this feature.</description>
+        </sheet>
+    </element>
+    <element name="Food Saint" type="Archetype Feature" source="silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_FOOD_SAINT">
+        <description>
+            <p>Starting at 17th level, you become an immortal protector of rejuvenation. You stop aging, you can't be aged magically, and gain immunity to necrotic damage. </p>
+        </description>
+        <sheet>
+            <description>You stop aging, you can't be aged magically, and gain immunity to necrotic damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" />
+        </rules>
+    </element>
+</elements>
