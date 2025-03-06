@@ -1,0 +1,152 @@
+<elements>
+    <info>
+        <name>Oath of Frugality</name>
+        <description>Oath of Frugality for Clerics from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name=" paladin-frugality.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/paladin-frugality.xml"/>
+        </update>
+    </info>
+    <element name="Oath of Frugality" type="Archetype" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_PALADIN_FRUGALITY">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p>In a world where the cycle begins within a divine kitchen and ends with a devouring bite, frugality is a virtue. The realms are created through great efforts of the divine with limited resources. One must thus be careful and frugal in expending them. The paladins following the ideals of frugality act effectively and never back down before completing a task at hand. These paladins consort with every kind of entity and deity if they believe that it will facilitate their efforts. </p>
+             <h5 class="caption">TENETS OF FRUGALITY</h5>
+            <p>A paladin who takes this oath carries four grains of rice, each carved with a symbol of one of the four tenets. </p>
+            <p class="indent">
+                <b><i>Never Waste an Opportunity.</i></b>
+                 When it's obvious that the use of a resource will yield better results, use it. The tenet's symbol is two arrows standing side by side, pointing in opposite directions. 
+            </p>
+            <p class="indent">
+                <b><i>Don’t be Wasteful.</i></b>
+                 Plan ahead and be precise about your expenditure; don't waste any resources unnecessarily. The tenet's symbol is a droplet.
+            </p>
+            <p class="indent">
+                <b><i>Complete the Task.</i></b>
+                If you are out hunting a creature, kill it; showing mercy at the last moment means the waste of every resource you have spent hunting the prey down. This applies to all tasks. Stay on them and aim to finish in the most efficient way unless doing so becomes impossible or irrelevant. The tenet's symbol is a cross mark.
+            </p>
+            <p class="indent">
+                <b><i>Protect the Cycle.</i></b>
+                All creatures are made with the resources constituting the realm and those resources must eventually return to the realm. Make sure those who seek or achieve immortality perish. Even gods must die at some point. The tenet's symbol is three arrows chasing each other in a circular pattern.
+            </p>
+            <p class="indent"></p>
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_OATH_SPELLS" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_CD" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_CD_EMERGENCY_RESOURCES" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_CD_RECYCLE" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_AURA_OF_MORTALITY" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_MAGICAL_CONSERVATION" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_DEVOURING_FORM" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_OATH_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_CD" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_CD_EMERGENCY_RESOURCES" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_CD_RECYCLE" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_AURA_OF_MORTALITY" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_MAGICAL_CONSERVATION" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_DEVOURING_FORM" level="1" />
+        </rules>
+    </element>
+    <element name="Oath Spells" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_OATH_SPELLS">
+        <description>
+        <p>You gain oath spells at the paladin levels listed. </p>
+            <table>
+                <thead>
+                    <tr><td>Paladin Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>purify food and drink, refresh*</td></tr>
+                <tr><td>5th</td><td>locate object, silver toothpicks*</td></tr>
+                <tr><td>9th</td><td>create food and water, shots!</td></tr>
+                <tr><td>13th</td><td>ethereal eaters*, locate creature</td></tr>
+                <tr><td>17th</td><td>reincarnate, spiking forks*</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" />
+            <grant type="Spell" level="3" id="ID_DRS_SILVERPLATE_SPELL_REFRESH" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_LOCATE_OBJECT" />
+            <grant type="Spell" level="5" id="ID_DRS_SILVERPLATE_SPELL_SILVER_TOOTHPICKS" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" />
+            <grant type="Spell" level="9" id="ID_DRS_SILVERPLATE_SPELL_SHOTS" />
+            <grant type="Spell" level="13" id="ID_DRS_SILVERPLATE_SPELL_ETHEREAL_EATERS" />
+            <grant type="Spell" level="13" id="ID_PHB_SPELL_LOCATE_CREATURE" />
+            <grant type="Spell" level="17" id="ID_PHB_SPELL_REINCARNATE" />
+            <grant type="Spell" level="17" id="ID_DRS_SILVERPLATE_SPELL_SPIKING_FORKS" />
+        </rules>
+    </element>
+    <element name="Channel Divinity" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_CD">
+        <description>
+            <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options: </p>
+            <ul>
+                <li><strong><i>Emergency Resources.</i></strong> You can use your Channel Divinity to restore magic to your magic items. As a part of your short rest, you focus divine magic on the items that you are attuned to. If those items have any charges that replenish under certain conditions, such as regaining some of them at dawn, they regain all expended charges. If the items have features that require you to finish a long rest to use them again, you are considered to have finished a long rest for the sole purpose of using those items' features again; you don't gain any other benefits of a long rest. </li>
+                <li><strong><i>Recycle.</i></strong> You can use your Channel Divinity to regain resources that you and your allies have recently spent. As an action, you wave your hand in a general direction where you and your allies have spent resources. All nonmagical items and objects that you and your allies have expended within the last 10 minutes return to you and your allies in their former conditions; for example, a broken arrow returns to the ally who shot it and it is mended. The total worth of the items restored in this manner can't exceed 1,000 gp.</li>
+            </ul>
+        </description>
+        <sheet display="false">
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Emergency Resources" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_CD_EMERGENCY_RESOURCES">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="Channel Divinity" alt="Emergency Resources">
+            <description>As a part of your short rest, you focus divine magic on the items that you are attuned to. If those items have any charges that replenish under certain conditions, such as regaining some of them at dawn, they regain all expended charges. If the items have features that require you to finish a long rest to use them again, you are considered to have finished a long rest for the sole purpose of using those items' features again; you don't gain any other benefits of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Recycle" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_CD_RECYCLE">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="Channel Divinity" alt="Recycle">
+            <description>As an action, you wave your hand in a general direction where you and your allies have spent resources. All nonmagical items and objects that you and your allies have expended within the last 10 minutes return to you and your allies in their former conditions; for example, a broken arrow returns to the ally who shot it and it is mended. The total worth of the items restored in this manner can't exceed 1,000 gp.</description>
+        </sheet>
+    </element>
+    <element name="Aura of Mortality" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_AURA_OF_MORTALITY">
+        <description>
+            <p>Beginning at 7th level, balancing energies swirl around you, making sure no damage goes to waste. When a creature comes within 10 feet of you for the first time or starts its turn there, it must succeed on a Charisma saving throw or lose all of its damage resistances until the start of its next turn. </p>
+            <p class="indent">At 18th level, the range of this aura increases to 30 feet. </p>
+        </description>
+        <sheet>
+            <description>When a creature comes within 10 feet of you for the first time or starts its turn there, it must succeed on a Charisma saving throw or lose all of its damage resistances until the start of its next turn.</description>
+            <description level="18">When a creature comes within 30 feet of you for the first time or starts its turn there, it must succeed on a Charisma saving throw or lose all of its damage resistances until the start of its next turn.</description>
+        </sheet>
+    </element>
+    <element name="Magical Conservation" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_MAGICAL_CONSERVATION">
+        <description>
+            <p>Starting at 15th level, when you roll for initiative, the next spell you cast does not expend a spell slot. </p>
+        </description>
+        <sheet>
+            <description>When you roll for initiative, the next spell you cast does not expend a spell slot.</description>
+        </sheet>
+    </element>
+    <element name="Devouring Form" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_DEVOURING_FORM">
+        <description>
+            <p>At 20th level, you can assume a darkened form of yourself, devouring anything around you, wasting nothing within your reach. As an action, you can magically become devouring darkness, gaining the following benefits for 1 minute: </p>
+            <ul>
+                <li>You have immunity to damage from nonmagical attacks. </li>
+                <li>At the end of each of your turns, each hostile creature within 60 feet of you must succeed on a Strength saving throw or be pulled 15 feet toward you. A creature that is Huge or larger is immune to this effect. </li>
+                <li>A creature that touches you or hits you with a melee attack while within 5 feet of you takes force damage equal to 2 times your Charisma modifier. </li>
+                <li>All unattended nonmagical objects within 60 feet of you are pulled 15 feet toward you at the end of each of your turns. An object that is Huge or larger is immune to this effect. Any object that can be pulled toward you by this feature disappears and is destroyed when it comes in contact with you. </li>
+            </ul>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a long rest. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description> As an action, you can magically become devouring darkness, gaining the following benefits for 1 minute:
+            You have immunity to damage from nonmagical attacks. 
+            At the end of each of your turns, each hostile creature within 60 feet of you must succeed on a Strength saving throw or be pulled 15 feet toward you. A creature that is Huge or larger is immune to this effect.
+            A creature that touches you or hits you with a melee attack while within 5 feet of you takes {{devouringform:dmg}} force damage.
+            All unattended nonmagical objects within 60 feet of you are pulled 15 feet toward you at the end of each of your turns. An object that is Huge or larger is immune to this effect. Any object that can be pulled toward you by this feature disappears and is destroyed when it comes in contact with you.
+            </description>
+        </sheet>
+        <rules>
+            <stat name="devouringform:dmg" value="charisma:modifier" />
+            <stat name="devouringform:dmg" value="charisma:modifier" />
+        </rules>
+    </element>
+</elements>
