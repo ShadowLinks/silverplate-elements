@@ -1,0 +1,119 @@
+<elements>
+    <info>
+        <name>Chef</name>
+        <description>Chef for Clerics from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name=" fighter-chef.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/fighter-chef.xml"/>
+        </update>
+    </info>
+    <element name="Chef" type="Archetype" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FIGHTER_CHEF">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p>Desiring to master all cooking utensils, a chef is a fighter who uses all types of tools and ingredients to defeat enemies and protect allies. You learn how to use a kitchen properly, then see the world around you as your kitchen.</p>
+            <p class="indent">Most chefs have a life goal; preparing the best meal, finding the recipe for the sweetest dessert, cooking for the gods, etc. Whatever your life goal is, you learn how to use tools and ingredients to defeat enemies and protect allies.</p>
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_BONUS_PROFICIENCY" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_CHEFS_KISS" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_SPICE_COMBATANT" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_SEASONED_VETERAN" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_CHEFS_SPECIALTY" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_MASTER_CHEF" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_BONUS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_CHEFS_KISS" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_SPICE_COMBATANT" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_SEASONED_VETERAN" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_CHEFS_SPECIALTY" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_MASTER_CHEF" level="1" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiency" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_BONUS_PROFICIENCY">
+        <description>
+            <p>When you choose this archetype at 3rd level, you become proficient with cook's utensils and kitchen weaponry. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KITCHEN_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+        </rules>
+    </element>
+    <element name="Chef's Kiss" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_CHEFS_KISS">
+        <description>
+            <p>Also starting at 3rd level, you can show your mastery while fighting with kitchen weaponry. This mastery is represented by your Chef's Kiss dice. You can use these dice in certain unique ways,  which are detailed below. </p>
+            <p class="indent">You have a number of those dice equal to twice your proficiency bonus. You regain any expended Chef's Kiss dice when you finish a long rest. Also, you can regain one expended Chef's Kiss die when you cook, but you can't do so again until you finish a long rest. </p>
+            <p class="indent">A Chef's Kiss die is a d6. When you reach certain levels in this class, the size of your Chef's Kiss dice increases: at 5th level (d8), 11th level (d1O), and 17th level (d12). </p>
+            <p class="indent">You can use your Chef's Kiss dice in the following ways: </p>
+            <p class="indent"><strong><i>Master of the Kitchen Knife.</i></strong> When you hit a creature with an attack using a cutting knife, you can use your reaction to twist the knife. Expend one Chef's Kiss die, and increase the damage by an amount equal to the number rolled plus your proficiency bonus. </p>
+            <p class="indent"><strong><i>Pan Shield.</i></strong> When you are, or a creature that you can see within 30 feet is, hit with an attack, you can use your reaction to expend a Chef's Kiss die and throw a frying pan or great frying pan in to intercept. The damage the target takes is reduced by an amount equal to the number rolled on the Chef's Kiss die plus your proficiency bonus (to a minimum of 0 damage). Your weapon then returns to your hand. </p>
+            <p class="indent"><strong><i>Staggering Technique.</i></strong> When you hit a creature with two-handed kitchen weaponry, you can use your reaction to expend one Chef's Kiss die. </p>
+            <p class="indent"><strong><i>Wonder of the Kitchen.</i></strong> You can use your action to expend one Chef's Kiss die and gain a +1 bonus to your attack and damage rolls with kitchen weaponry for 1 minute. Also, these attacks become magical. </p>
+        </description>
+        <sheet usage="{{chefs kiss:amount}}d{{chefs kiss:size}}/Long Rest">
+            <description>You can regain one expended Chef's Kiss die when you cook, but you can't do so again until you finish a long rest. You can use your Chef's Kiss dice in the following ways:
+            Master of the Kitchen Knife. When you hit a creature with an attack using a cutting knife (p. 143), you can use your reaction to twist the knife. Expend one Chef's Kiss die, and increase the damage by an amount equal to the number rolled plus your proficiency bonus.             
+            Pan Shield. When you are, or a creature that you can see within 30 feet is, hit with an attack, you can use your reaction to expend a Chef's Kiss die and throw a frying pan or great frying pan in to intercept. The damage the target takes is reduced by an amount equal to the number rolled on the Chef's Kiss die plus your proficiency bonus (to a minimum of 0 damage). Your weapon then returns to your hand. 
+            Staggering Technique. When you hit a creature with two-handed kitchen weaponry, you can use your reaction to expend one Chef's Kiss die. On a roll of 6 or higher, the target is knocked prone.
+            Wonder of the Kitchen. You can use your action to expend one Chef's Kiss die and gain a +1 bonus to your attack and damage rolls with kitchen weaponry for 1 minute. Also, these attacks become magical. </description>
+        </sheet>
+        <rules>
+            <stat name="chefs kiss:amount" value="4"/>
+            <stat name="chefs kiss:amount" value="2" level="5"/>
+            <stat name="chefs kiss:amount" value="2" level="9"/>
+            <stat name="chefs kiss:amount" value="2" level="13"/>
+            <stat name="chefs kiss:amount" value="2" level="17"/>
+            <stat name="chefs kiss:size" value="6" bonus="size"/>
+            <stat name="chefs kiss:size" value="8" bonus="size" level="5"/>
+            <stat name="chefs kiss:size" value="10" bonus="size" level="11"/>
+            <stat name="chefs kiss:size" value="12" bonus="size" level="17"/>
+        </rules>
+    </element>
+    <element name="Spice Combatant" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_SPICE_COMBATANT">
+        <description>
+            <p>Starting at 7th level, you can learn how to use spices to distract your enemies. You can use your bonus action to expend one Chef's Kiss die and throw spice at a creature of your choice within 30 feet of you. The target must succeed on a Constitution saving throw (DC = 8 + your proficiency bonus + the result of the Chef's Kiss die roll) or have disadvantage on ability checks, attack rolls, or saving throws (your choice) until the end of its next turn.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description> You can use your bonus action to expend one Chef's Kiss die and throw spice at a creature of your choice within 30 feet of you. The target must succeed on a Constitution saving throw DC {{spice-combatant:dc}} + the result of the Chef's Kiss die roll, or have disadvantage on ability checks, attack rolls, or saving throws (your choice) until the end of its next turn.</description>
+        </sheet>
+        <rules>
+            <stat name="spice-combatant:dc" value="8" bonus="base"/>
+            <stat name="spice-combatant:dc" value="proficiency"/>
+        </rules>
+    </element>
+    <element name="Seasoned Veteran" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_SEASONED_VETERAN" >
+        <description>
+            <p>Starting at 10th level, your exposure to meals of varying quality has strengthened your constitution. You gain advantage on saving throws against poison and you have resistance to poison damage. </p>
+            <p class="indent">At 14th level, your exposure to the mental stress and the physical heat of the kitchen grants you resistance to fire and psychic damage. </p>
+        </description>
+        <sheet>
+            <description>You gain advantage on saving throws against poison</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" level="14"/>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" level="14"/>
+        </rules>
+    </element>
+    <element name="Chef's Specialty" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_CHEFS_SPECIALTY" >
+        <description>
+            <p>At 15th level you create two signature recipes for your allies to enjoy. It takes 1 hour for you to prepare a meal using one of your signature recipes, and it may be done during a short rest. You must have cook's utensils and necessary ingredients worth at least 1 gp in your possession to be able to prepare the meal. The meal expires and loses all of its properties 8 hours after it is cooked. </p>
+            <p class="indent">Each signature dish contains a 1st or 2nd-level spell, chosen when you gain this feature. The spell must have a casting time of 1 action, a range of Self or Touch, and must be one that cannot deal damage. A creature may consume the dish as an action, gaining the effects of the spell. </p>
+            <p class="indent">You can use this feature to prepare the meal by using one of your signature recipes a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest. </p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>You create two signature recipes for your allies to enjoy. It takes 1 hour for you to prepare a meal using one of your signature recipes, and it may be done during a short rest. You must have cook's utensils and necessary ingredients worth at least 1 gp in your possession to be able to prepare the meal. The meal expires and loses all of its properties 8 hours after it is cooked. Each signature dish contains a 1st or 2nd-level spell, chosen when you gain this feature. The spell must have a casting time of 1 action, a range of Self or Touch, and must be one that cannot deal damage. A creature may consume the dish as an action, gaining the effects of the spell.</description>
+        </sheet>
+    </element>
+    <element name="Master Chef" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_FIGHTER_CHEF_MASTER_CHEF" >
+        <description>
+            <p>At 18th level, you learn two additional signature recipes for your Chef's Specialty feature and the spell you choose for these recipes can be a 3rd-level spell. </p>
+        </description>
+        <sheet>
+            <description>You learn two additional signature recipes for your Chef's Specialty feature and the spell you choose for these recipes can be a 3rd-level spell.</description>
+        </sheet>
+    </element>
+</elements>
