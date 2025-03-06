@@ -1,7 +1,7 @@
 <elements>
     <info>
         <name>College of Flavor</name>
-        <description>College of Flavor for Barbarians from The Tasty Lands of Silverplate</description>
+        <description>College of Flavor for Bards from The Tasty Lands of Silverplate</description>
         <update version="0.0.1">
             <file name=" bard-flavor.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/bard-flavor.xml"/>
         </update>

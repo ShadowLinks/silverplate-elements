@@ -1,0 +1,117 @@
+<elements>
+    <info>
+        <name>Circle of Dough</name>
+        <description>Circle of Dough for Clerics from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name=" druid-dough.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/druid-dough.xml"/>
+        </update>
+    </info>
+    <element name="Circle of Dough" type="Archetype" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_DRUID_DOUGH">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>When the lands of Silverplate were attacked by unnatural forces, those who wished to protect it begged the greater powers to grant them the power of nature. On that day, they were blessed with a vision of flour and water. These enlightened people formed the Circle of Dough and vowed to protect the balance of this realm with their newfound elemental powers. </p>
+            <p class="indent"></p>
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_CIRCLE_SPELLS" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_THE_VISION_OF_FLOUR" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_THE_VISION_OF_WATER" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_THE_NATURAL_MIX" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_DOUGHFUL_HEALING" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_AVATAR_OF_DOUGH" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_CIRCLE_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_THE_VISION_OF_FLOUR" level="2" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_THE_VISION_OF_WATER" level="2" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_THE_NATURAL_MIX" level="6" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_DOUGHFUL_HEALING" level="10" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_AVATAR_OF_DOUGH" level="14" />
+        </rules>
+    </element>
+    <element name="Circle Spells" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_CIRCLE_SPELLS">
+        <description>
+            <p>When you join the Circle of Dough, you are blessed with the Vision, and magic begins to flow into you. At 3rd, 5th, 7th, and 9th level, you gain access to circle spells. </p>
+            <p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you. </p>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Circle Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>enlarge/reduce, ferment</td></tr>
+                <tr><td>5th</td><td>divine wrapping, water walk</td></tr>
+                <tr><td>7th</td><td>conjure minor elementals, deathward</td></tr>
+                <tr><td>9th</td><td>conjure elemental, resilient sphere</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
+            <grant type="Spell" level="3" id="ID_DRS_SILVERPLATE_SPELL_FERMENT" />
+            <grant type="Spell" level="5" id="ID_DRS_SILVERPLATE_SPELL_DIVINE_WRAPPING" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_WATER_WALK" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_DEATH_WARD" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" />
+        </rules>
+    </element>
+    <element name="The Vision of Flour" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_THE_VISION_OF_FLOUR">
+        <description>
+            <p>Starting at 2nd level when you transform into a beast using your Wild Shape feature, you can choose to assume the Dough version of it. Any Dough beast retains all of its statistics and abilities it normally has, but also has the following features: </p>
+            <ul>
+                <li>Your body is completely made out of dough. You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks. </li>
+                <li>You can reshape your doughy body quickly but briefly. As a reaction to taking damage (except fire damage) from a nonmagical attack, you can regain a number of hit points equal to your proficiency bonus. </li>
+                <li>Your limbs help you move by stretching out. Your jump distance is doubled. </li>
+            </ul>
+        </description>
+        <sheet>
+            <description>As a reaction to taking damage (except fire damage) from a nonmagical attack, you can regain {{proficiency}} hit points. Your jump distance is doubled.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+        </rules>
+    </element>
+    <element name="The Vision of Water" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_THE_VISION_OF_WATER">
+        <description>
+            <p>Also at 2nd level, you learn the temporary preservation* cantrip. This cantrip doesn't count against the number of druid cantrips you know. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_DRS_SILVERPLATE_SPELL_TEMPORARY_PRESERVATION" />
+        </rules>
+    </element>
+    <element name="The Natural Mix" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_THE_NATURAL_MIX">
+        <description>
+            <p>At 6th level, you understand the ways the sacred elements of flour and water must Circle of Dough druıd be perfectly balanced, not just outside but within. Whenever you assume the Dough version of a beast, your transformation creates a watery shield around you and you gain 10 temporary hit points. Also, you can breathe underwater while you are transformed into a Dough beast. </p>
+        </description>
+        <sheet>
+            <description>Whenever you assume the Dough version of a beast, your transformation creates a watery shield around you and you gain 10 temporary hit points. Also, you can breathe underwater while you are transformed into a Dough beast.</description>
+        </sheet>
+    </element>
+    <element name="Doughful Healing" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_DOUGHFUL_HEALING">
+        <description>
+            <p>At 10th level, you can share your doughful vitality with others. As an action, you can touch a creature and place a number of dough balls on it. For each dough ball you place, you lose 5 hit points. The number of dough balls you have placed on creatures cannot exceed your level. </p>
+            <p class="indent">As an action, you can activate some or all the dough balls you have placed. Each creature that has an activated dough ball on it regains hit points equal to five times the number of dough balls activated on it, at which point the activated dough balls disappear. </p>
+            <p class="indent">If a creature that has a dough ball attached to it is transported by magical means such as with the teleportation or plane shift spells, or the creature dies, the dough ball disappears. </p>
+        </description>
+        <sheet>
+            <description>As an action, you can touch a creature and place a number of dough balls on it. For each dough ball you place, you lose 5 hit points. The number of dough balls you have placed on creatures cannot exceed your level. As an action, you can activate some or all the dough balls you have placed. Each creature that has an activated dough ball on it regains hit points equal to five times the number of dough balls activated on it, at which point the activated dough balls disappear. If a creature that has a dough ball attached to it is transported by magical means such as with the teleportation or plane shift spells, or the creature dies, the dough ball disappears.</description>
+        </sheet>
+    </element>
+    <element name="The Avatar of Dough" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_DRUID_DOUGH_AVATAR_OF_DOUGH">
+        <description>
+            <p>At 14th level, you are gifted with the strength of the elementals of the Circle of Dough. You can transform into a flour elemental or a water elemental using your Wild Shape feature. However, the transformation lasts 1 minute or until you revert to your normal form. </p>
+            <p class="indent">Once you use this feature, you must finish a long rest to use it again. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can transform into a flour elemental or a water elemental using your Wild Shape feature. However, the transformation lasts 1 minute or until you revert to your normal form.</description>
+        </sheet>
+    </element>
+</elements>
