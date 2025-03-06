@@ -6,6 +6,20 @@
             <file name="items-wonderous.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-wonderous.xml"/>
         </update>
     </info>
+    <element name="Apple of Immunity" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_APPLE_OF_IMMUNITY">
+        <description>
+            <p>This green magical orb looks like a glass apple ornament. While holding it, you can use your bonus action to speak its command word and cause the apple to hover around you. While the apple is hovering around you, whenever you take damage, you can use your reaction to take no damage instead. Once you do, you have immunity to the damage types prevented by the reaction until the next dawn. Whenever you are subjected to the said damage type, you regain 1d4 hit points instead of taking damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Item</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="trident">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
 </elements>
 
 <!--  
@@ -17,18 +31,16 @@
         </description>
         <setters>
             <set name="keywords"></set>
-            <set name="category">Magic Weapons</set>
+            <set name="category">Wondrous Item</set>
             <set name="cost" currency="gp">0</set>
-            <set name="type" addition="trident">Weapon</set>
+            <set name="type" addition="trident">Wondrous Item</set>
             <set name="rarity">Uncommon</set>
-            <set name="enhancement">1</set>
-            <set name="weapon">Trident</set>
             <set name="attunement">true</set>
         </setters>
     </element>
 
 
-Apple of Immunity
+
 Wondrous Item, legendary (requires attunement)
 
 This green magical orb looks like a glass apple ornament. While holding it, you can use your bonus 
