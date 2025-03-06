@@ -6,6 +6,24 @@
             <file name="items-weapons.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-weapons.xml"/>
         </update>
     </info>
+     <element name="Weapon Proficiency (kitchen weapons)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KITCHEN_WEAPONS">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CUTTING_KNIFE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FRYING_PAN" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_FRYING_PAN" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_GRATER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_OVEN_SHOVEL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_WARFORK" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREAT_WARSPOON" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HAND_MIXER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_OVEN_SHOVEL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_ROLLING_PIN" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_THROWING_PICK" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARFORK" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_GRATER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARSPOON" />
+        </rules>
+     </element>
     <element name="Weapon Proficiency (Cutting Knife)" type="Proficiency" source="Silverplate" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CUTTING_KNIFE">
         <supports>Weapon, Melee, Ranged, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, kitchen-weapons, ID_INTERNAL_WEAPON_GROUP_KITCHEN_WEAPONS</supports>
     </element>
