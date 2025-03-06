@@ -1,0 +1,76 @@
+<elements>
+    <info>
+        <name>Way of Kebab</name>
+        <description>Way of Kebab for Clerics from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name=" monk-kebab.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/monk-kebab.xml"/>
+        </update>
+    </info>
+    <element name="Way of Kebab" type="Archetype" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_MONK_KEBAB">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>In the First Age, foodfolk started to study and use magical ways to fight against the threat of mold. However, not everyone could harness arcane power, so some people began to train in unarmed martial arts. Not long after they realized there was a power within them that could be utilized as a weapon, they named this power after the master of the style, Kebab, and they all committed themselves to the great ways of Kebab. </p>
+            <p class="indent">Although with the advancement of craft today, there aren't many left who follow the way of Master Kebab, those who are trained still protect the lands of Silverplate against every kind of evil. </p>
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SHISH_STRIKES" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SPINNING_TECHNIQUE" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SAUCY_PROTECTION" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SOUL_MINCER" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SHISH_STRIKES" level="3" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SPINNING_TECHNIQUE" level="6" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SAUCY_PROTECTION" level="11" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SOUL_MINCER" level="17" />
+        </rules>
+    </element>
+    <element name="Shish Strikes" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SHISH_STRIKES">
+        <description>
+            <p>Starting when you choose this archetype at 3rd level, your unarmed strikes can pierce through enemies. You can choose to deal piercing damage instead of bludgeoning damage with your unarmed strikes. Also, you can spend 1 ki point to enhance your unarmed strikes until the start of your next turn; while enhanced, your unarmed strikes deal an additional 2 damage on a hit. </p>
+            <p class="indent">When you reach 5th level, your arms and legs glow with molten heat when you use this feature, allowing them to stretch further. You can attack creatures within 10 feet of you with unarmed strikes while your unarmed strikes are enhanced by the Shish Strikes feature.</p>
+        </description>
+        <sheet>
+            <description>You can choose to deal piercing damage instead of bludgeoning damage with your unarmed strikes. Also, you can spend 1 ki point to enhance your unarmed strikes until the start of your next turn; while enhanced, your unarmed strikes deal an additional 2 damage on a hit.</description>
+            <description level="5">You can choose to deal piercing damage instead of bludgeoning damage with your unarmed strikes. Also, you can spend 1 ki point to enhance your unarmed strikes until the start of your next turn; while enhanced, your unarmed strikes deal an additional 2 damage on a hit. You can attack creatures within 10 feet of you with unarmed strikes while your unarmed strikes are enhanced by the Shish Strikes feature.</description>
+        </sheet>
+    </element>
+    <element name="Spinning Technique" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SPINNING_TECHNIQUE">
+        <description>
+            <p>Starting at 6th level, you learn the most important maneuver of Master Kebab; the Spinning Technique. As a bonus action, you can spend a number of ki points equal to the number of creatures within your reach that you want to hit. When you do so, you quickly spin and strike each of those creatures once with your unarmed strike. You make a single attack roll against all targets but roll for damage separately. </p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>As a bonus action, you can spend a number of ki points equal to the number of creatures within your reach that you want to hit. When you do so, you quickly spin and strike each of those creatures once with your unarmed strike. You make a single attack roll against all targets but roll for damage separately.</description>
+        </sheet>
+    </element>
+    <element name="Saucy Protection" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SAUCY_PROTECTION">
+        <description>
+            <p>Starting at 11th level, your body slowly adapts to the essence of the combat; its sauce. While your unarmed strikes are enhanced by the Shish Strikes feature, you have resistance to bludgeoning, piercing, and slashing damage. </p>
+        </description>
+        <sheet>
+            <description>While your unarmed strikes are enhanced by the Shish Strikes feature, you have resistance to bludgeoning, piercing, and slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Soul Mincer" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_MONK_KEBAB_SOUL_MINCER">
+        <description>
+            <p>When you reach 17th level, you can connect deeply with Kebab's teachings and focus your hostile intent on a single target, trying to vanquish it no matter what. As a bonus action, you can mark a creature within 120 feet of you that you are aware of. </p>
+            <p class="indent">You gain the following benefits:</p>
+            <ul>
+                <li>While your unarmed strikes are enhanced by the Shish Strikes feature, you can choose to deal psychic damage with your unarmed strikes, instead of bludgeoning or piercing damage, when you hit the marked creature. </li>
+                <li>Your unarmed strikes score a critical hit on a roll of 18 or higher against the marked creature. </li>
+                <li>When the marked creature hits you with an attack while within 5 feet of you, you can spend 1 ki point as a reaction and make 2 unarmed strikes against it. </li>
+                <li>When you enhance your unarmed strikes with the Shish Strikes feature, your successful unarmed strikes against the marked creature deal extra damage. The amount of this extra damage is equal to the die provided in the Martial Arts column of the Monk Table (according to your level). </li>
+            </ul>
+            <p class="indent">The creature is no longer marked if it is reduced to 0 hit points, dies, or is no longer within 300 feet of you. </p>
+            <p class="indent">You can use this feature twice. Once you finish a long rest, you regain all expended uses. </p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>As a bonus action, you can mark a creature within 120 feet of you that you are aware of. You gain the following benefits: 
+            While your unarmed strikes are enhanced by the Shish Strikes feature, you can choose to deal psychic damage with your unarmed strikes, instead of bludgeoning or piercing damage, when you hit the marked creature.
+            Your unarmed strikes score a critical hit on a roll of 18 or higher against the marked creature.
+            When the marked creature hits you with an attack while within 5 feet of you, you can spend 1 ki point as a reaction and make 2 unarmed strikes against it.
+            When you enhance your unarmed strikes with the Shish Strikes feature, your successful unarmed strikes against the marked creature deal extra damage. The amount of this extra damage is equal to your martial arts die.</description>
+        </sheet>
+    </element>
+</elements>
