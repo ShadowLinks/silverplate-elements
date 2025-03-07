@@ -2,7 +2,7 @@
     <info>
         <name>Chef</name>
         <description>Chef Archetypefor Fighters from The Tasty Lands of Silverplate</description>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name=" fighter-chef.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/fighter-chef.xml"/>
         </update>
     </info>
