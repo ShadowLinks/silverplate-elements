@@ -10,7 +10,36 @@
 	</info>
 	<files>
 			<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/source.xml" />
-            <file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/languages.xml"/>
+            
+			<file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/languages.xml"/>
+			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/backgrounds.xml"/>
+			<file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/feats.xml"/>
+			<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/spells.xml" />
 
+			<file name="race-foodfolk.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/race-foodfolk.xml"/>
+			<file name="foodfolk-cookyourown.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/foodfolk-cookyourown.xml"/>
+			<file name="foodfolk-tags.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/foodfolk-tags.xml"/>
+			
+			<file name="items-armor.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-armor.xml"/>
+			<file name="items-potions.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-potions.xml"/>
+			<file name="items-rings.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-rings.xml"/>
+			<file name="items-rods.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-rods.xml"/>
+			<file name="items-staves.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-staves.xml"/>
+			<file name="items-wands.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-wands.xml"/>
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-weapons.xml"/>
+			<file name="items-wonderous.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/items-wonderous.xml"/>
+			
+			<file name=" barbarian-sugarrush.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/barbarian-sugarrush.xml"/>
+			<file name=" bard-flavor.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/bard-flavor.xml"/>
+			<file name=" cleric-rejuvination.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/cleric-rejuvination.xml"/>
+			<file name=" druid-dough.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/druid-dough.xml"/>
+			<file name=" fighter-chef.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/fighter-chef.xml"/>
+			<file name=" monk-kebab.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/monk-kebab.xml"/>
+			<file name=" paladin-frugality.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/paladin-frugality.xml"/>
+			<file name=" ranger-vegetableguerilla.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/ranger-vegetableguerilla.xml"/>
+			<file name=" rogue-tastestealer.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/rogue-tastestealer.xml"/>
+			<file name=" sorcerer-spicomancer.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/sorcerer-spicomancer.xml"/>
+			<file name=" warlock-gourmet.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/warlock-gourmet.xml"/>
+			<file name=" wizard-ancientrecipes.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/wizard-ancientrecipes.xml"/>
     </files>
 </index>
