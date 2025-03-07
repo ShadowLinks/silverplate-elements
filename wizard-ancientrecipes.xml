@@ -2,7 +2,7 @@
     <info>
         <name>School of Ancient Recipes</name>
         <description>School of Ancient Recipes for Wizards from The Tasty Lands of Silverplate</description>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name=" wizard-ancientrecipes.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/wizard-ancientrecipes.xml"/>
         </update>
     </info>
