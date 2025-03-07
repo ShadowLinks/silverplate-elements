@@ -8,7 +8,7 @@
     </info>
     <element name="Insipid Rod" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_INSIPID_ROD">
         <description>
-            <p>This is a rod made of completely flavorless rusk. While holding the rod, you are tasteless, can't cast spells, and have immunity to spells. You benefit from this magic item even while tasteless./p>
+            <p>This is a rod made of completely flavorless rusk. While holding the rod, you are tasteless, can't cast spells, and have immunity to spells. You benefit from this magic item even while tasteless.</p>
         </description>
         <setters>
             <set name="keywords">antimagic</set>
