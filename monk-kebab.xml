@@ -1,7 +1,7 @@
 <elements>
     <info>
         <name>Way of Kebab</name>
-        <description>Way of Kebab for Clerics from The Tasty Lands of Silverplate</description>
+        <description>Way of Kebab for Monks from The Tasty Lands of Silverplate</description>
         <update version="0.0.1">
             <file name=" monk-kebab.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/monk-kebab.xml"/>
         </update>

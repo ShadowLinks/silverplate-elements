@@ -1,7 +1,7 @@
 <elements>
     <info>
         <name>Oath of Frugality</name>
-        <description>Oath of Frugality for Clerics from The Tasty Lands of Silverplate</description>
+        <description>Oath of Frugality for Paladins from The Tasty Lands of Silverplate</description>
         <update version="0.0.1">
             <file name=" paladin-frugality.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/paladin-frugality.xml"/>
         </update>

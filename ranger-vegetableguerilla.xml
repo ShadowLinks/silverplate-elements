@@ -1,0 +1,81 @@
+<elements>
+    <info>
+        <name>Vegetable Guerilla Conclave</name>
+        <description>Vegetable Guerilla Conclave for Rangers from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name=" ranger-vegetableguerilla.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/ranger-vegetableguerilla.xml"/>
+        </update>
+    </info>
+    <element name="Vegetable Guerilla Conclave" type="Archetype" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_RANGER_VEGETABLEGUERILLA">
+        <supports>Ranger Archetype</supports>
+        <description>
+            <p>Some rangers study the connection between vegetables and the environment they grow in, and learn how to use the environment to their advantage. The environment becomes their ultimate weapon, and they adapt themselves to new environments quickly. Some of them consult with vegetable spirits, convincing them to assist them in battle. </p>
+            <p class="indent"></p>
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_VEGETABLE_GUERILLA_TACTICS" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_BE_LIKE_A_VEGETABLE" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_MASTER_GUERILLA" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_ONE_WITH_THE_ENVIRONMENT" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_VEGETABLE_GUERILLA_TACTICS" level="3" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_BE_LIKE_A_VEGETABLE" level="7" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_MASTER_GUERILLA" level="11" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_ONE_WITH_THE_ENVIRONMENT" level="15" />
+        </rules>
+    </element>
+    <element name="Vegetable Guerilla Tactics" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_VEGETABLE_GUERILLA_TACTICS">
+        <description>
+            <p>At 3rd level, you connect yourself to the environment you are in, just as the vegetables release their roots into the land. Thorns get in your enemies' way, the wind clears your path, and the land beneath your enemies slides. </p>
+            <p class="indent">At the start of each of your turns, you can use one of the following: </p>
+            <p class="indent"><strong><i>Environmental Wrath.</i></strong> Choose a creature that you can see within 60 feet of you. It must succeed on a Dexterity saving throw or take ld8 bludgeoning, piercing, or slashing damage (one of your choice) from the environmental effects, such as a hit from a falling tree, a cut made by a thorn, or a bite of a passing vermin. </p>
+            <p class="indent"><strong><i>Ghost Guerilla.</i></strong> Choose a number of creatures up to your Wisdom modifier (minimum one). You and the chosen creatures have advantage on Dexterity (Stealth) checks until the end of your next turn. </p>
+            <p class="indent"><strong><i>Landslide.</i></strong> Choose a creature that you can see within 60 feet of you that is standing on a natural surface. It must succeed on a Dexterity saving throw or be knocked prone. </p>
+            
+        </description>
+        <sheet>
+            <description>At the start of each of your turns, you can use one of the following:
+            Environmental Wrath. Choose a creature that you can see within 60 feet of you. It must succeed on a Dexterity saving throw or take ld8 bludgeoning, piercing, or slashing damage (one of your choice) from the environmental effects, such as a hit from a falling tree, a cut made by a thorn, or a bite of a passing vermin. 
+            Ghost Guerilla. Choose a number of creatures up to {{wisdom:modifier}}. You and the chosen creatures have advantage on Dexterity (Stealth) checks until the end of your next turn. 
+            Landslide. Choose a creature that you can see within 60 feet of you that is standing on a natural surface. It must succeed on a Dexterity saving throw or be knocked prone. 
+            </description>
+            <description level="11">At the start of each of your turns, you can use one of the following:
+            Environmental Wrath. Choose a creature that you can see within 60 feet of you. It must succeed on a Dexterity saving throw or take ld10 magical bludgeoning, piercing, or slashing damage (one of your choice) from the environmental effects, such as a hit from a falling tree, a cut made by a thorn, or a bite of a passing vermin. 
+            Ghost Guerilla. Choose a number of creatures up to {{wisdom:modifier}}. You and the chosen creatures have advantage on Dexterity (Stealth) checks until the end of your next turn and you can choose to become invisible until the end of your current turn. 
+            Landslide. Choose a creature that you can see within 60 feet of you that is standing on a natural surface. It must succeed on a Dexterity saving throw or be knocked prone and restrained until the end of its next turn. 
+            </description>
+        </sheet>
+    </element>
+    <element name="Be Like a Vegetable" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_BE_LIKE_A_VEGETABLE">
+        <description>
+            <p>Beginning at 7th level, once you connect yourself the environment, it lets you move in it more smoothly. </p>
+            <p class="indent">As an action, you take a deep breath and feel the environment, building a magical connection with it. For the next 1 minute, your speed increases by 10 feet while you are within 1 mile of the point with which you have built the connection. </p>
+            <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum once). You regain any expended uses when you finish a long rest. </p>
+        </description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>As an action, you take a deep breath and feel the environment, building a magical connection with it. For the next 1 minute, your speed increases by 10 feet while you are within 1 mile of the point with which you have built the connection.</description>
+        </sheet>
+    </element>
+    <element name="Master Guerilla" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_MASTER_GUERILLA">
+        <description>
+            <p>At 11th level, you master the Vegetable Guerilla Tactics tactics you've learned. You gain additional benefits when you use the tactics in the Vegetable Guerilla Tactics feature: </p>
+            <p class="indent">Environmental Wrath. The damage becomes magical and increases to ldlO. </p>
+            <p class="indent">Ghost Guerilla. You can choose to become invisible until the end of your current turn. </p>
+            <p class="indent">Landslide. The creature is also restrained until the end of its next turn on a failed save.</p>
+        </description>
+        <sheet>
+            <description>You gain additional benefits when you use the tactics in the Vegetable Guerilla Tactics feature.</description>
+        </sheet>
+    </element>
+    <element name="One with the Environment" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_RANGER_VEGETABLEGUERILLA_ONE_WITH_THE_ENVIRONMENT">
+        <description>
+            <p>When you reach 15th level, the environment uses every means to help protect you from harm. When you take damage, you can use your reaction to have immunity or resistance to that damage. However, if you choose to have immunity, you can't use the Vegetable Guerilla Tactics feature at the start of your next turn and you can't use this feature for the next 1 minute. </p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest. </p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest" action="Reaction">
+            <description>When you take damage, you can use your reaction to have immunity or resistance to that damage. However, if you choose to have immunity, you can't use the Vegetable Guerilla Tactics feature at the start of your next turn and you can't use this feature for the next 1 minute.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,168 @@
+<elements>
+    <info>
+        <name>School of Ancient Recipes</name>
+        <description>School of Ancient Recipes for Wizards from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name=" wizard-ancientrecipes.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/wizard-ancientrecipes.xml"/>
+        </update>
+    </info>
+    <element name="School of Ancient Recipes" type="Archetype" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_WIZARD_ANCIENTRECIPES">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p>Although the wizards of ancient recipes are well-educated in most arcane applications, they do not concern themselves with the current paradigm. Their focus is on the past, the times when everything was created according to the purest and simplest recipes; the recipes that the divine used to follow. </p>
+            <p class="indent"></p>
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_HISTORY_EXPERTISE" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_ARCANOLOGICAL_STUDIES" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_LOST_METHODS" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_RAW_MAGIC" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_MAGICAL_DISPERSION" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_ANCIENT_MAGIC" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_HISTORY_EXPERTISE" level="2" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_ARCANOLOGICAL_STUDIES" level="2" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_LOST_METHODS" level="6" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_RAW_MAGIC" level="10" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_MAGICAL_DISPERSION" level="14" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_ANCIENT_MAGIC" level="20" />
+        </rules>
+    </element>
+    <element name="History Expertise" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_HISTORY_EXPERTISE">
+        <description>
+            <p>Beginning when you select this school at 2nd level, you gain expertise in history. You gain proficiency in the History skill if you don't already have it and your proficiency bonus is doubled for any Intelligence (History) checks you make. </p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" bonus="double"/>
+        </rules>
+    </element>
+    <element name="Arcanological Studies" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_ARCANOLOGICAL_STUDIES">
+        <description>
+            <p>Starting at 2nd level, you can cast the comprehend languages, detect magic, and identify spells without expending a spell slot. You learn these spells if you don't already know them. </p>
+        </description>
+        <sheet>
+            <description>You can cast the comprehend languages, detect magic, and identify spells without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC"/>
+            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY"/>
+        </rules>
+    </element>
+    <element name="Lost Methods" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_LOST_METHODS">
+        <description>
+            <p>At 6th level, you learn to combine your simpler spells into more complex ones. As an action, you can expend 2 spell slots of the same level and regain a spell slot of one level higher. The spell slot you regain must be of a level you already have access to. You can use this feature a number of times equal to your proficiency bonus. Once you finish a long rest, you regain all expended uses. </p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>As an action, you can expend 2 spell slots of the same level and regain a spell slot of one level higher. The spell slot you regain must be of a level you already have access to.</description>
+        </sheet>
+    </element>
+    <element name="Raw Magic" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_RAW_MAGIC">
+        <description>
+            <p>Starting at 10th level, you can alter the spells you know and apply ancient methods to cast them. When you deal damage with a spell, you can choose to deal force damage instead of the spell's normal damage type. If you cast a spell that normally deals force damage, it deals an additional 2d10 force damage. </p>
+        </description>
+        <sheet>
+            <description>When you deal damage with a spell, you can choose to deal force damage instead of the spell's normal damage type. If you cast a spell that normally deals force damage, it deals an additional 2d10 force damage.</description>
+        </sheet>
+    </element>
+    <element name="Magical Dispersion" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_MAGICAL_DISPERSION">
+        <description>
+            <p>Starting at 14th level, you have immunity to force damage. You also take less damage from magical attacks. When a spell, similar magic, or an attack made with a magic weapon deals you damage, the damage you take is reduced by an amount equal to your proficiency bonus plus your Intelligence modifier (to a minimum of 0).</p>
+        </description>
+        <sheet>
+            <description>You have immunity to force damage. You also take less damage from magical attacks. When a spell, similar magic, or an attack made with a magic weapon deals you damage, the damage you take is reduced by {{magical-dispersion}}.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FORCE" />
+            <stat name="magical-dispersion" value="proficiency" bonus="base"/>
+            <stat name="magical-dispersion" value="intelligence:modifier" />
+        </rules>
+    </element>
+    <element name="Ancient Magic" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_ANCIENT_MAGIC">
+        <description>
+            <p>Unlike other wizard schools, the School of Ancient Recipes teaches unique spells called Ancient Spells. To be able to learn them, you must focus your study on them, foregoing the Spell Mastery and the Signature Spells features. </p>
+            <p class="indent">At 20th level, you finally learn an ancient spell and master its casting. You learn to cast one of the following special spells of your choice that is available only to wizards who study the School of Ancient Recipes.</p>
+            <p class="indent">Once you cast an ancient spell, you can't cast it again for 7 days. </p>
+        </description>
+        <sheet usage="1/7 Days">
+            <description>Spell Mastery and the Signature Spells features are unavailble to you. You are able to cast 1 ancient magic spell.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Ancient Magic" supports="ancient-magic-spell" />
+        </rules>
+    </element>
+    <element name="Ingurgitate" type="Spell" source="source" id="ID_DRS_SILVERPLATE_SPELL_INGURGITATE">
+        <supports>ancient-magic-spell</supports>
+        <requirements>ID_DRS_SILVERPLATE_ARCHETYPE_WIZARD_ANCIENTRECIPES</requirements>
+        <description>
+            <p>A disk of nothingness with numerous teeth on its border and a devouring gap in its center appears and keeps expanding, devouring everything in its path. </p>
+            <p class="indent">When you cast this spell, a 3-foot-tall and 30-foot-radius disc appears; it is centered on you. When a creature first comes in contact with the disk or ends its turn within, it must make a Charisma saving throw, taking l0dl0 force damage on a failed save, or half as much damage on a successful one. All structures and unattended objects in the disc take 30 force damage at the start of each of your turns. </p>
+            <p class="indent">At the start of each of your turns, while you are concentrating on the spell, the radius of the disc increases by 30 feet, up to 900 feet. If you move from your current location after casting the spell either by choice or force, your concentration ends. </p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">10</set>
+            <set name="school">Ancient Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">32 fangs, each from a different creature, which is consumed by the spell</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Shape the Eternal Dough" type="Spell" source="source" id="ID_DRS_SILVERPLATE_SPELL_SHAPE_THE_ETERNAL_DOUGH">
+        <supports>ancient-magic-spell</supports>
+        <requirements>ID_DRS_SILVERPLATE_ARCHETYPE_WIZARD_ANCIENTRECIPES</requirements>
+        <description>
+            <p>You touch a point on the ground and mark the vast area surrounding it. You can alter the form of the landscape within 1 mile of the point to your liking. You can raise mountains, dig tunnels, create rivers and lakes, and even alter the vegetation and build structures. This spell can add structures to the landscape but it can't remove or alter structures built by others nor affect places inhabited by sentient creatures, such as dragon lairs, lizardfolk villages, and foodfolk kingdoms. If you try to use this spell to harm or imprison a creature, the spell fails. </p>
+            <p class="indent">The change happens instantaneously. After it happens, nature takes its course. If the new landscape is not sustainable, changes occur over time. For instance, if you create a lake but there are no water sources feeding the lake, it is doomed to dry up. </p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">10</set>
+            <set name="school">Ancient Transmutation</set>
+            <set name="time">1 hour</set>
+            <set name="range">touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a masterwork rolling pin worth at least 9999 gp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="True Cooking" type="Spell" source="source" id="ID_DRS_SILVERPLATE_SPELL_TRUE_COOKING">
+        <supports>ancient-magic-spell</supports>
+        <requirements>ID_DRS_SILVERPLATE_ARCHETYPE_WIZARD_ANCIENTRECIPES</requirements>
+        <description>
+            <p>You can create life and give it a soul. You cook a person from the ingredients of the spell and decide on their memories, characteristics, morality, personality, name, appearance, knowledge, talents, goals, and dreams. You create the person to your liking but they must be at least a year younger than their adult form. You can create a replica of a person you know, but a successful DC 30 Wisdom (Insight) check is required if you want to imitate their personality. </p>
+            <p class="indent">Choose a class for the person you've created; they have 1 level in that class. Then, create a character sheet for the 1st-level character in the same way you created one for yourselves. </p>
+            <p class="indent">Although this person has a personality that you've determined, they might change according to new experiences as everyone tends to do. </p>
+            <p class="indent">If you create another person with this spell, the previous one you've created dies and their soul disappears into nothingness, making it impossible to bring them back to life. </p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">10</set>
+            <set name="school">Ancient Necromancy</set>
+            <set name="time">1 day</set>
+            <set name="range">10 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">30 pounds of flour, 6 pounds of vegetables, 6 pounds of dairy products, 6 pounds of meat or a meat substitute, 4 pounds of sugar, 2 pounds of butter, 1 gallon of water, 1 gallon of vegetable oil, and a pinch of salt, which are all consumed by the spell</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>

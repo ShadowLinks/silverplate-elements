@@ -1,0 +1,174 @@
+<elements>
+    <info>
+        <name>Spicomancer</name>
+        <description>Spicomancer for Sorcerers from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name=" sorcerer-spicomancer.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/sorcerer-spicomancer.xml"/>
+        </update>
+    </info>
+    <element name="Spicomancer" type="Archetype" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_SORCERER_SPICOMANCER">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p>Your power comes from the faint flavor deep within you. It is a rare variety of spice bequeathed by your early ancestors or seasoned within you by an entity. Regardless, you know how power tastes, and the more you understand your own taste, the more you understand the power within. Understanding spice is understanding the foodfolk and how to season them to your liking. </p>
+            <p class="indent"></p>
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SPICOMANCER_FLAVOR" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SEEING_THE_TASTES" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SEASONING" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_AGGRAVATE_FLAVOR" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_BLAND" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SAPID_AURA" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SPICOMANCER_FLAVOR" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SEEING_THE_TASTES" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SEASONING" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_AGGRAVATE_FLAVOR" level="6" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_BLAND" level="14" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SAPID_AURA" level="18" />
+        </rules>
+    </element>
+    <element name="Spicomancer Flavors" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SPICOMANCER_FLAVOR">
+        <description>
+            <p>You can pick from or roll on the Spicomancer Flavors table to create a spice for your character. </p>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>Flavors</td></tr>
+                </thead>
+                <tr><td>1</td><td><strong><i>Black Pepper.</i></strong> When a strong feeling overwhelms you, you sneeze very loudly. </td></tr>
+                <tr><td>2</td><td><strong><i>Garlic Powder.</i></strong> In a crowd, strangers tend to approach you first regardless of your appearance and demeanor. </td></tr>
+                <tr><td>3</td><td><strong><i>Oregano.</i></strong> Your open wounds and blood have an appetizing smell. </td></tr>
+                <tr><td>4</td><td><strong><i>Cinnamon.</i></strong> You rarely change your expression or body language. You are eerily still. </td></tr>
+                <tr><td>5</td><td><strong><i>Anise.</i></strong> You don't move your eyes, instead, you move your head to look around. </td></tr>
+                <tr><td>6</td><td><strong><i>Mint.</i></strong> You tend to exaggerate everything including your gestures and stories. </td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="spice-flavor" name="Spicomancer Flavors" />
+        </rules>
+    </element>
+    <element name="Black Pepper" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_FLAVOR_1">
+        <supports>spice-flavor</supports>
+        <description>
+            <p>When a strong feeling overwhelms you, you sneeze very loudly.</p>
+        </description>
+        <sheet>
+            <description>When a strong feeling overwhelms you, you sneeze very loudly.</description>
+        </sheet>
+    </element>
+    <element name="Garlic Powder" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_FLAVOR_2">
+        <supports>spice-flavor</supports>
+        <description>
+            <p>In a crowd, strangers tend to approach you first regardless of your appearance and demeanor.</p>
+        </description>
+        <sheet>
+            <description>In a crowd, strangers tend to approach you first regardless of your appearance and demeanor.</description>
+        </sheet>
+    </element>
+    <element name="Oregano" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_FLAVOR_3">
+        <supports>spice-flavor</supports>
+        <description>
+            <p>Your open wounds and blood have an appetizing smell.</p>
+        </description>
+        <sheet>
+            <description>Your open wounds and blood have an appetizing smell.</description>
+        </sheet>
+    </element>
+    <element name="Cinnamon" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_FLAVOR_4">
+        <supports>spice-flavor</supports>
+        <description>
+            <p>You rarely change your expression or body language. You are eerily still.</p>
+        </description>
+        <sheet>
+            <description>You rarely change your expression or body language. You are eerily still.</description>
+        </sheet>
+    </element>
+    <element name="Anise" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_FLAVOR_5">
+        <supports>spice-flavor</supports>
+        <description>
+            <p>You don't move your eyes, instead, you move your head to look around.</p>
+        </description>
+        <sheet>
+            <description>You don't move your eyes, instead, you move your head to look around.</description>
+        </sheet>
+    </element>
+    <element name="Mint" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_FLAVOR_6">
+        <supports>spice-flavor</supports>
+        <description>
+            <p>You tend to exaggerate everything including your gestures and stories.</p>
+        </description>
+        <sheet>
+            <description> You tend to exaggerate everything including your gestures and stories.</description>
+        </sheet>
+    </element>
+    <element name="Seeing the Tastes" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SEEING_THE_TASTES">
+        <description>
+            <p>At 1st level, you gain the ability to see the tastes around you. You can cast the detect magic spell without expending a spell slot. </p>
+            <p class="indent">When you reach 7th level in this class, you may use your bonus action to focus on the flavors surrounding you and gain truesight out to 120 feet until the start of your next turn. Once you use this feature, you must finish a long rest to use it again. </p>
+            <p class="indent">When you reach 11th level in this class, you learn to see the finest details. When you look at a creature with your truesight, you know what conditions are affecting it. </p>
+        </description>
+        <sheet>
+            <description>You can cast the detect magic spell without expending a spell slot.</description>
+            <description level="7">You can cast the detect magic spell without expending a spell slot.
+            You may use your bonus action to focus on the flavors surrounding you and gain truesight out to 120 feet until the start of your next turn. Once you use this feature, you must finish a long rest to use it again.
+            </description>
+            <description level="11">You can cast the detect magic spell without expending a spell slot.
+            You may use your bonus action to focus on the flavors surrounding you and gain truesight out to 120 feet until the start of your next turn. Once you use this feature, you must finish a long rest to use it again. 
+            When you look at a creature with your truesight, you know what conditions are affecting it.
+            </description>
+        </sheet>
+    </element>
+    <element name="Seasoning" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SEASONING">
+        <description>
+            <p>Starting at 1st level, you may infuse your spells with spice, giving tasteless creatures disadvantage on saving throws against your spells. Once you use this feature, you must finish a short or long rest to use it again. </p>
+            <p class="indent">When you reach 2nd level in this class, you may spend 1 sorcery point to infuse any spell with spice. </p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You may infuse your spells with spice, giving tasteless creatures disadvantage on saving throws against your spells. Once you use this feature, you must finish a short or long rest to use it again.</description>
+            <description level="2">you may infuse your spells with spice, giving tasteless creatures disadvantage on saving throws against your spells. Once you use this feature, you must finish a short or long rest to use it again. 
+            You may spend 1 sorcery point to infuse any spell with spice.
+            </description>
+        </sheet>
+    </element>
+    <element name="Aggravate Flavor" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_AGGRAVATE_FLAVOR">
+        <description>
+            <p>At 6th level, you learn to enhance your spells with borrowed flavors from your allies. As a reaction, while casting a spell, choose up to 3 willing creatures within 30 feet and spend 1 sorcerer point for each creature. The creatures become tasteless until the end of their next turn and your spell gains one of the following benefits: </p>
+            <ul>
+                <li>The spell's DC increases by 1 for each creature that becomes tasteless. </li>
+                <li>The spell deals an additional 2d8 cold, fire, or psychic damage of your choice for each creature that becomes tasteless. If any of those creatures' attunement to a magic item ends because of this feature making them tasteless, the spell deals an  additional 4d8 damage instead of 2d8 for each such creature. </li>
+                <li>If the spell has a range of at least 60 feet, its range increases by 30 feet for each creature that becomes tasteless. </li>
+            </ul>
+            <p class="indent">A creature that is already tasteless can't contribute to this feature.</p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. Once you finish a long rest, you regain all expended uses. </p>
+        </description>
+        <sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+            <description>As a reaction, while casting a spell, choose up to 3 willing creatures within 30 feet and spend 1 sorcerer point for each creature. The creatures become tasteless until the end of their next turn and your spell gains one of the following benefits:
+            The spell's DC increases by 1 for each creature that becomes tasteless.
+            The spell deals an additional 2d8 cold, fire, or psychic damage of your choice for each creature that becomes tasteless. If any of those creatures' attunement to a magic item ends because of this feature making them tasteless, the spell deals an  additional 4d8 damage instead of 2d8 for each such creature.
+            If the spell has a range of at least 60 feet, its range increases by 30 feet for each creature that becomes tasteless.
+            A creature that is already tasteless can't contribute to this feature.
+            </description>
+        </sheet>
+    </element>
+    <element name="Bland" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_BLAND">
+        <description>
+            <p>Starting at 14th level, you can turn a distasteful situation to your advantage. While you are tasteless, you have advantage on saving throws against spells and other magical effects; also, you have resistance to damage from spells. </p>
+        </description>
+        <sheet>
+            <description>While you are tasteless, you have advantage on saving throws against spells and other magical effects; also, you have resistance to damage from spells.</description>
+        </sheet>
+    </element>
+    <element name="Sapid Aura" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_SORCERER_SPICOMANCER_SAPID_AURA">
+        <description>
+            <p>Starting at 18th level, an aura of strong taste surrounds you. Each creature that comes within 30 feet of you or ends its turn there must succeed on a Wisdom saving throw or become charmed by you until the end of its next turn. </p>
+        </description>
+        <sheet>
+            <description>Each creature that comes within 30 feet of you or ends its turn there must succeed on a Wisdom saving throw or become charmed by you until the end of its next turn.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,111 @@
+<elements>
+    <info>
+        <name>The Gourmet</name>
+        <description>The Gourmet patron for Warlocks from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name=" warlock-gourmet.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/warlock-gourmet.xml"/>
+        </update>
+    </info>
+    <element name="The Gourmet" type="Archetype" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_WARLOCK_GOURMET">
+        <supports>Otherworldly Patron</supports>
+        <description>
+            <p>You have made a pact with one of Silverplate's most mysterious figures; the Gourmet. No one knows who or what it is but some say the Gourmet is a powerful wizard who bestows powers on those who deserve it, while others believe it is actually an agent of the Great Eater, or even the Great Eater itself. Nonetheless, you are given a chance to become one of the few people who can use the powers of this strange entity. It is now up to you to judge the foodfolk and become a savior, or an executioner. </p>
+            <p class="indent"></p>
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_SPELLS" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_PRESENTATION" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_BONUS_CANTRIPS" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_SMELL" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_TEXTURE" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_TASTE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_PRESENTATION" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_BONUS_CANTRIPS" level="1" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_SMELL" level="6" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_TEXTURE" level="10" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_TASTE" level="14" />
+        </rules>
+    </element>
+    <element name="Expanded Spell List" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_SPELLS">
+        <description>
+            <p>The Gourmet lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you. </p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>coating of many flavors*, sense shelf life* </td></tr>
+                <tr><td>2nd</td><td>see invisibility, shift to cake*</td></tr>
+                <tr><td>3rd</td><td>self-service*, sugarball* </td></tr>
+                <tr><td>4th</td><td>divination, ethereal eaters* </td></tr>
+                <tr><td>5th</td><td>dominate person, spiking forks* </td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_DRS_SILVERPLATE_SPELL_COATING_OF_MANY_FLAVORS</extend>
+            <extend>ID_DRS_SILVERPLATE_SPELL_SENSE_SHELF_LIFE</extend>
+            <extend>ID_PHB_SPELL_SEE_INVISIBILITY</extend>
+            <extend>ID_DRS_SILVERPLATE_SPELL_SHIFT_TO_CAKE</extend>
+            <extend>ID_DRS_SILVERPLATE_SPELL_SELF_SERVICE</extend>
+            <extend>ID_DRS_SILVERPLATE_SPELL_SUGARBALL</extend>
+            <extend>ID_PHB_SPELL_FIRE_DIVINATION</extend>
+            <extend>ID_DRS_SILVERPLATE_SPELL_ETHEREAL_EATERS</extend>
+            <extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+            <extend>ID_DRS_SILVERPLATE_SPELL_SPIKING_FORKS</extend>
+        </spellcasting>
+    </element>
+    <element name="The Presentation" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_PRESENTATION">
+        <description>
+            <p>Starting at 1st level, you can see the food hidden beneath exaggerated garnishes. You can see through nonmagical disguises and can't be fooled by them. </p>
+        </description>
+        <sheet>
+            <description>You can see through nonmagical disguises and can't be fooled by them.</description>
+        </sheet>
+    </element>
+    <element name="Bonus Cantrips" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_BONUS_CANTRIPS">
+        <description>
+            <p>At 1st level, you learn the temporary preservation* and thaumaturgy cantrips. They count as warlock cantrips for you, but they don't count against your number of cantrips known. </p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_DRS_SILVERPLATE_SPELL_TEMPORARY_PRESERVATION"/>
+            <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY"/>
+        </rules>
+    </element>
+    <element name="The Smell" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_SMELL">
+        <description>
+            <p>At 6th level, you learn to perceive your surroundings through the lingering aroma on them. You have blindsight out to 30 feet. If a creature's smell is suppressed by magic, it is invisible to your blindsight.</p>
+        </description>
+        <sheet>
+            <description>You have blindsight out to 30 feet. If a creature's smell is suppressed by magic, it is invisible to your blindsight.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+        </rules>
+    </element>
+    <element name="The Texture" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_TEXTURE">
+        <description>
+            <p>Starting at 10th level, you can examine a creature within 120 feet and understand whether it is suffering from the burnt, frozen, or tasteless condition. You have advantage on your attack rolls against creatures that are affected by those conditions, and they have disadvantage on saving throws against your spells. </p>
+        </description>
+        <sheet>
+            <description>You can examine a creature within 120 feet and understand whether it is suffering from the burnt, frozen, or tasteless condition. You have advantage on your attack rolls against creatures that are affected by those conditions, and they have disadvantage on saving throws against your spells.</description>
+        </sheet>
+    </element>
+    <element name="The Taste" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WARLOCK_GOURMET_THE_TASTE">
+        <description>
+            <p>Starting at l4th level, you can describe a creature's taste to it, making it realize just how delicious it is. When you hit a creature that is within 30 feet of you with an attack, you can describe the creature's taste as a reaction. If the creature can hear and understand you, and has an Intelligence score greater than 3, it must make a Wisdom  saving throw. On a failed save, the creature realizes how tasteful its own body is and starts to cannibalize itself; the creature uses its action to eat itself on its next turn, dealing 10d10  piercing damage to itself. This damage can't be reduced by resistance. </p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a long rest. </p>
+        </description>
+        <sheet usage="1/Long Rest" action="Reaction">
+            <description>When you hit a creature that is within 30 feet of you with an attack, you can describe the creature's taste as a reaction. If the creature can hear and understand you, and has an Intelligence score greater than 3, it must make a Wisdom  saving throw. On a failed save, the creature realizes how tasteful its own body is and starts to cannibalize itself; the creature uses its action to eat itself on its next turn, dealing 10d10  piercing damage to itself. This damage can't be reduced by resistance.</description>
+        </sheet>
+    </element>
+</elements>

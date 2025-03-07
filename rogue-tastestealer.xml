@@ -1,0 +1,105 @@
+<elements>
+    <info>
+        <name>Taste Stealer</name>
+        <description>Taste Stealer for Rogues from The Tasty Lands of Silverplate</description>
+        <update version="0.0.1">
+            <file name=" rogue-tastestealer.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/rogue-tastestealer.xml"/>
+        </update>
+    </info>
+    <element name="Taste Stealer" type="Archetype" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_ROGUE_TASTESTEALER">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>Taste stealers are those who do not make do with their own tastes, but wish to have more. Instead of developing new tastes themselves, they find it easier to steal the taste of others. Outwardly, they seem charismatic, and quite delicious thanks to their quick gains. However, those who know their true nature are cautious of them: Nobody likes thieves, especially those who are after your taste. </p>
+            <p class="indent"></p>
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_TOOLS_FOR_TASTE" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_TASTE_EXTRACTION" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_FAVORITE_TASTE" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_REAP_TASTE" />
+            <div element="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_RICH_TASTES" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_TOOLS_FOR_TASTE" level="3" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_TASTE_EXTRACTION" level="3" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_FAVORITE_TASTE" level="9" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_REAP_TASTE" level="13" />
+            <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_RICH_TASTES" level="17" />
+        </rules>
+    </element>
+    <element name="Tools for Taste" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_TOOLS_FOR_TASTE">
+        <description>
+            <p>When you choose this archetype at 3rd level, you gain proficiency with cook's utensils and alchemist's supplies. </p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+        </rules>
+    </element>
+    <element name="Taste Extraction" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_TASTE_EXTRACTION">
+        <description>
+            <p>At 3rd level, you learn to extract taste from your foes. You can extract a taste crystal from a creature when you deal extra damage to it with the Sneak Attack feature. The effects of taste crystals vary according to the creature type of the creature they are extracted from. A taste crystal expires in 1 month and loses all of its properties, turning into a piece of salt. </p>
+            <p class="indent">You can consume a taste crystal to gain one of the following benefits according to the type of the crystal: </p>
+            <p class="indent"><strong><i>Aberration Taste Crystal.</i></strong> When you are forced to make an Intelligence or Wisdom saving throw, you can consume the crystal as a reaction to gain a +2 bonus to the saving throw. </p>
+            <p class="indent"><strong><i>Beast Taste Crystal.</i></strong> You can consume the crystal as an action. You have advantage on your Wisdom (Perception) checks for 1 minute. </p>
+            <p class="indent"><strong><i>Celestial Taste Crystal.</i></strong> You can consume the crystal as an action. You discern all illusions within 60 feet of you until the end of your turn. </p>
+            <p class="indent"><strong><i>Construct Taste Crystal.</i></strong> You can consume the crystal as a bonus action. You gain resistance to bludgeoning, piercing, and slashing damage for 1 minute. </p>
+            <p class="indent"><strong><i>Dragon Taste Crystal.</i></strong> When you are affected by a condition, you can consume the crystal as a reaction to end the condition on yourself. </p>
+            <p class="indent"><strong><i>Elemental Taste Crystal.</i></strong> You can consume the crystal as a bonus action. You gain blindsight with a radius of 15 feet for 1 minute. </p>
+            <p class="indent"><strong><i>Fey Taste Crystal.</i></strong> When you are forced to make a Dexterity or Charisma saving throw, you can consume the crystal as a reaction to gain a +2 bonus to the saving throw. </p>
+            <p class="indent"><strong><i>Fiend Taste Crystal.</i></strong> You can consume the crystal as a bonus action. For 1 minute, you can see normally in darkness, both magical and nonmagical, to a distance of 120 feet. </p>
+            <p class="indent"><strong><i>Giant Taste Crystal.</i></strong> When you are forced to make a Strength or Constitution saving throw, you can consume the crystal as a reaction to gain a +2 bonus to the saving throw. </p>
+            <p class="indent"><strong><i>Humanoid Taste Crystal.</i></strong> When you make an ability check that doesn't include your proficiency bonus, you can consume the crystal as a reaction to add half your proficiency bonus (rounded down) to the check. </p>
+            <p class="indent"><strong><i>Monstrosity Taste Crystal.</i></strong> You can consume this crystal as a part of your movement. Your speed increases by 10 feet for 1 minute. You can benefit from this crystal once at a time. </p>
+            <p class="indent"><strong><i>Ooze Taste Crystal.</i></strong> You can consume this crystal as a part of your movement. You gain climbing speed equal to your walking speed for 1 minute. </p>
+            <p class="indent"><strong><i>Plant Taste Crystal.</i></strong> If you haven't moved in your current turn, you can give up your movement and consume the crystal. You have a +3 bonus to AC until you move. </p>
+            <p class="indent"><strong><i>Undead Taste Crystal.</i></strong> You can consume the crystal as an action. You don't need to breathe for 1 minute. </p>
+        </description>
+        <sheet>
+            <description>You can extract a taste crystal from a creature when you deal extra damage to it with the Sneak Attack feature. The effects of taste crystals vary according to the creature type of the creature they are extracted from. A taste crystal expires in 1 month and loses all of its properties, turning into a piece of salt. You can consume a taste crystal to gain one of the following benefits according to the type of the crystal:
+            Aberration Taste Crystal. When you are forced to make an Intelligence or Wisdom saving throw, you can consume the crystal as a reaction to gain a +2 bonus to the saving throw. 
+            Beast Taste Crystal. You can consume the crystal as an action. You have advantage on your Wisdom (Perception) checks for 1 minute. 
+            Celestial Taste Crystal. You can consume the crystal as an action. You discern all illusions within 60 feet of you until the end of your turn. 
+            Construct Taste Crystal. You can consume the crystal as a bonus action. You gain resistance to bludgeoning, piercing, and slashing damage for 1 minute. 
+            Dragon Taste Crystal. When you are affected by a condition, you can consume the crystal as a reaction to end the condition on yourself. 
+            Elemental Taste Crystal. You can consume the crystal as a bonus action. You gain blindsight with a radius of 15 feet for 1 minute. 
+            Fey Taste Crystal. When you are forced to make a Dexterity or Charisma saving throw, you can consume the crystal as a reaction to gain a +2 bonus to the saving throw. 
+            Fiend Taste Crystal. You can consume the crystal as a bonus action. For 1 minute, you can see normally in darkness, both magical and nonmagical, to a distance of 120 feet. 
+            Giant Taste Crystal. When you are forced to make a Strength or Constitution saving throw, you can consume the crystal as a reaction to gain a +2 bonus to the saving throw. 
+            Humanoid Taste Crystal. When you make an ability check that doesn't include your proficiency bonus, you can consume the crystal as a reaction to add half your proficiency bonus (rounded down) to the check. 
+            Monstrosity Taste Crystal. You can consume this crystal as a part of your movement. Your speed increases by 10 feet for 1 minute. You can benefit from this crystal once at a time. 
+            Ooze Taste Crystal. You can consume this crystal as a part of your movement. You gain climbing speed equal to your walking speed for 1 minute. 
+            Plant Taste Crystal. If you haven't moved in your current turn, you can give up your movement and consume the crystal. You have a +3 bonus to AC until you move. 
+            Undead Taste Crystal. You can consume the crystal as an action. You don't need to breathe for 1 minute. </description>
+        </sheet>
+    </element>
+    <element name="Favorite Taste" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_FAVORITE_TASTE">
+        <description>
+            <p>By 9th level, you've developed a taste for a specific type of taste crystal; it is your favorite. Choose two creature types. When you extract a taste crystal from a creature of a chosen creature type, you extract 2 additional taste crystals. Also, the extra damage of your Sneak Attack feature is increased by 3d6 against such creatures. </p>
+        </description>
+        <sheet>
+            <description>Choose two creature types. When you extract a taste crystal from a creature of a chosen creature type, you extract 2 additional taste crystals. Also, the extra damage of your Sneak Attack feature is increased by 3d6 against such creatures.</description>
+        </sheet>
+    </element>
+    <element name="Reap Taste" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_REAP_TASTE">
+        <description>
+            <p>Starting at 13th level, whenever you extract taste from a creature, the creature becomes tasteless for 1 minute. </p>
+        </description>
+        <sheet>
+            <description>Whenever you extract taste from a creature, the creature becomes tasteless for 1 minute.</description>
+        </sheet>
+    </element>
+    <element name="Rich Tastes" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_ROGUE_TASTESTEALER_RICH_TASTES">
+        <description>
+            <p>At 17th level, you choose an additional creature type for your Favorite Taste feature. You have advantage on saving throws against spells and other abilities used by creatures that are one of your Favorite Tastes. </p>
+            <p class="indent">When you consume a taste crystal, you become immune to being tasteless until the start of your next turn. If you are tasteless when you consume a taste crystal, the condition on you ends. </p>
+        </description>
+        <sheet>
+            <description>Choose an additional creature type for your Favorite Taste feature. You have advantage on saving throws against spells and other abilities used by creatures that are one of your Favorite Tastes. When you consume a taste crystal, you become immune to being tasteless until the start of your next turn. If you are tasteless when you consume a taste crystal, the condition on you ends.</description>
+        </sheet>
+    </element>
+</elements>

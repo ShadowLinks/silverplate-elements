@@ -1,7 +1,7 @@
 <elements>
     <info>
         <name>Circle of Dough</name>
-        <description>Circle of Dough for Clerics from The Tasty Lands of Silverplate</description>
+        <description>Circle of Dough for Druids from The Tasty Lands of Silverplate</description>
         <update version="0.0.1">
             <file name=" druid-dough.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/druid-dough.xml"/>
         </update>
