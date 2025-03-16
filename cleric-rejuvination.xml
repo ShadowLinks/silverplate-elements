@@ -2,7 +2,7 @@
     <info>
         <name>Rejuvination Domain</name>
         <description>Rejuvination Domain for Clerics from The Tasty Lands of Silverplate</description>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name=" cleric-rejuvination.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/cleric-rejuvination.xml"/>
         </update>
     </info>
@@ -63,16 +63,16 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK"/>
-            <grant type="Spell" level="1" id="ID_DRS_SILVERPLATE_SPELL_REFRESH"/>
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_LESSER_RESTORATION"/>
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_PROTECTION_FROM_POISON"/>
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_REVIVIFY"/>
-            <grant type="Spell" level="5" id="ID_DRS_SILVERPLATE_SPELL_SHOTS"/>
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_DEATH_WARD"/>
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT"/>
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_GREATER_RESTORATION"/>
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_HALLOW"/>
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_DRS_SILVERPLATE_SPELL_REFRESH" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_PROTECTION_FROM_POISON" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_REVIVIFY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_DRS_SILVERPLATE_SPELL_SHOTS" spellcasting="Cleric" prepared="true"  />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_HALLOW" spellcasting="Cleric" prepared="true" />
             <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_BONUS_PROFICIENCY" level="1" />
             <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_MORNING_COFFEE" level="1" />
             <grant type="Archetype Feature" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_CLERIC_REJUVINATION_PURIFY_FRIENDS" level="1" />
