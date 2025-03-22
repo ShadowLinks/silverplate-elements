@@ -2,7 +2,7 @@
     <info>
         <name>Oath of Frugality</name>
         <description>Oath of Frugality for Paladins from The Tasty Lands of Silverplate</description>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name=" paladin-frugality.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/paladin-frugality.xml"/>
         </update>
     </info>
@@ -68,16 +68,16 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Spell" prepared="true" level="3" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" />
-            <grant type="Spell" prepared="true" level="3" id="ID_DRS_SILVERPLATE_SPELL_REFRESH" />
-            <grant type="Spell" prepared="true" level="5" id="ID_PHB_SPELL_LOCATE_OBJECT" />
-            <grant type="Spell" prepared="true" level="5" id="ID_DRS_SILVERPLATE_SPELL_SILVER_TOOTHPICKS" />
-            <grant type="Spell" prepared="true" level="9" id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" />
-            <grant type="Spell" prepared="true" level="9" id="ID_DRS_SILVERPLATE_SPELL_SHOTS" />
-            <grant type="Spell" prepared="true" level="13" id="ID_DRS_SILVERPLATE_SPELL_ETHEREAL_EATERS" />
-            <grant type="Spell" prepared="true" level="13" id="ID_PHB_SPELL_LOCATE_CREATURE" />
-            <grant type="Spell" prepared="true" level="17" id="ID_PHB_SPELL_REINCARNATE" />
-            <grant type="Spell" prepared="true" level="17" id="ID_DRS_SILVERPLATE_SPELL_SPIKING_FORKS" />
+            <grant type="Spell" prepared="true" spellcasting="paladin" level="3" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" />
+            <grant type="Spell" prepared="true" spellcasting="paladin" level="3" id="ID_DRS_SILVERPLATE_SPELL_REFRESH" />
+            <grant type="Spell" prepared="true" spellcasting="paladin" level="5" id="ID_PHB_SPELL_LOCATE_OBJECT" />
+            <grant type="Spell" prepared="true" spellcasting="paladin" level="5" id="ID_DRS_SILVERPLATE_SPELL_SILVER_TOOTHPICKS" />
+            <grant type="Spell" prepared="true" spellcasting="paladin" level="9" id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" />
+            <grant type="Spell" prepared="true" spellcasting="paladin" level="9" id="ID_DRS_SILVERPLATE_SPELL_SHOTS" />
+            <grant type="Spell" prepared="true" spellcasting="paladin" level="13" id="ID_DRS_SILVERPLATE_SPELL_ETHEREAL_EATERS" />
+            <grant type="Spell" prepared="true" spellcasting="paladin" level="13" id="ID_PHB_SPELL_LOCATE_CREATURE" />
+            <grant type="Spell" prepared="true" spellcasting="paladin" level="17" id="ID_PHB_SPELL_REINCARNATE" />
+            <grant type="Spell" prepared="true" spellcasting="paladin" level="17" id="ID_DRS_SILVERPLATE_SPELL_SPIKING_FORKS" />
         </rules>
     </element>
     <element name="Channel Divinity" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_PALADIN_FRUGALITY_CD">
