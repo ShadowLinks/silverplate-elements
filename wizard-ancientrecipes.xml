@@ -38,7 +38,8 @@
             <description></description>
         </sheet>
         <rules>
-            <stat name="history:proficiency" value="proficiency" bonus="double"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+            <stat name="history:proficiency" value="proficiency" bonus="double" />
         </rules>
     </element>
     <element name="Arcanological Studies" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_ARCANOLOGICAL_STUDIES">
