@@ -2,7 +2,7 @@
     <info>
         <name>School of Ancient Recipes</name>
         <description>School of Ancient Recipes for Wizards from The Tasty Lands of Silverplate</description>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name=" wizard-ancientrecipes.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/wizard-ancientrecipes.xml"/>
         </update>
     </info>
@@ -38,7 +38,7 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" bonus="double"/>
+            <stat name="history:proficiency" value="proficiency" bonus="double"/>
         </rules>
     </element>
     <element name="Arcanological Studies" type="Archetype Feature" source="Silverplate" id="ID_DRS_SILVERPLATE_ARCHETYPE_FEATURE_WIZARD_ANCIENTRECIPES_ARCANOLOGICAL_STUDIES">
