@@ -1374,7 +1374,7 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+            <grant type="Language" id="ID_MM_LANGUAGE_IGNAN" />
         </rules>
     </element>
     <element name="Grilled/Smoked - Loved by the Gods (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_GRILLEDSMOKED_LOVED_BY_THE_GODS">
