@@ -2,7 +2,7 @@
     <info>
         <name>Foodfolk tags</name>
         <description>The Foodfolk tags to create Foodfolk from The Tasty Lands of Silverplate</description>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="foodfolk-tags.xml" url="https://raw.githubusercontent.com/ShadowLinks/silverplate-elements/refs/heads/main/foodfolk-tags.xml"/>
         </update>
     </info>
@@ -1207,7 +1207,7 @@
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CUTTING_KNIFE" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARGRATER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_GRATER" />
         </rules>
     </element>
     <element name="Fresh - Straight From the Source (3)" type="Racial Trait" source="Silverplate" id="ID_DRS_SILVERPLATE_RACIAL_TRAIT_FRESH_STRAIGHT_FROM_THE_SOURCE">
