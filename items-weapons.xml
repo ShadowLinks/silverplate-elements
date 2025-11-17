@@ -325,7 +325,7 @@
             <p class="indent">You have a +l bonus to attack and damage rolls made with this magic weapon. This bonus becomes +2 when the fork is used against a dragon. Additionally, you can use your action to charge at a creature within 30 feet of you in a straight line. When you do, you move at a very high speed, difficult terrain doesn't slow you down, and you have advantage on saving throws against traps until the end of your turn. The target must succeed on a Dexterity saving throw (DC = 8 + your Strength modifier + your proficiency bonus) or you strike it with the fork after your charge, dealing ld8 piercing damage plus 2d6 force damage. If the target is a dragon, the fork makes a booming sound that only dragons can hear, dealing an additional 2d6 thunder damage to the target.</p>
         </description>
         <setters>
-            <set name="keywords">warfork, tunder</set>
+            <set name="keywords">warfork, thunder</set>
             <set name="category">Magic Weapons</set>
             <set name="cost" currency="gp">0</set>
             <set name="type" addition="warfork">Weapon</set>
